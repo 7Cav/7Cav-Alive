@@ -1,1 +1,0 @@
-_this addAction ["<t color='#FF0000'>Heal</t>", { _this setDamage 0; }
