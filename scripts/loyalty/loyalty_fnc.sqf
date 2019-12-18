@@ -1,5 +1,5 @@
-[] call compile preprocessFileLineNumbers "Tac2\secure\encryptedProfile.sqf";
-[] call compile preprocessFileLineNumbers "Tac2\loyalty\loyalty_values.sqf";
+[] call compile preprocessFileLineNumbers "scripts\secure\encryptedProfile.sqf";
+[] call compile preprocessFileLineNumbers "scripts\loyalty\loyalty_values.sqf";
 
 
 LOYALTY_fnc_OpenSpawnUI = 

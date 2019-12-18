@@ -1,7 +1,8 @@
-null = [_this select 0] execVM "scripts\EmptyInventory.sqf";
-[this,"none",true] call cScripts_fnc_doStarterCrate;
-[_this select 0, true] call ace_arsenal_fnc_initBox;
-[_this select 0, [
+params [["_object", objNull, [objNull]]];
+systemChat format ["%1", _object];
+[_object,"none",true] call cScripts_fnc_doStarterCrate;
+[_object, true] call ace_arsenal_fnc_initBox;
+[_object, [
 	"launch_I_Titan_F",
 	"launch_O_Titan_ghex_F",
 	"launch_O_Titan_F",

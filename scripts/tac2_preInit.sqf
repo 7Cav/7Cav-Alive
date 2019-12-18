@@ -1,6 +1,5 @@
 // Init custom Ares modules
-call Tac2_fnc_initAresModules;
-
+call fnc_initAresModules;
 
 //Chat messages for Team kills of blufor players;
 [] spawn {
@@ -15,7 +14,7 @@ call Tac2_fnc_initAresModules;
 };
 
 // Initialize loyalty rewards GUI
-_vehDialog = [] spawn compile PreprocessFileLineNumbers "Tac2\loyalty\loyalty_fnc.sqf";
+_vehDialog = [] spawn compile PreprocessFileLineNumbers "scripts\loyalty\loyalty_fnc.sqf";
 
 [] spawn {
 	sleep 900;

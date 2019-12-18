@@ -5,8 +5,6 @@ waitUntil { getPlayerUID player != "" };
 
 [] call SPM_fnc_clientInit;
 
-[] execVM ("scripts\configure" + worldName + "Client.sqf");			// Island-specific modifications
-
 player setVariable ["CLIENT_Owner", clientOwner, true];
 
 // Headless client treatment
@@ -93,9 +91,6 @@ player addEventHandler ["GetOutMan", { if ({ isPlayer _x } count crew (_this sel
 // Disable faction changes due to team killing, vehicle destruction, etc.
 player addEventHandler ["HandleRating", { 0 }];
 
-[] execVM "scripts\vehicle\crew\CrewList.sqf";
-[] execVM "scripts\vehicle\paradrop\Paradrop.sqf";
-
 [] execVM "ASL_AdvancedSlingLoading\overrideStandardSlingLoading.sqf";
 [] execVM "scripts\vehiclePermissionsInit.sqf";
 
@@ -105,8 +100,6 @@ player addEventHandler ["HandleRating", { 0 }];
 [] call CLIENT_InitForceDryFire;
 [] call CLIENT_MonitorEnemyControlledAreas;
 [] call Tac2_fnc_fortifyPermissionsInitPlayer;
-
-[] execVM "scripts\misc\diary.sqf";
 
 ["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
 

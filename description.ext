@@ -29,12 +29,12 @@ enableTargetDebug = 1;
 
 class Extended_PreInit_EventHandlers {
 	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
-	tac2_preInit = "0 spawn compile preprocessFileLineNumbers 'Tac2\tac2_preInit.sqf'";
+	tac2_preInit = "0 spawn compile preprocessFileLineNumbers 'scripts\tac2_preInit.sqf'";
 	settings = "0 spawn compile preprocessFileLineNumbers 'simple_splint\functions\fn_initsettings.sqf'";
 };
 class Extended_PostInit_EventHandlers {
 	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
-	tac2_postInit = "0 spawn compile preprocessFileLineNumbers 'Tac2\tac2_postInit.sqf'";
+	tac2_postInit = "0 spawn compile preprocessFileLineNumbers 'scipts\tac2_postInit.sqf'";
 };
 
 
@@ -51,51 +51,33 @@ RespawnDialog = 0;
 wreckManagerMode = 0;
 corpseManagerMode = 0;
 
-#include "scripts\common.hpp"				  		// Common dialog classes
-#include "JB\defines.hpp"
-#include "JB\dialog_containerEdit.hpp"
-#include "OP\dialog_command.hpp"
-#include "OP\dialog_inspector.hpp"
-#include "Tac2\loyalty\loyalty_gui.hpp"
-#include "Tac2\loyalty\loyalty_hud.hpp"
+#include "cScripts\Loadouts\script\CfgPoppy.hpp"
+#include "cScripts\ViewingDistance\GUI.h"
+#include "cScripts\CfgLoadouts.hpp"
+
 
 class CfgFunctions
 {
-	#include "INIT\CfgFunctions.hpp"				// Mission-wide preInit and postInit functions
-	#include "scripts\CfgFunctions.hpp"				// Mission-wide functions
-	#include "OO\CfgFunctions.hpp"					// Primitive object oriented support
-	#include "QS\CfgFunctions.hpp"					// UAV reset
-	#include "JB\CfgFunctions.hpp"
-	#include "SPM\CfgFunctions.hpp"
-	#include "OP\CfgFunctions.hpp"
-	#include "Diagnostics\CfgFunctions.hpp"
 	#include "cScripts\CavFnc\CfgFunctions.hpp"
 	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
 	#include "cScripts\ViewingDistance\CfgFunctions.hpp"
-	#include "simple_splint\CfgFunctions.hpp"		// Simple Splint
-	#include "Tac2\CfgFunctions.hpp"
+	#include "simple_splint\CfgFunctions.hpp"		// S`imple Splint
 };
 
-#include "cScripts\Loadouts\script\CfgPoppy.hpp"
-#include "cScripts\ViewingDistance\GUI.h"
-#include "cScripts\CfgUnitInsignia.hpp"
-#include "cScripts\CfgLoadouts.hpp"
 
 class CfgSounds
 {
 	#include "AR_AdvancedRappelling\CfgSounds.hpp"
-	#include "JB\CfgSounds.hpp"
-	#include "SPM\CfgSounds.hpp"
 };
 
-class RscTitles
+/*class RscTitles
 {
 	#include "scripts\vehicle\crew\CrewList.hpp"	// Occupants HUD for vehicles
 	#include "scripts\vehicle\paradrop\Paradrop.hpp"// Indicators for HALO and static lines
 	#include "Diagnostics\dialog_stripChart.hpp"
 	#include "Tac2\loyalty\loyalty_gui.hpp"
 	#include "Tac2\loyalty\loyalty_hud.hpp"
-};
+};*/
 
 class Params
 {
