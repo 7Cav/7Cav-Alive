@@ -90,7 +90,7 @@ _EHWeapon = ["weapon", {
 
 				// Check line of sight with enemy units in 100m radius
 				private _isVisibleToLocalUnits = {
-					if([player, _x, UNDERCOVER_fov] call Tac2_fnc_hasLineOfSight) exitWith { _shouldBlowCover = true; true };
+					if([player, _x, UNDERCOVER_fov] call tac2_fnc_hasLineOfSight) exitWith { _shouldBlowCover = true; true };
 				} forEach (player nearEntities ["Man", UNDERCOVER_spotDistance] select { side _x != side player && side _x != west});
 				if (not isNil "_isVisibleToLocalUnits") exitWith { true };
 

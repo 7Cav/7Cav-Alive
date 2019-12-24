@@ -1,10 +1,11 @@
 /*
+Author: JB
 
-[vehicle, vehicleInit] call JB_fnc_respawnVehicleInitialize
+[vehicle, vehicleInit] call vehicle_fnc_respawnVehicleInitialize
 
 Set up a vehicle for respawn
 
-_null = [MyVehicle, { MyVehicle engineOn true }] call JB_fnc_respawnVehicleInitialize;
+_null = [MyVehicle, { MyVehicle engineOn true }] call vehicle_fnc_respawnVehicleInitialize;
 
 vehicle			- the vehicle to be respawned (required)
 vehicleInit		- the script which is executed whenever the vehicle is created. (optional)

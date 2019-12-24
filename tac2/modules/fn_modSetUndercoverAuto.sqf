@@ -23,5 +23,5 @@ if (count _dialogResult == 0) exitWith {};
 _dialogResult params ["_a", "_b", "_c", "_d"];
 
 {
-	[parseNumber _a, parseNumber _b, parseNumber _c, parseNumber _d] remoteExec ["Tac2_fnc_setUndercoverAuto", _x];
+	[parseNumber _a, parseNumber _b, parseNumber _c, parseNumber _d] remoteExec ["tac2_fnc_setUndercoverAuto", _x];
 } forEach _selectedObjects

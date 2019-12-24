@@ -1,8 +1,8 @@
 class simpleSplint {
 	tag = "simpleSplint";
-	class init {
+	class functions {
 		file = "simpleSplint\functions";
-    class initSplint { postInit = 1; };
+    	class initSplint { postInit = 1; };
 		class initSettings {};
 		class splintLimb {};
 		class fixLimb {};

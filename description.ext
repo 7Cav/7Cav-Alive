@@ -30,12 +30,12 @@ enableTargetDebug = 1;
 
 class Extended_PreInit_EventHandlers {
 	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
-	tac2_preInit = "0 spawn compile preprocessFileLineNumbers 'Tac2\tac2_preInit.sqf'";
+	tac2_preInit = "0 spawn compile preprocessFileLineNumbers 'tac2\tac2_preInit.sqf'";
 	settings = "0 spawn compile preprocessFileLineNumbers 'simpleSplint\functions\fn_initsettings.sqf'";
 };
 class Extended_PostInit_EventHandlers {
 	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
-	tac2_postInit = "0 spawn compile preprocessFileLineNumbers 'Tac2\tac2_postInit.sqf'";
+	tac2_postInit = "0 spawn compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
 };
 
 
@@ -52,8 +52,9 @@ RespawnDialog = 0;
 wreckManagerMode = 0;
 corpseManagerMode = 0;
 
-#include "Tac2\loyalty\loyalty_gui.hpp"
-#include "Tac2\loyalty\loyalty_hud.hpp"
+#include "scripts\common.hpp"				  		// Common dialog classes
+#include "tac2\loyalty\loyalty_gui.hpp"
+#include "tac2\loyalty\loyalty_hud.hpp"
 
 class CfgFunctions
 {
@@ -61,7 +62,10 @@ class CfgFunctions
 	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
 	#include "cScripts\ViewingDistance\CfgFunctions.hpp"
 	#include "simpleSplint\CfgFunctions.hpp"		// Simple Splint
-	#include "Tac2\CfgFunctions.hpp"
+	#include "tac2\CfgFunctions.hpp"
+	#include "utils\CfgFunctions.hpp"
+	#include "scripts\vehicle\CfgFunctions.hpp"
+	#include "init\CfgFunctions.hpp"
 };
 
 #include "cScripts\Loadouts\script\CfgPoppy.hpp"
@@ -77,8 +81,8 @@ class CfgSounds
 
 class RscTitles
 {
-	#include "Tac2\loyalty\loyalty_gui.hpp"
-	#include "Tac2\loyalty\loyalty_hud.hpp"
+	#include "tac2\loyalty\loyalty_gui.hpp"
+	#include "tac2\loyalty\loyalty_hud.hpp"
 };
 
 class CfgDebriefing

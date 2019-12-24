@@ -276,3 +276,15 @@ SERVER_RemoteCallerCuratorType =
 
 	"CO"
 };
+
+SERVER_InitializeObject =
+{
+	params ["_object"];
+
+	if (_object isEqualType objNull) exitWith
+	{
+		if (not (_object isKindOf "Static")) then { [[_object]] call SERVER_CurateEditableObjects };
+	};
+
+	if (_object isEqualType grpNull) exitWith { [[units _object]] call SERVER_CurateEditableObjects };
+};

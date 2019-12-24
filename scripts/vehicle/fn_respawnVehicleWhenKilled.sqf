@@ -1,6 +1,7 @@
 /*
+Author: JB
 
-[vehicle, respawnDelay] call JB_fnc_respawnVehicleWhenKilled
+[vehicle, respawnDelay] call vehicle_fnc_respawnVehicleWhenKilled
 
 This script handles respawn of a vehicle after its destruction.  This script should be called in the vehicle's Init
 section.  For example:

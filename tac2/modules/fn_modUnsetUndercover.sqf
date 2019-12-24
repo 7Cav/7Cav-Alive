@@ -9,5 +9,5 @@ private _selectedObjects = if (isNull _objectUnderCursor) then
 	};
 
 {
-		[] remoteExec ["Tac2_fnc_unsetUndercoverAuto", _x];
+		[] remoteExec ["tac2_fnc_unsetUndercoverAuto", _x];
 } forEach _selectedObjects

@@ -8,4 +8,4 @@ private _selectedObjects = if (isNull _objectUnderCursor) then
 		[_objectUnderCursor];
 	};
 
-[_selectedObjects, true] remoteExec ["Tac2_fnc_chainUnchainUnit", 2, false];
+[_selectedObjects, true] remoteExec ["tac2_fnc_chainUnchainUnit", 2, false];

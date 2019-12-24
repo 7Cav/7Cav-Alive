@@ -1,3 +1,6 @@
+/*
+Author: JB
+*/
 private _vehicle = param [0, objNull, [objNull]];
 
 detach _vehicle;
@@ -21,7 +24,7 @@ private _ejectOccupants =
 
 if (canSuspend) then
 {
-	[_ejectOccupants, 5, 1] call JB_fnc_timeoutWaitUntil;
+	[_ejectOccupants, 5, 1] call utils_fnc_timeoutWaitUntil;
 }
 else
 {
@@ -52,7 +55,7 @@ else
 	_vehicle setPosASL _position;
 
 	{
-		if (not isPlayer _x && { not isObjectHidden _x } && { ([_vehicle, _x] call JB_fnc_objectBoundsIntersect) }) then { [_x] call JB_fnc_respawnVehicleReturn };
+		if (not isPlayer _x && { not isObjectHidden _x } && { ([_vehicle, _x] call utils_fnc_objectBoundsIntersect) }) then { [_x] call vehicle_fnc_respawnVehicleReturn };
 	} forEach (_vehicle nearObjects 30);
 
 	_vehicle hideObjectGlobal false;

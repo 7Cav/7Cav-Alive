@@ -36,22 +36,22 @@ player addEventHandler ["HandleRating", { 0 }];
 
 // TODO-RENABLE: [] call JB_fnc_increasedFuelConsumption;
 
-[] call Tac2_fnc_fortifyPermissionsInitPlayer;
+[] call tac2_fnc_fortifyPermissionsInitPlayer;
 
 [] execVM "scripts\misc\diary.sqf";
 
-["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
+// ["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
 
-CLIENT_CommandChatHandler =
-{
-	params ["_channel", "_text"];
+// CLIENT_CommandChatHandler =
+// {
+// 	params ["_channel", "_text"];
 
-	if (_text find "gm " == 0 || _text find "mc " == 0 || _text find "mp " == 0) then
-	{
-		[_text] remoteExec ["SERVER_ExecuteCommand", 2];
-	};
-};
+// 	if (_text find "gm " == 0 || _text find "mc " == 0 || _text find "mp " == 0) then
+// 	{
+// 		[_text] remoteExec ["SERVER_ExecuteCommand", 2];
+// 	};
+// };
 
-[CLIENT_CommandChatHandler] call JB_fnc_chatAddEventHandler;
+// [CLIENT_CommandChatHandler] call JB_fnc_chatAddEventHandler;
 
 diag_log "initPlayerLocal end";

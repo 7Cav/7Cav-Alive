@@ -6,6 +6,6 @@
     [_this select 0, 1200] call ace_rearm_fnc_setSupplyCount;
     (_this select 0) setVariable ["ACE_isRepairVehicle", true, true];
   }
-] call JB_fnc_respawnVehicleInitialize;
-[_this select 0, 60] call JB_fnc_respawnVehicleWhenKilled;
-[_this select 0, 1500, 99999] call JB_fnc_respawnVehicleWhenAbandoned;
+] call vehicle_fnc_respawnVehicleInitialize;
+[_this select 0, 60] call vehicle_fnc_respawnVehicleWhenKilled;
+[_this select 0, 1500, 99999] call vehicle_fnc_respawnVehicleWhenAbandoned;

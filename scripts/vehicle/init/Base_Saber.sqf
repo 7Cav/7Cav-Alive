@@ -1,8 +1,8 @@
 //Currently Abrams
 
-[_this select 0, {}] call JB_fnc_respawnVehicleInitialize;
-[_this select 0, 420] call JB_fnc_respawnVehicleWhenKilled;
-[_this select 0, 1500, 600] call JB_fnc_respawnVehicleWhenAbandoned;
+[_this select 0, {}] call vehicle_fnc_respawnVehicleInitialize;
+[_this select 0, 420] call vehicle_fnc_respawnVehicleWhenKilled;
+[_this select 0, 1500, 600] call vehicle_fnc_respawnVehicleWhenAbandoned;
 
 // Old Leopard 2 stuff
 
@@ -19,6 +19,6 @@
 // 		(_this select 0) setObjectTextureGlobal [1, "Data\LEO2TURRET.jpg"];
 // 		(_this select 0) setObjectTextureGlobal [2, "Data\LEO3RCWS.jpg"];
 // 	}	
-// }] call JB_fnc_respawnVehicleInitialize;
-// [_this select 0, 420] call JB_fnc_respawnVehicleWhenKilled;
-// [_this select 0, 1500, 600] call JB_fnc_respawnVehicleWhenAbandoned;
+// }] call vehicle_fnc_respawnVehicleInitialize;
+// [_this select 0, 420] call vehicle_fnc_respawnVehicleWhenKilled;
+// [_this select 0, 1500, 600] call vehicle_fnc_respawnVehicleWhenAbandoned;

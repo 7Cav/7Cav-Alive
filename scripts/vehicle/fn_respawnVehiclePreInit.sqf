@@ -1,3 +1,6 @@
+/*
+Author: JB
+*/
 // If a player is moving faster than this speed (m/s) then they are not considered to be near a vehicle and it can be considered abandoned
 #define ABANDON_SPEED 6.0
 
@@ -48,7 +51,7 @@ JB_RV_SetInitializer =
 
 	This function obtains the parameters needed for JB_RV_RespawnVehicle.  This function exists
 	so that the parameters can be collected at one time and then used at another time.  That
-	ability is particularly important for JB_fnc_respawnVehicleWhenKilled.  The vehicle
+	ability is particularly important for vehicle_fnc_respawnVehicleWhenKilled.  The vehicle
 	will be Killed, and then the parameters can be immediately collected.  The WhenKilled script
 	can then delay for however long it likes, other software can remove the wrecked vehicle,
 	and the parameters that were saved can be supplied to JB_RV_RespawnVehicle.
@@ -96,7 +99,7 @@ JB_RV_RemoveRespawnParameters =
 
 newVehicle = [parameters] call JB_fnc_respawnVehicle
 
-	Immediately respawn a vehicle that has been initialized by JB_fnc_respawnVehicleInitialize.  The
+	Immediately respawn a vehicle that has been initialized by vehicle_fnc_respawnVehicleInitialize.  The
 	vehicle will be recreated using the location and initialization script supplied at that time.
 
 	The parameters to this function are defined by JB_fnc_respawnVehicleParameters, which collects
@@ -153,9 +156,9 @@ JB_RV_RespawnVehicle =
 	deleteVehicle _vehicle;
 
 	// Set the vehicle's variable name to point to the respawned vehicle on the server and on all clients
-	[_newVehicle, _vehicleName] call JB_fnc_setVehicleVarName;
+	[_newVehicle, _vehicleName] call vehicle_fnc_setVehicleVarName;
 
-	[_newVehicle] call JB_fnc_respawnVehicleReturn;
+	[_newVehicle] call vehicle_fnc_respawnVehicleReturn;
 
 	_newVehicle;
 };
@@ -305,7 +308,7 @@ JB_RV_Monitor =
 			else
 			{
 				_vehicle setOwner 2;
-				[{ owner _vehicle == 2 }, 5] call JB_fnc_timeoutWaitUntil;
+				[{ owner _vehicle == 2 }, 5] call utils_fnc_timeoutWaitUntil;
 
 				// Sort out aircraft from which a player ejected
 				if (_vehicle isKindOf "Plane" && _vehicle animationPhase "canopy_hide" == 1) then
@@ -337,7 +340,7 @@ JB_RV_Monitor =
 	if (_shouldReturn) then
 	{
 		sleep _respawnDelay;
-		[_vehicle] call JB_fnc_respawnVehicleReturn;
+		[_vehicle] call vehicle_fnc_respawnVehicleReturn;
 
 		[_vehicle] spawn JB_RV_Monitor;
 	};

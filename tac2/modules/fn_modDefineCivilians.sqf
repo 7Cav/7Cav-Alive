@@ -5,4 +5,4 @@ private _newRatings = [];
 } forEach _selectedObjects;
 
 // Needs to exec on server
-[_newRatings, true] remoteExec ["Tac2_fnc_updateUnitRatings", 2, false];
+[_newRatings, true] remoteExec ["tac2_fnc_updateUnitRatings", 2, false];

@@ -1,11 +1,12 @@
 /*
+Author: JB
 
-[vehicle, distance, duration, move] call JB_fnc_respawnVehicleWhenAbandoned
+[vehicle, distance, duration, move] call vehicle_fnc_respawnVehicleWhenAbandoned
 
 This script handles respawn of a vehicle when it is abandoned by its crew and no friendly soldiers are within
 a specified distance for a specified time.  Example call:
 
-[MyVehicle, 300, 120] call JB_fnc_respawnVehicleWhenAbandoned;
+[MyVehicle, 300, 120] call vehicle_fnc_respawnVehicleWhenAbandoned;
 
 vehicle			- the vehicle to be respawned (required)
 distance		- the distance at which all friendlies must be before a vehicle is considered abandoned

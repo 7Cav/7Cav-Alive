@@ -10,6 +10,6 @@
 
 		(_this select 0) addMPEventHandler ["MPKilled", { if (local (_this select 0)) then { [_this select 0, 0.8, 1.0] call SPM_RemoveRandomAmmunition } }];
 	}
-] call JB_fnc_respawnVehicleInitialize;
-[_this select 0, 60] call JB_fnc_respawnVehicleWhenKilled;
-[_this select 0, 1500, 99999] call JB_fnc_respawnVehicleWhenAbandoned;
+] call vehicle_fnc_respawnVehicleInitialize;
+[_this select 0, 60] call vehicle_fnc_respawnVehicleWhenKilled;
+[_this select 0, 1500, 99999] call vehicle_fnc_respawnVehicleWhenAbandoned;

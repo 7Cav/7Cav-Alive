@@ -1,5 +1,5 @@
 // Init custom Ares modules
-call Tac2_fnc_initAresModules;
+call tac2_fnc_initAresModules;
 
 
 //Chat messages for Team kills of blufor players;
