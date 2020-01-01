@@ -3,7 +3,7 @@ diag_log "initServer start";
 #include "\serverscripts\zeusserverscripts\secretKey.sqf"
 missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
 
-_null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
+// _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
 // Disable RHS engine start up so vehicles move immediately when spawned
 RHS_ENGINE_STARTUP_OFF = 1;
@@ -45,9 +45,7 @@ setDate _date;
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
 
-[] execVM "scripts\decals.sqf";
-[] execVM "scripts\fortifyInit.sqf";
-
+// [] execVM "scripts\fortifyInit.sqf";
 
 enableEnvironment [false, true];
 

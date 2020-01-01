@@ -23,12 +23,9 @@ if (isNumber (missionConfigFile >> "briefing") && { getNumber (missionConfigFile
 
 // Action (scroll wheel) override framework
 private _handle = execVM "scripts\client\overrideAction.sqf";
-waitUntil { scriptDone _handle };
 
 // Curator (Zeus) assignment and permissions framework
 private _handle = execVM "scripts\client\curator.sqf";
-waitUntil { scriptDone _handle };
 
 // Vehicle permissions framework
 private _handle = execVM "scripts\client\vehiclePermissions.sqf";
-waitUntil { scriptDone _handle };

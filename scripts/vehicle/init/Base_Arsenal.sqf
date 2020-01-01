@@ -1,8 +1,14 @@
-null = [_this select 0] execVM "scripts\EmptyInventory.sqf";
-[_this select 0, "charlie"] call cScripts_fnc_doStarterCrate;
-[_this select 0, true] call ace_arsenal_fnc_initBox;
+_crate = _this select 0;
+
+clearweaponcargoGlobal _crate;
+clearmagazinecargoGlobal _crate;
+clearitemcargoGlobal _crate;
+clearbackpackcargoGlobal _crate;
+
+[_crate, "charlie"] call cScripts_fnc_doStarterCrate;
+[_crate, true] call ace_arsenal_fnc_initBox;
 sleep 5;
-[_this select 0, [
+[_crate, [
 	"launch_I_Titan_F",
 	"launch_O_Titan_ghex_F",
 	"launch_O_Titan_F",

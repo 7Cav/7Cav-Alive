@@ -30,7 +30,7 @@ player addEventHandler ["HandleRating", { 0 }];
 [] call tac2_fnc_fortifyPermissionsInitPlayer;
 
 // Make diary entries
-[] execVM "scripts\misc\diary.sqf";
+[] execVM "scripts\client\diary.sqf";
 
 // Execute class-specific init
 ["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];

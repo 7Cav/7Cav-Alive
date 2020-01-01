@@ -1,11 +1,7 @@
 private _state = param [0, "", [""]];
 
 if (_state == "init") then
-{
-
-	[] call MAP_InitializeGeneral;
-	[] call HUD_Infantry_Initialize;
-	[] call HUD_Repair_Initialize;
+{	[] call HUD_Repair_Initialize;
 
 	player setVariable ["SPM_BranchOfService", "support"];
 	player setVariable ["JBA_LogisticsSpecialist", true, true]; //JIP

@@ -1,11 +1,7 @@
 private _state = param [0, "", [""]];
 
 if (_state == "init") then
-{
-
-	[] call MAP_InitializeGeneral;
-	[] call HUD_Medic_Initialize;
-	[] call HUD_Infantry_Initialize;
+{	[] call HUD_Medic_Initialize;
 
 	player setVariable ["SPM_BranchOfService", "infantry"];
 

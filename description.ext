@@ -1,4 +1,4 @@
-author = "People";
+author = "Citarelli.D, Bojan, JB, Bates. J";
 overviewPicture = "media\images\loading.jpg";
 
 loadScreen = "media\images\loading.jpg";
@@ -17,25 +17,18 @@ class Header
 
 enableDebugConsole[] =
 {
-	"76561197974853932", // Carter.D
-	"76561197988661394", // Treck.M
-	"76561198040127295", // Tully.B
-	"76561198131898852", // Argus
-	"76561198168754324", // Dakota.N
-	"76561198089890491", // Vex.W
-	"76561198020218548", // Bickford.B
 	"76561198048006094" // Bojan (not 7th Cavalry)
 };
 enableTargetDebug = 1;
 
 class Extended_PreInit_EventHandlers {
 	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
-	tac2_preInit = "0 spawn compile preprocessFileLineNumbers 'tac2\tac2_preInit.sqf'";
-	settings = "0 spawn compile preprocessFileLineNumbers 'simpleSplint\functions\fn_initsettings.sqf'";
+	tac2_preInit = "call compile preprocessFileLineNumbers 'tac2\tac2_preInit.sqf'";
+	settings = "call compile preprocessFileLineNumbers 'simpleSplint\functions\fn_initsettings.sqf'";
 };
 class Extended_PostInit_EventHandlers {
 	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
-	tac2_postInit = "0 spawn compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
+	tac2_postInit = "call compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
 };
 
 

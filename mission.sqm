@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3341;
+		nextID=3361;
 	};
 	class Camera
 	{
-		pos[]={14216.371,40.45187,16263.396};
-		dir[]={-0.63968164,-0.51300454,0.5725022};
-		up[]={-0.38228953,0.85835379,0.34214297};
-		aside[]={0.66693181,-9.6391886e-008,0.74518901};
+		pos[]={14205.635,52.719429,16244.212};
+		dir[]={-0.16895406,-0.4141399,0.89440495};
+		up[]={-0.0768729,0.91020882,0.40694886};
+		aside[]={0.9826287,-9.8953024e-008,0.18561892};
 	};
 };
 binarizationWanted=0;
@@ -14460,7 +14460,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="images\Info.paa";
+											value="media\images\Info.paa";
 										};
 									};
 								};
@@ -14539,7 +14539,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="images\enlist.paa";
+											value="media\images\enlist.paa";
 										};
 									};
 								};
@@ -14618,7 +14618,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="images\serverRules.paa";
+											value="media\images\serverRules.paa";
 										};
 									};
 								};
@@ -25528,13 +25528,13 @@ class Mission
 									class PositionInfo
 									{
 										position[]={14184.749,19.867098,16276.483};
-										angles[]={0.0026520467,0.74878114,6.2818484};
+										angles[]={0.0026529003,0.74878114,6.2818413};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
-										init="call{null = [this] execVM ""scripts\EmptyInventory.sqf"";null = [this] execVM ""scripts\ACREBox.sqf"";this enableRopeAttach false;}";
+										init="call{_null = [this] execVM ""scripts\vehicle\init\Base_Radio.sqf"";}";
 									};
 									id=36;
 									type="Box_NATO_Support_F";
@@ -28317,7 +28317,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{_null = [this] execVM ""scripts\Base_Arsenal.sqf"";}";
+										init="call{_null = [this] execVM ""scripts\vehicle\init\Base_Arsenal.sqf"";}";
 									};
 									id=9877;
 									type="B_supplyCrate_F";

@@ -1,11 +1,7 @@
 private _state = param [0, "", [""]];
 
 if (_state == "init") then
-{
-	[] call MAP_InitializeGeneral;
-	[] call HUD_Infantry_Initialize;
-
-	player setVariable ["SPM_BranchOfService", "infantry"];
+{	player setVariable ["SPM_BranchOfService", "infantry"];
 	player setVariable ["TAC2_canFortify", true];
 	player setvariable ["ACE_IsEngineer", 2];
 

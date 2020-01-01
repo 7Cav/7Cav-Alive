@@ -6,8 +6,6 @@
 [] execVM "scripts\client\vehiclePermissionsList.sqf";
 [] execVM "scripts\client\vehiclePermissionConditions.sqf";
 
-
-
 CLIENT_InvalidPermissionMessage = 
 {
 	params ["_vehicle", "_role"];
@@ -140,94 +138,3 @@ CLIENT_VP_GetIn_Key =
 ["MoveToPilot", { (["VP_Pilot"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
 ["MoveToTurret", { (["VP_Turret"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
 ["MoveToCargo", { (["VP_Cargo"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-	Initialize the vehicle permissions handler. Called in each class init script
-*/
-// CLIENT_SetHandlers =
-// {
-// 	params ["_player"];
-// 	_player addEventHandler ["GetInMan", CLIENT_GetInHandler];
-// 	_player addEventHandler ["SeatSwitchedMan", CLIENT_MovedHandler];
-// };
-
-/*
-	Validate vehicle permissions when a player enters a vehicle
-	Uses regular A3 event handlers, but we're using JB's action override instead
-*/
-// CLIENT_GetInHandler = 
-// {
-// 	params ["_unit", "_role", "_vehicle", "_turret"];
-
-// 	// Ghetto way of detecting if a Zeus is controlling AI
-// 	if (CLIENT_CuratorType == "MC" && { player distance _unit > sizeOf typeOf _unit }) exitWith { false };
-
-// 	// Get all TypeFilters for this role
-// 	private _permissions = _unit getVariable ["VP_" + _role, []];
-
-// 	// Find TypeFilters that contain a relevent value for this vehicle
-// 	private _applicable = _permissions select { [typeOf _vehicle, _x select 0] call utils_fnc_passesTypeFilter };
-
-// 	// If there are no TypeFilters, they dont have permission
-// 	if (count _applicable == 0) exitWith { [_unit, _vehicle, _role] call CLIENT_InvalidPermission };
-
-// 	// Otherwise, we're good to go
-// };
-
-/*
-	Validate vehicle permissions when a player moves inside a vehicle
-	Uses regular A3 event handlers, but we're using JB's action override instead
-*/
-// CLIENT_MovedHandler = 
-// {
-// 	params ["_unit", "_unit2", "_vehicle"];
-
-// 	private _role = (assignedVehicleRole _unit) select 0;
-
-// 	if (typeName _role == "ARRAY") then { _role = _role select 0 };
-
-// 	switch (_role) do
-// 	{
-// 		case "Driver": { _role = "driver" };
-// 		case "Cargo": { _role = "cargo" };
-// 		case "Turret": { _role = "gunner" };
-// 	};
-
-// 	if (CLIENT_CuratorType == "MC" && { player distance _unit > sizeOf typeOf _unit }) exitWith { false };
-
-// 	private _permissions = _unit getVariable ["VP_" + _role, []];
-
-// 	private _applicable = _permissions select { [typeOf _vehicle, _x select 0] call utils_fnc_passesTypeFilter };
-
-// 	if (count _applicable == 0) exitWith { [_unit, _vehicle, _role] call CLIENT_InvalidPermission };
-
-// };
-
-// CLIENT_InvalidPermission = 
-// {
-// 	params ["_unit", "_vehicle", "_role"];
-
-// 	moveOut _unit;
-
-// 	private _allMessages = [_vehicle, _role] call CLIENT_InvalidPermissionMessage;
-// 	{
-// 		[_allMessages joinString "<br/>", 1, true] call utils_fnc_showBlackScreenMessage;
-// 	};
-// };

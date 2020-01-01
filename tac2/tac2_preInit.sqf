@@ -1,7 +1,3 @@
-// Init custom Ares modules
-call tac2_fnc_initAresModules;
-
-
 //Chat messages for Team kills of blufor players;
 [] spawn {
     waitUntil {!(isNull player)};
