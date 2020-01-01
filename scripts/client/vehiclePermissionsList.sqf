@@ -174,5 +174,6 @@ TypeFilter_InfantryVehicles =
 	["rhsusf_m102*", true], //HMMWV
 	["rhsusf_m104*", true], //HMMWV
 	["rhsusf_mrzr*", true], // MRZR
+	["rhsusf_m1240*", true], // RHS MATV
 	["All", false]
 ];
