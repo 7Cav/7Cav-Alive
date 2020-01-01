@@ -1,3 +1,7 @@
+/*
+	Author: JB
+*/
+
 // How frequently the driver will check to see if the engine should be turned off (seconds)
 #define ENGINE_OFF_INTERVAL 99999
 // How many seconds the driver will sit stationary before turning off the vehicle engine (seconds, multiple of ENGINE_OFF_INTERVAL)

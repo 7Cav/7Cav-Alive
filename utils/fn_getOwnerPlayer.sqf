@@ -1,3 +1,7 @@
+/*
+	Author: JB
+*/
+
 params ["_owner"];
 
 private _player = objNull; // Server (_owner == 2) returns objNull

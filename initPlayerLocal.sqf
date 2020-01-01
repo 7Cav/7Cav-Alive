@@ -40,7 +40,7 @@ player addEventHandler ["HandleRating", { 0 }];
 
 [] execVM "scripts\misc\diary.sqf";
 
-// ["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
+["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
 
 // CLIENT_CommandChatHandler =
 // {

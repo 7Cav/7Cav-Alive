@@ -1,3 +1,5 @@
+CLIENT_CuratorType = "";
+
 CLIENT_DisableZeusWatermark =
 {
 	[] spawn

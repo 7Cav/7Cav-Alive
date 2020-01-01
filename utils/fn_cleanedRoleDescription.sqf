@@ -1,3 +1,7 @@
+/*
+	Author: JB
+*/
+
 params ["_description"];
 
 private _paren = _description find "(";

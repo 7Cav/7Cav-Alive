@@ -1,3 +1,7 @@
+/*
+	Author: JB
+*/
+
 private _string = param [0, "", [""]];
 private _location = param [1, "", [""]];
 

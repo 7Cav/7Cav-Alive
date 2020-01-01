@@ -1,3 +1,7 @@
+/*
+	Author: JB
+*/
+
 params ["_string", "_pattern"];
 
 _string = toString [1] + _string + toString [2];

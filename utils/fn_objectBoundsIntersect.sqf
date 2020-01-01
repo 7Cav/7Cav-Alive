@@ -1,4 +1,6 @@
 /*
+	Author: JB
+
 	objectBoundsIntersect determines if the bounds of two world objects intersect.  This is accomplished by
 	sampling the surface of the smaller object at regular intervals and determining if any of those samples lie inside
 	the limits of the other object's bounding box.  Best performance is for objects that are nowhere near each other.
