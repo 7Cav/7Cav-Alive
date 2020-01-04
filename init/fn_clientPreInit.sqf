@@ -22,10 +22,10 @@ if (isNumber (missionConfigFile >> "briefing") && { getNumber (missionConfigFile
 };
 
 // Action (scroll wheel) override framework
-private _handle = execVM "scripts\client\overrideAction.sqf";
+#include "..\scripts\client\overrideAction.sqf";
 
 // Curator (Zeus) assignment and permissions framework
-private _handle = execVM "scripts\client\curator.sqf";
+#include "..\scripts\client\curator.sqf";
 
 // Vehicle permissions framework
-private _handle = execVM "scripts\client\vehiclePermissions.sqf";
+#include "..\scripts\client\vehiclePermissions.sqf";

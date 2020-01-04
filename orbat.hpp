@@ -131,7 +131,7 @@ class CfgOrbat
         commanderRank = "Lieutenant"; // Rank of unit commander (by default selected based on unit size)
         text = "2nd Platoon"; // Custom text and short text, can still use some arguments when defined:
         textShort = "2-Platoon";
-        description= ""
+        description= "";
         assets[] = {USAF_F35A_STEALTH,USAF_F22,USAF_A10};
 		subordinates[] ={1Sq4,2Sq4,3Sq4};
      };
@@ -206,7 +206,7 @@ class CfgOrbat
         commanderRank = "Lieutenant"; // Rank of unit commander (by default selected based on unit size)
         text = "1st Platoon"; // Custom text and short text, can still use some arguments when defined:
         textShort = "1-Platoon";
-        description= ""
+        description= "";
         assets[] = {};
 		subordinates[] ={1Sq5};
 	 };
