@@ -1,8 +1,8 @@
-onLoadName 			= "7Cav Full Spectrum v5.0.0";
-onLoadMission 		= "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
-author              = "7th Cavalry Regiment!";
-loadScreen          = "media\images\MissionLogo.paa";
-overviewPicture     = "media\images\MissionLogo.paa";
+onLoadName = "7Cav Full Spectrum v5.0.0";
+onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
+author = "7th Cavalry Regiment!";
+loadScreen = "media\images\MissionLogo.paa";
+overviewPicture = "media\images\MissionLogo.paa";
 
 briefing = 0;
 debriefing = 0;
@@ -107,4 +107,4 @@ class CfgDebriefing
 	};
 };
 
-// s#include orbat.ext
+#include "orbat.hpp"

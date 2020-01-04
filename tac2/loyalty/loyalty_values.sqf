@@ -111,5 +111,5 @@ LoyaltyVehicles = [
 	["B_T_VTOL_01_armed_F", 22, 20, 120, 1, "Must be in Buffalo to fly, all can gun", "air", {}, {}],
 
 	// 23 - Stealth UAV
-	["B_UAV_05_F", 23, 10, 60, 1, "", "air", {}, {createVehicleCrew (_this select 0);}], 
+	["B_UAV_05_F", 23, 10, 60, 1, "", "air", {}, {createVehicleCrew (_this select 0);}]
 ];

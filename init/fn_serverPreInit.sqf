@@ -1,3 +1,3 @@
 if (not isServer && hasInterface) exitWith {};
 
-[] execVM "scripts\server\curator.sqf";
+#include "..\scripts\server\curator.sqf";
