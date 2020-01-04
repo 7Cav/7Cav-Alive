@@ -2,7 +2,7 @@
 [] call tac2_fnc_initAresModules;
 
 // Temp fix for 'god mode' glitch
-// player addEventHandler ["Respawn", { [player] call ace_common_fnc_resetAllDefaults; }];
+player addEventHandler ["Respawn", { [player] call ace_common_fnc_resetAllDefaults; }];
 
 // Ensure that enhanced movement vehicle enter menu doesn't work
 [] spawn {
