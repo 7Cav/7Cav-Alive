@@ -41,11 +41,14 @@ setDate _date;
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
-[] execVM "AR_AdvancedRappelling\functions\fn_advancedRappellingInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
 
 // [] execVM "scripts\fortifyInit.sqf";
+
+// Alive initialization
+[] execVM "alive\CustomFactions.sqf";
+[] execVM "alive\Tasks.sqf";
 
 enableEnvironment [false, true];
 

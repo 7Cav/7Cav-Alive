@@ -97,12 +97,12 @@ JB_RV_RemoveRespawnParameters =
 
 /*
 
-newVehicle = [parameters] call JB_fnc_respawnVehicle
+newVehicle = [parameters] call utils_fnc_respawnVehicle
 
 	Immediately respawn a vehicle that has been initialized by vehicle_fnc_respawnVehicleInitialize.  The
 	vehicle will be recreated using the location and initialization script supplied at that time.
 
-	The parameters to this function are defined by JB_fnc_respawnVehicleParameters, which collects
+	The parameters to this function are defined by utils_fnc_respawnVehicleParameters, which collects
 	the parameters from the old vehicle for use by this function.  This permits scripts to collect
 	the respawn parameters at one time and use them at another.
 

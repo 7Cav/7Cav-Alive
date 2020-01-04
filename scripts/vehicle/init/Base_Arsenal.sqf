@@ -119,5 +119,6 @@ sleep 5;
 	"I_E_AT_01_weapon_F",
 	"I_E_AA_01_weapon_F",
 	"RHS_SPG9_Tripod_Bag",
-	"RHS_SPG9_Gun_Bag"
+	"RHS_SPG9_Gun_Bag",
+	"ALIVE_Terminal"
 ]] call ace_arsenal_fnc_removeVirtualItems;

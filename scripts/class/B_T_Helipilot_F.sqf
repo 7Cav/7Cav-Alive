@@ -3,8 +3,6 @@ private _state = param [0, "", [""]];
 
 if (_state == "init") then
 {
-
-	player setVariable ["SPM_BranchOfService", "air"];
 	player setvariable ["ACE_IsEngineer", 2];
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	{
@@ -19,7 +17,7 @@ if (_state == "init") then
 	_permissions = [];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
     _permissions pushBack [TypeFilter_AttackRotory, [], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot true } }];
-	_permissions pushBack [TypeFilter_All, [VPC_UnlessLogisticsDriving], {}];
+	_permissions pushBack [TypeFilter_All, [], {}];
 	player setVariable ["VP_Turret", _permissions];
 };
 

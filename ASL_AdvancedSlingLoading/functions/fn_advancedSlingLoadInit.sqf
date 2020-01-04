@@ -498,7 +498,7 @@ ASL_Retract_Ropes = {
 				_this call ASL_Drop_Ropes;
 
 				{ ropeUnwind [_x, 3, 0] } forEach _existingRopes;
-				[{ { not ropeUnwound _x } count _existingRopes == 0 }, 20] call JB_fnc_timeoutWaitUntil;
+				[{ { not ropeUnwound _x } count _existingRopes == 0 }, 20] call utils_fnc_timeoutWaitUntil;
 				{ ropeDestroy _x } forEach _existingRopes;
 
 				_allRopes = _vehicle getVariable ["ASL_Ropes",[]];

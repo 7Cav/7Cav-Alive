@@ -48,6 +48,18 @@ CLIENT_SetInfantryVehiclePermissions =
 	[TypeFilter_ArmoredVehicles] call utils_fnc_manualDriveInitPlayer;
 };
 
+CLIENT_SetArmorCrewVehiclePermissions =
+{
+	params ["_player"];
+
+	[_player] call CLIENT_SetInfantryVehiclePermissions;
+
+	// Add to the infantry permissions
+	{
+		player setVariable [_x, [[TypeFilter_ArmoredVehicles, [], {}]] + (player getVariable _x)];
+	} forEach ["VP_Driver", "VP_Gunner", "VP_Commander", "VP_Turret"];
+};
+
 /*
 	Get permission for a particular user in a particular vehicle for a particular role.
 	Return a list of permissions that allow a player to use a vehicle, as well as error messages (if any)

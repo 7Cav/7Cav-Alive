@@ -2,15 +2,9 @@ private _state = param [0, "", [""]];
 
 if (_state == "init") then
 {
-
-	[] call HUD_Repair_Initialize;
-
 	[] call Tac2_fnc_treeCutterInitPlayer;
 
-	player setVariable ["SPM_BranchOfService", "support"];
-	player setVariable ["JBA_LogisticsSpecialist", true, true];
 	player setvariable ["ACE_IsEngineer", 2];
-	player setVariable ["TAC2_canFortify", true];
 
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	{

@@ -6,7 +6,7 @@ Author: JB
 This script handles respawn of a vehicle after its destruction.  This script should be called in the vehicle's Init
 section.  For example:
 
-_null = [MyVehicle, 20] call JB_fnc_vehicleRespawn;
+_null = [MyVehicle, 20] call utils_fnc_vehicleRespawn;
 
 vehicle			- the vehicle to be respawned (required)
 respawnDelay	- the delay between the vehicle being destroyed and being respawned (optional)

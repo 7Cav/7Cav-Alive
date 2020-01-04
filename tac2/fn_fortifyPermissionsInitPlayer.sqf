@@ -6,13 +6,13 @@
   // Check if Apollo
   if(!(player getVariable ["TAC2_canFortify", false])) then {
     _return = false;
-    ["You must be an Apollo unit to fortify.", 3] call JB_fnc_showBlackScreenMessage;
+    ["You must be an Apollo unit to fortify.", 3] call utils_fnc_showBlackScreenMessage;
   };
 
   // Check if in base
   if(player inArea headquarters) then {
     _return = false;
-    ["You may not fortify on base.", 3] call JB_fnc_showBlackScreenMessage;
+    ["You may not fortify on base.", 3] call utils_fnc_showBlackScreenMessage;
   };
 
   _return;

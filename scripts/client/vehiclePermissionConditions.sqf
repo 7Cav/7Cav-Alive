@@ -2,18 +2,6 @@
 	Define extra conditions here to limit the usage of certain vehicles based on certain criteria.
 */
 
-VPC_UnlessLogisticsDriving =
-{
-	params ["_vehicle", "_player", "_type"];
-
-	if (not ((driver _vehicle) getVariable ["JBA_LogisticsSpecialist", false])) exitWith { "" };
-
-	private _vehicleName = [typeOf _vehicle, "CfgVehicles"] call utils_fnc_displayName;
-	private _driverName = ([roleDescription driver _vehicle] call utils_fnc_cleanedRoleDescription);
-
-	format ["You may not enter this %1 while it is driven by a %2", _vehicleName, _driverName]
-};
-
 VPC_UnlessOccupied =
 {
 	params ["_vehicle", "_player", "_type"];

@@ -2,11 +2,6 @@ private _state = param [0, "", [""]];
 
 if (_state == "init") then
 {
-
-	[] call HUD_Medic_Initialize;
-
-	player setVariable ["SPM_BranchOfService", "infantry"];
-
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	{
 		player setVariable [_x, [[TypeFilter_LogisticsVehicles, [], {}]] + (player getVariable _x)];

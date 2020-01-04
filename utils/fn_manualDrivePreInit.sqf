@@ -20,7 +20,7 @@ JB_MDI_IsManualDriveVehicle =
 
 	if (count _typeFilter == 0) exitWith { false };
 
-	([typeOf vehicle player, _typeFilter] call JB_fnc_passesTypeFilter)
+	([typeOf vehicle player, _typeFilter] call utils_fnc_passesTypeFilter)
 };
 
 JB_MDI_ManualDriveCondition =
