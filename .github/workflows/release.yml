@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches: 
-      - develop-actions
+      - master
 
 jobs:
   build:
@@ -20,8 +20,8 @@ jobs:
         sudo apt-get install armake -y  || exit 0
         export VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
         export FILENAME=7Cav_FullSpectrum_$VERSION.Altis.pbo
-        echo ::set-env name=VERSION::$VERSION
-        echo ::set-env name=FILENAME::$FILENAME
+        echo ::set-output name=VERSION::$VERSION
+        echo ::set-output name=FILENAME::$FILENAME
         armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.Altis.pbo
 
     - name: Create Release
@@ -30,7 +30,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v${{ steps.build.outputs.VERSION }}
+        tag_name: ${{ steps.build.outputs.VERSION }}
         release_name: Release ${{ steps.build.outputs.VERSION }}
         draft: false
         prerelease: false
@@ -41,7 +41,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./${{ steps.build.outputs.FILENAME }}
         asset_name: ${{ steps.build.outputs.FILENAME }}
         asset_content_type: application/pbo
