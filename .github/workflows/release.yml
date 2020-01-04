@@ -20,6 +20,7 @@ jobs:
         sudo apt-get install armake -y  || exit 0
         export VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
         export FILENAME=7Cav_FullSpectrum_$VERSION.Altis.pbo
+        echo $VERSION
         echo ::set-env name=VERSION::$VERSION
         echo ::set-env name=FILENAME::$FILENAME
         armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.Altis.pbo
