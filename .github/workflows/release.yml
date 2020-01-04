@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - develop-actions
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Build PBO
+      id: build
+      run: |
+        sudo add-apt-repository ppa:koffeinflummi/armake -y
+        sudo apt-get update -y
+        sudo apt-get install armake -y
+        export VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
+        armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.Altis.pbo
+
+    - name: Create a Release
+      uses: actions/create-release@v1
+      with:
+        # The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag
+        tag_name: $VERSION
+        # The name of the release. For example, `Release v1.0.1`
+        release_name: $VERSION
