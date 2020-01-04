@@ -50,17 +50,7 @@ LoyaltyVehicles = [
 	["rhsusf_m113d_usarmy", 4, 10, 20, -1, "", "land", {}, {}],
 
 	// 5 - Leopard 2
-	["I_MBT_03_cannon_F", 5, 10, 20, 2, "You must be in a Saber slot to drive/gun/command. Camo selection doesn't work", "land", {}, {	
-		if (worldName in ["Altis", "Takistan", "tem_anizay"]) then {
-			(_this select 0) setObjectTextureGlobal [0, "Data\TankBodyTexture.paa"];
-			(_this select 0) setObjectTextureGlobal [1, "Data\TankTurretTexture.paa"];
-			(_this select 0) setObjectTextureGlobal [2, "Data\TankTurretMGTexture.paa"];
-		} else {
-			(_this select 0) setObjectTextureGlobal [0, "Data\LEO1FRNT.jpg"];
-			(_this select 0) setObjectTextureGlobal [1, "Data\LEO2TURRET.jpg"];
-			(_this select 0) setObjectTextureGlobal [2, "Data\LEO3RCWS.jpg"];
-		}
-	}],
+	["I_MBT_03_cannon_F", 5, 10, 20, 2, "You must be in a Saber slot to drive/gun/command.", "land", {}, {}],
 
 	// 6 - Inf. Blackfish
 	["B_T_VTOL_01_infantry_F", 6, 10, 30, 2, "Must be in Buffalo/Titan slot to fly", "air", {}, {}],
@@ -122,7 +112,4 @@ LoyaltyVehicles = [
 
 	// 23 - Stealth UAV
 	["B_UAV_05_F", 23, 10, 60, 1, "", "air", {}, {createVehicleCrew (_this select 0);}], 
-
-	// 24 - F22
-	["rhsusf_f22", 24, 20, 120, 1, "Must be in Eagle to fly", "air", {}, {}]
 ];
