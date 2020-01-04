@@ -790,8 +790,8 @@ randomSeed=4198919;
 class ScenarioData
 {
 	disabledAI=1;
-	respawn=2;
-	respawnDelay=3;
+	respawn=3;
+	respawnDelay=5;
 	class Header
 	{
 		gameType="Coop";
