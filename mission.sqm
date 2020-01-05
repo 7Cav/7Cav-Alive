@@ -55135,11 +55135,11 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={18221.125,14.326943,8619.875};
-								angles[]={6.1980653,0,0.086446159};
+								position[]={17920.875,0.00023174286,8487};
 							};
 							id=10360;
 							type="ALiVE_mil_cqb";
+							atlOffset=12.383;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -55195,7 +55195,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="all";
+											value="towns";
 										};
 									};
 								};
@@ -55290,7 +55290,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="taor_1_WEST, taor_1_EAST";
+											value="";
 										};
 									};
 								};
@@ -57731,7 +57731,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="0.25";
+											value="1";
 										};
 									};
 								};
@@ -57750,7 +57750,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -58082,7 +58082,7 @@ class Mission
 						};
 					};
 					id=10337;
-					atlOffset=16.43321;
+					atlOffset=16.771534;
 				};
 				class Item4
 				{
@@ -58944,7 +58944,7 @@ class Mission
 				};
 			};
 			id=10338;
-			atlOffset=-0.37634277;
+			atlOffset=-0.37637138;
 		};
 		class Item3
 		{
@@ -84182,7 +84182,7 @@ class Mission
 			name="marker_80";
 			text="22";
 			type="mil_arrow";
-			angle=221.99988;
+			angle=221.99983;
 			id=14007;
 		};
 	};
@@ -84190,11 +84190,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=13;
+			nextID=12;
 		};
 		class Links
 		{
-			items=13;
+			items=12;
 			class Item0
 			{
 				linkID=0;
@@ -84308,16 +84308,6 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=10360;
-				item1=10327;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item12
-			{
-				linkID=12;
 				item0=13899;
 				item1=10327;
 				class CustomData
