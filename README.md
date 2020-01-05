@@ -2,7 +2,7 @@
     <img src="https://7cav.us/proxy.php?image=https%3A%2F%2Fi.imgur.com%2FS5D8WuM.png&hash=a05014e6b7eae1a1ca80fb6b31f65dbd" width="720">
 </p>
 
-# Full Spectrum Mission File for Altis V7.X
+# Full Spectrum Mission File for Altis V5.X
 ---
 
 # ARMA 3 TACTICAL REALISM 2 SERVER
