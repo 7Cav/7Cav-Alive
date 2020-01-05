@@ -8,7 +8,7 @@ class EditorData
 	toggles=1573;
 	class ItemIDProvider
 	{
-		nextID=13972;
+		nextID=14001;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5064;
+		nextID=5190;
 	};
 	class Camera
 	{
-		pos[]={14198.932,63.493839,16277.205};
-		dir[]={-0.63238716,-0.72373617,-0.27666381};
-		up[]={-0.66309547,0.69002062,-0.2900959};
-		aside[]={-0.40085191,4.0966552e-007,0.91625589};
+		pos[]={15409.149,43.656372,16990.918};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -105,7 +105,6 @@ addons[]=
 	"alive_mil_placement",
 	"alive_civ_placement",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F",
 	"rhs_main",
 	"alive_mil_placement_custom",
 	"rhsusf_c_troops",
@@ -138,11 +137,13 @@ addons[]=
 	"ace_tripod",
 	"ace_atragmx",
 	"ace_kestrel4500",
+	"A3_Characters_F",
 	"acre_main",
 	"ace_goggles",
 	"ace_gforces",
 	"A3_Characters_F_Jets",
-	"rhsusf_main"
+	"rhsusf_main",
+	"A3_Modules_F_StrategicMap"
 };
 class AddonsMetaData
 {
@@ -904,14 +905,13 @@ class Mission
 		year=2035;
 		month=6;
 		day=24;
-		hour=5;
-		minute=0;
+		minute=12;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=55;
+		items=56;
 		class Item0
 		{
 			dataType="Layer";
@@ -12408,7 +12408,7 @@ class Mission
 							{
 								position[]={14229.912,22.787663,16183.181};
 								angles[]={0,3.242857,0};
-					};
+							};
 							side="Empty";
 							class Attributes
 							{
@@ -12416,7 +12416,7 @@ class Mission
 							};
 							id=13994;
 							type="rhsusf_M977A4_AMMO_usarmy_d";
-							atlOffset=0.32633781;
+							atlOffset=0.32632637;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12456,7 +12456,7 @@ class Mission
 							};
 							id=13995;
 							type="rhsusf_M978A4_usarmy_d";
-							atlOffset=0.32534027;
+							atlOffset=0.32533073;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12496,7 +12496,7 @@ class Mission
 							};
 							id=13996;
 							type="rhsusf_M977A4_REPAIR_usarmy_d";
-							atlOffset=0.32534027;
+							atlOffset=0.32529068;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12643,7 +12643,7 @@ class Mission
 						};
 					};
 					id=9888;
-					atlOffset=0.65192413;
+					atlOffset=0.64942741;
 				};
 				class Item1
 				{
@@ -20127,7 +20127,7 @@ class Mission
 									{
 										position[]={14201.481,25.247879,16315.769};
 										angles[]={0,1.0607409,0};
-							};
+									};
 									side="Empty";
 									flags=5;
 									class Attributes
@@ -20242,7 +20242,7 @@ class Mission
 								};
 							};
 							id=12061;
-							atlOffset=0.11294937;
+							atlOffset=0.11295128;
 						};
 						class Item142
 						{
@@ -43923,7 +43923,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								createAsSimpleObject=1;
 								disableSimulation=1;
 							};
 							id=12203;
@@ -47979,7 +47978,7 @@ class Mission
 				};
 			};
 			id=9887;
-			atlOffset=0.50996971;
+			atlOffset=0.5100174;
 		};
 		class Item1
 		{
@@ -48277,7 +48276,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14390.625,19.01,16209.125};
-						angles[]={-0,3.8175497,0};
+						angles[]={0,3.8175497,0};
 					};
 					areaSize[]={12.106517,0,23.173288};
 					areaIsRectangle=1;
@@ -84100,6 +84099,96 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item55
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15428.82,18.739315,17115.172};
+			};
+			id=14000;
+			type="ModuleStrategicMapORBAT_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleStrategicMapORBAT_F_Path";
+					expression="_this setVariable ['Path',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="missionConfigFile >> ""CfgOrbat"" >> ""Regi""";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleStrategicMapORBAT_F_Tags";
+					expression="_this setVariable ['Tags',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleStrategicMapORBAT_F_Parent";
+					expression="_this setVariable ['Parent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleStrategicMapORBAT_F_Tiers";
+					expression="_this setVariable ['Tiers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 	};
