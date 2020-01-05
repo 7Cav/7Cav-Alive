@@ -33,17 +33,33 @@ CLIENT_SetInfantryVehiclePermissions =
 
 	_permissions = [];
 	_permissions pushBack [TypeFilter_All, [], {}];
-	_player setVariable ["VP_cargo", _permissions];
+	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
+	_player setVariable ["VP_Cargo", _permissions];
 
 	_permissions = [];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
-	_player setVariable ["VP_driver", _permissions];
+	_player setVariable ["VP_Driver", _permissions];
 
 	_permissions = [];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
 	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
-	_permissions pushBack [TypeFilter_All, [VPC_UnlessArmed], {}];
-	_player setVariable ["VP_gunner", _permissions];
+	_permissions pushBack [TypeFilter_All, [], {}];
+	_player setVariable ["VP_Gunner", _permissions];
+
+	_permissions = [];
+	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
+	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
+	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], {}];
+	_player setVariable ["VP_Commander", _permissions];
+
+	_permissions = [];
+	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
+	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
+	_permissions pushBack [TypeFilter_TransportRotory, [], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot false } }];
+	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot false } }];
+	_player setVariable ["VP_Turret", _permissions];
+
+	_player setVariable ["VP_Pilot", []];
 
 	[TypeFilter_ArmoredVehicles] call utils_fnc_manualDriveInitPlayer;
 };
