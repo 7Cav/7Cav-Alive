@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1573;
+	toggles=549;
 	class ItemIDProvider
 	{
 		nextID=14008;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5400;
+		nextID=5442;
 	};
 	class Camera
 	{
@@ -52782,7 +52782,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="false";
+											value="true";
 										};
 									};
 								};
@@ -56089,7 +56089,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="7";
+											value="10";
 										};
 									};
 								};
@@ -56222,7 +56222,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="7";
+											value="10";
 										};
 									};
 								};
@@ -56393,7 +56393,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="75";
+											value="55";
 										};
 									};
 								};
@@ -57731,7 +57731,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="1";
+											value="0.25";
 										};
 									};
 								};
@@ -57788,7 +57788,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="200";
+											value="30";
 										};
 									};
 								};
@@ -57826,7 +57826,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="100";
+											value="";
 										};
 									};
 								};
@@ -57845,7 +57845,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="10";
+											value="";
 										};
 									};
 								};
@@ -57902,7 +57902,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="0";
+											value="";
 										};
 									};
 								};
@@ -57959,7 +57959,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="10";
+											value="";
 										};
 									};
 								};
@@ -57978,7 +57978,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="0";
+											value="";
 										};
 									};
 								};
@@ -58073,7 +58073,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="1";
+											value="0.6";
 										};
 									};
 								};
@@ -84132,7 +84132,7 @@ class Mission
 			name="marker_75";
 			text="Charlie";
 			type="mil_triangle";
-			angle=126.00003;
+			angle=125.99999;
 			id=14002;
 		};
 		class Item51
@@ -84142,7 +84142,7 @@ class Mission
 			name="marker_76";
 			text="Alpha";
 			type="mil_triangle";
-			angle=132.99998;
+			angle=132.99997;
 			id=14003;
 		};
 		class Item52
@@ -84152,7 +84152,7 @@ class Mission
 			name="marker_77";
 			text="Bravo";
 			type="mil_triangle";
-			angle=132.99998;
+			angle=132.99997;
 			id=14004;
 		};
 		class Item53
@@ -84162,7 +84162,7 @@ class Mission
 			name="marker_78";
 			text="Romeo";
 			type="mil_triangle";
-			angle=156.99998;
+			angle=156.99997;
 			id=14005;
 		};
 		class Item54
@@ -84182,7 +84182,7 @@ class Mission
 			name="marker_80";
 			text="22";
 			type="mil_arrow";
-			angle=221.99998;
+			angle=221.99988;
 			id=14007;
 		};
 	};
