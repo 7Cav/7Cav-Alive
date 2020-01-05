@@ -198,7 +198,7 @@ LOYALTY_fnc_vehicleCreate =
 	params [["_spawnCurrency", "points"]];
 	_vehicleIndex = parseNumber (lbData [7, lbCurSel 7]);
 	_vehicle = LoyaltyVehicles select _vehicleIndex;
-	_vehicle params ["_vehicleClass", "_levelCost", "_cavBuckCost", "_cooldownCost", "_maxVehicles", "_message", "_condition", "_callBack"];
+	_vehicle params ["_vehicleClass", "_levelCost", "_cavBuckCost", "_cooldownCost", "_maxVehicles", "_message", "_defaultSpawn", "_condition", "_callBack"];
 
 
 	_spawnLocation = lbData [15, lbCurSel 15];

@@ -11,5 +11,5 @@ if (_state == "init") then
 
 if (_state == "respawn") then
 {
-
+	player setVariable ["ace_medical_medicClass", 1];
 };
