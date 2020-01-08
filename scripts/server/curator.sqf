@@ -157,7 +157,7 @@ SERVER_ZeusGuids =
 	private _uidMilitaryPolice = [];
 	private _uidCameraOperators = [];
 
-//	#include "\serverscripts\zeusserverscripts\tac2_zeus_guids.sqf"
+	#include "\serverscripts\zeusserverscripts\tac2_zeus_guids.sqf"
 
 	_uidDevelopers pushBackUnique "76561198048006094"; // Bojan
 
