@@ -120,5 +120,10 @@ sleep 5;
 	"I_E_AA_01_weapon_F",
 	"RHS_SPG9_Tripod_Bag",
 	"RHS_SPG9_Gun_Bag",
+	"ALIVE_Terminal",
+	"ALiVE_Handgrenade_stone",
+	"ALiVE_Handgrenade_can",
+	"ALiVE_Handgrenade_bottle",
+	"ACE_CTS9"
 	"ALIVE_Tablet"
 ]] call ace_arsenal_fnc_removeVirtualItems;
