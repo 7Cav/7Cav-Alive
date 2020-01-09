@@ -348,7 +348,7 @@ class tac2_Mustang : tac2_base {
        "ACE_tourniquet",8,
        "ACE_salineIV",
        };
-    preLoadout = "[(_this select 0), 'charlie', 0, 0] call cScripts_fnc_setPreInitPlayerSettings;";
+    preLoadout = "[(_this select 0), 'medical', 2, 0] call cScripts_fnc_setPreInitPlayerSettings;";
     postLoadout = "[(_this select 0),true,true] call cScripts_fnc_setPostInitPlayerSettings;";
 };
 //Apollo
