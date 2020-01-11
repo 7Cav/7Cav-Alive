@@ -212,11 +212,15 @@ class tac2_Platoon_Leader : tac2_Leadership {
 };
 //Squad Leader
 class tac2_Squad_Leader : tac2_Leadership {
+    items[] += {
+        "ACRE_PRC152",2
+     };
 };
 // Alpha Fireteam Leader
 class tac2_AlphaFTL : tac2_Leadership {
     magazines[] +={
-        "Chemlight_red",2
+        "Chemlight_red",2,
+        "ACRE_PRC152",1
     };
 };
 // Alpha AR
@@ -268,7 +272,8 @@ class tac2_alphaRifle : tac2_base {
 // bravo Fireteam Leader
 class tac2_bravoFTL : tac2_Leadership {
     magazines[] +={
-        "Chemlight_red",2
+        "Chemlight_red",2,
+        "ACRE_PRC152",1
     };
 };
 // bravo AR

@@ -531,6 +531,7 @@ STHud_Settings_TextShadow = 1;
 STHud_Settings_UnconsciousFadeEnabled = true;
 
 // USAF
+force USAF_allowNuke = false;
 force force usaf_serviceMenu_setting_allowHangarRearm = true;
 force force usaf_serviceMenu_setting_allowHangarRefuel = true;
 force force usaf_serviceMenu_setting_allowHangarRepair = true;
@@ -540,6 +541,7 @@ force force usaf_serviceMenu_setting_refuelTime = "100";
 force force usaf_serviceMenu_setting_reloadTime = "2";
 force force usaf_serviceMenu_setting_repairTime = "100";
 force force usaf_serviceMenu_setting_replaceSources = false;
+
 
 // VCOM SETTINGS
 force force VCM_ActivateAI = true;
