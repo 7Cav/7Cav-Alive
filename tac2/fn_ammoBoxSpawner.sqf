@@ -48,6 +48,7 @@ _spawn_medical_box = {
   _crate addItemCargoGlobal ["ACE_surgicalKit", 4]; 
   _crate addItemCargoGlobal ["ACE_elasticBandage", 100]; 
   _crate addItemCargoGlobal ["ACE_personalAidKit", 20]; 
+  _crate addItemCargoGlobal ["ACE_splint", 40; 
   _crate addItemCargoGlobal ["ACE_salineIV", 30]; 
   _crate addItemCargoGlobal ["ACE_tourniquet", 30]; 
   _crate addItemCargoGlobal ["ACE_packingBandage", 100];
