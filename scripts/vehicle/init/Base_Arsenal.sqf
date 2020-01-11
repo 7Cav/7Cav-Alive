@@ -124,6 +124,6 @@ sleep 5;
 	"ALiVE_Handgrenade_stone",
 	"ALiVE_Handgrenade_can",
 	"ALiVE_Handgrenade_bottle",
-	"ACE_CTS9"
+	"ACE_CTS9",
 	"ALIVE_Tablet"
 ]] call ace_arsenal_fnc_removeVirtualItems;

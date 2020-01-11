@@ -92,6 +92,7 @@ TypeFilter_GroundAttackAircraft =
 	["rhsusf_f22*", true],
 	["RHS_A10*", true],
 	["B_T_VTOL_01_armed_F", true],
+	["USAF*", true],
 	["All", false]
 ];
 
