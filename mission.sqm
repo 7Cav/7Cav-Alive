@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5568;
+		nextID=5610;
 	};
 	class Camera
 	{
-		pos[]={14292.388,58.107719,16189.617};
-		dir[]={-0.69018114,-0.39536861,-0.60614824};
-		up[]={-0.29708001,0.91851109,-0.26090795};
-		aside[]={-0.65991354,-3.9034057e-007,0.75140196};
+		pos[]={14226.108,68.837624,16267.304};
+		dir[]={0.88600153,-0.26312453,0.38201621};
+		up[]={0.24167186,0.96474147,0.10420063};
+		aside[]={0.39597058,-1.0244548e-006,-0.91836423};
 	};
 };
 binarizationWanted=0;
@@ -14835,7 +14835,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={14334.504,19.229301,16383.136};
+								position[]={14333.25,19.121361,16383.875};
 								angles[]={0.094385825,0.44976649,0.027993103};
 							};
 							side="Empty";
@@ -14846,7 +14846,7 @@ class Mission
 							};
 							id=1067;
 							type="Land_HBarrier_Big_F";
-							atlOffset=9.5367432e-005;
+							atlOffset=-0.0027008057;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18475,7 +18475,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=1543;
 									type="Land_LampHalogen_F";
@@ -18516,7 +18515,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=10411;
 									type="Land_LampHalogen_F";
@@ -18557,7 +18555,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=10414;
 									type="Land_LampHalogen_F";
@@ -18597,7 +18594,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=10415;
 									type="Land_LampHalogen_F";
@@ -18637,7 +18633,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=10619;
 									type="Land_LampHalogen_F";
@@ -18677,7 +18672,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=10620;
 									type="Land_LampHalogen_F";
@@ -18717,7 +18711,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=12063;
 									type="Land_LampHalogen_F";
@@ -18758,7 +18751,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=12064;
 									type="Land_LampHalogen_F";
@@ -18799,7 +18791,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=12065;
 									type="Land_LampHalogen_F";
@@ -18840,7 +18831,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=12066;
 									type="Land_LampHalogen_F";
@@ -18880,7 +18870,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13193;
 									type="Land_LampHalogen_F";
@@ -18920,7 +18909,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13194;
 									type="Land_LampHalogen_F";
@@ -18960,7 +18948,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13195;
 									type="Land_LampHalogen_F";
@@ -19000,7 +18987,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13196;
 									type="Land_LampHalogen_F";
@@ -19040,7 +19026,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13197;
 									type="Land_LampHalogen_F";
@@ -19080,7 +19065,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13198;
 									type="Land_LampHalogen_F";
@@ -19120,7 +19104,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13199;
 									type="Land_LampHalogen_F";
@@ -19160,7 +19143,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13200;
 									type="Land_LampHalogen_F";
@@ -19200,7 +19182,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13201;
 									type="Land_LampHalogen_F";
@@ -19240,7 +19221,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13202;
 									type="Land_LampHalogen_F";
@@ -19280,7 +19260,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13203;
 									type="Land_LampHalogen_F";
@@ -19320,7 +19299,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13204;
 									type="Land_LampHalogen_F";
@@ -19360,7 +19338,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13205;
 									type="Land_LampHalogen_F";
@@ -19400,7 +19377,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13206;
 									type="Land_LampHalogen_F";
@@ -19440,7 +19416,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13207;
 									type="Land_LampHalogen_F";
@@ -19480,7 +19455,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13208;
 									type="Land_LampHalogen_F";
@@ -19520,7 +19494,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13366;
 									type="Land_LampHalogen_F";
@@ -19560,7 +19533,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13980;
 									type="Land_LampHalogen_F";
@@ -19600,7 +19572,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13981;
 									type="Land_LampHalogen_F";
@@ -19640,7 +19611,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13982;
 									type="Land_LampHalogen_F";
@@ -19680,7 +19650,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13983;
 									type="Land_LampHalogen_F";
@@ -19721,7 +19690,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13984;
 									type="Land_LampHalogen_F";
@@ -19761,7 +19729,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13985;
 									type="Land_LampHalogen_F";
@@ -19801,7 +19768,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13986;
 									type="Land_LampHalogen_F";
@@ -19841,7 +19807,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13987;
 									type="Land_LampHalogen_F";
@@ -19881,7 +19846,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13988;
 									type="Land_LampHalogen_F";
@@ -19921,7 +19885,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13989;
 									type="Land_LampHalogen_F";
@@ -19961,7 +19924,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13990;
 									type="Land_LampHalogen_F";
@@ -20001,7 +19963,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13991;
 									type="Land_LampHalogen_F";
@@ -20041,7 +20002,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13992;
 									type="Land_LampHalogen_F";
@@ -20081,7 +20041,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										disableSimulation=1;
 									};
 									id=13993;
 									type="Land_LampHalogen_F";
@@ -55205,12 +55164,12 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={10439.125,84.340088,8106.5};
-								angles[]={0.019996032,0,0.05461248};
+								position[]={10439.125,84.340202,8106.5};
+								angles[]={0.020001473,0,0.054611351};
 							};
 							id=10324;
 							type="ALiVE_require";
-							atlOffset=-0.0021133423;
+							atlOffset=-0.0019989014;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -55380,7 +55339,7 @@ class Mission
 													"BOOL"
 												};
 											};
-											value=1;
+											value=0;
 										};
 									};
 								};
