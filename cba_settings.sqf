@@ -531,7 +531,7 @@ STHud_Settings_TextShadow = 1;
 STHud_Settings_UnconsciousFadeEnabled = true;
  
 // USAF
-force USAF_allowNuke = true;
+force force USAF_allowNuke = false;
 force usaf_serviceMenu_setting_allowHangarRearm = true;
 force usaf_serviceMenu_setting_allowHangarRefuel = true;
 force usaf_serviceMenu_setting_allowHangarRepair = true;
