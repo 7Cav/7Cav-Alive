@@ -359,6 +359,8 @@ class tac2_Apollo : tac2_base {
         "ACE_Fortify",1,
         "toolkit",1
     };
+    preLoadout = "[(_this select 0), 'engineer', 2, 0] call cScripts_fnc_setPreInitPlayerSettings;";
+    postLoadout = "[(_this select 0),true,true] call cScripts_fnc_setPostInitPlayerSettings;";
 };
 //Havoc
 class tac2_Havoc : tac2_base {

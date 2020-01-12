@@ -188,9 +188,9 @@ ace_medical_feedback_painEffectType = 0;
 force force ace_medical_fractures = 1;
 ace_medical_gui_enableActions = 0;
 force force ace_medical_gui_enableMedicalMenu = 1;
-force force ace_medical_gui_enableSelfActions = true;
+ace_medical_gui_enableSelfActions = true;
 force force ace_medical_gui_maxDistance = 2.46099;
-force force ace_medical_gui_openAfterTreatment = true;
+ace_medical_gui_openAfterTreatment = true;
 force force ace_medical_ivFlowRate = 1;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
@@ -531,7 +531,7 @@ STHud_Settings_TextShadow = 1;
 STHud_Settings_UnconsciousFadeEnabled = true;
  
 // USAF
-force USAF_allowNuke = true;
+force force USAF_allowNuke = false;
 force usaf_serviceMenu_setting_allowHangarRearm = true;
 force usaf_serviceMenu_setting_allowHangarRefuel = true;
 force usaf_serviceMenu_setting_allowHangarRepair = true;
