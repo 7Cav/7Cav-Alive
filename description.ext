@@ -55,7 +55,6 @@ class CfgFunctions
 {
 	#include "cScripts\CavFnc\CfgFunctions.hpp"
 	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
-	#include "cScripts\ViewingDistance\CfgFunctions.hpp"
 	#include "tac2\CfgFunctions.hpp"
 	#include "utils\CfgFunctions.hpp"
 	#include "scripts\vehicle\CfgFunctions.hpp"
@@ -63,7 +62,6 @@ class CfgFunctions
 };
 
 #include "cScripts\Loadouts\script\CfgPoppy.hpp"
-#include "cScripts\ViewingDistance\GUI.h"
 #include "cScripts\CfgUnitInsignia.hpp"
 #include "cScripts\CfgLoadouts.hpp"
 
