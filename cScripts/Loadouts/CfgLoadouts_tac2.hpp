@@ -1,5 +1,4 @@
-
-class CommonBlufor {
+//class CommonBlufor {
     // backpack[] = {""};
     // goggles[] = {"rhs_googles_clear"};
     // headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
@@ -24,7 +23,7 @@ class CommonBlufor {
     // insignia[] = {""};
     //preLoadout = "";
     //postLoadout = "";
-};
+//};
 /*-------------------BASE LOADOUTS-------------------*/
 class tac2_base : commonBlufor {
     backpack[] = {"B_AssaultPack_mcamo"};
