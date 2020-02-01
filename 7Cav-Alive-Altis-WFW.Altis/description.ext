@@ -2,7 +2,7 @@ onLoadName = "7Cav Full Spectrum v5.1.2";
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
 loadScreen = "media\images\MissionLogo.paa";
-overviewPicture = "media\images\MissionLogo.paa";
+overviewPicture = "";
 
 briefing = 0;
 debriefing = 0;

@@ -2,7 +2,6 @@ SERVER_CuratorMaster = objNull;
 SERVER_MissionControllers = [];
 SERVER_MilitaryPolice = [];
 SERVER_CameraOperators = [];
-SERVER_SuperUsers = [];
 
 // This is run on every player respawn, adding the player to the servers editabled objects
 // and, if valid, grants the player curator permissions
@@ -112,8 +111,10 @@ SERVER_CuratorType =
 	params ["_player"];
 
 	// Override variable to add arbitrary users
-	if ((getPlayerUID _player) in SERVER_SuperUsers) exitWith { "MC" };
+	SuperUsers = [];
+	if ((getPlayerUID _player) in SuperUsers) exitWith { "MC" };
 
+	private _curatorType = "";
 	private _curatorTypeByID = "";
 	private _curatorTypeByRole = "";
 
@@ -122,11 +123,12 @@ SERVER_CuratorType =
 
 	_curatorTypeByRole = [roleDescription _player] call SERVER_CuratorTypeByRole;
 
-	if (_curatorTypeByID == "MC" && _curatorTypeByRole == "MC") exitWith { "MC" };
-	if (_curatorTypeByID in ["MC", "MP"] && _curatorTypeByRole in ["MC", "MP"]) exitWith { "MP" };
-	if (_curatorTypeByID in ["MC", "MP", "CO"] && _curatorTypeByRole in ["MC", "MP", "CO"]) exitWith { "CO" };
+	if (_curatorTypeByID == "MC" && _curatorTypeByRole == "MC") exitWith { _curatorType = "MC" };
+	if (_curatorTypeByID in ["MC", "MP"] && _curatorTypeByRole in ["MC", "MP"]) exitWith { _curatorType = "MP" };
+	if (_curatorTypeByID in ["MC", "MP", "CO"] && _curatorTypeByRole in ["MC", "MP", "CO"]) exitWith { _curatorType = "CO" };
 
-	""
+
+	_curatorType
 };
 
 // Get the curator type based on the players steam ID
