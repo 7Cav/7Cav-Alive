@@ -1,0 +1,36 @@
+name: Copy files to all missions
+
+on:
+  push:
+    branches: 
+      - develop
+
+jobs:
+  build:
+    name: Copy main repository files
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+      
+    - name: Copy main repository files
+      id: get-files
+      continue-on-error: true
+      run: |
+        for d in *7Cav*/; do
+          if [ -d "${D}"]; then
+            if [ $d != "7Cav-Alive.Altis/" ]
+              then
+                echo "Starting to process $d"
+                ls -d $d/* | grep -v "mission.sqm" | xargs rm -rf
+                ls -d ./7Cav-Alive.Altis/* | grep -v "mission.sqm" | xargs -I '{}' cp -r '{}' ./$d
+            fi
+          fi
+        done
+        git config --local user.email "action@github.com"
+        git config --local user.name "Repository Copy Bot"
+        git checkout develop
+        git pull
+        git add .
+        git commit -m "Copy files from commit: $GITHUB_SHA"
+        git push --set-upstream origin develop

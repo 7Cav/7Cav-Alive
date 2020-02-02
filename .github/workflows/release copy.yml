@@ -1,4 +1,4 @@
-name: CI
+name: Build and Release Master
 
 on:
   push:
@@ -12,18 +12,36 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Build PBO
-      id: build
+    
+    - name: Install Armake
+      id: install
       run: |
         sudo add-apt-repository ppa:koffeinflummi/armake -y  || exit 0
         sudo apt-get update -y  || exit 0
         sudo apt-get install armake -y  || exit 0
-        export VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
-        export FILENAME=7Cav_FullSpectrum_$VERSION.Altis.pbo
+        
+    - name: Build PBO
+      id: build
+      run: |
+        VERSION=`cat 7Cav-Alive.Altis/description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
+        FILENAME=7Cav-Alive-$VERSION.zip
         echo ::set-output name=VERSION::$VERSION
         echo ::set-output name=FILENAME::$FILENAME
-        armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.Altis.pbo
-
+        
+        for d in *7Cav*/; do
+          if [ -d "${D}"]; then
+            cd $d
+              echo "Attempting build for $d"
+              NAME=`echo $d | cut -f 1 -d '.'`
+              MAP=`echo $d | grep -Po '\.(.*)' | tr -d ./`
+              armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . ../$NAME-$VERSION.$MAP.pbo
+              echo "Built $d"
+            cd ..  
+          fi
+        done
+        
+        zip $FILENAME *.pbo
+        
     - name: Create Release
       id: create_release
       uses: actions/create-release@master

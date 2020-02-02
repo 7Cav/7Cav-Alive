@@ -1,0 +1,40 @@
+name: Test All PBOs Build
+
+on:
+  pull_request:
+    branches:
+    - develop
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Install Armake
+      id: install
+      run: |
+        sudo add-apt-repository ppa:koffeinflummi/armake -y  || exit 0
+        sudo apt-get update -y  || exit 0
+        sudo apt-get install armake -y  || exit 0
+    - name: Build PBOs
+      id: build
+      run: |
+        for d in *7Cav*/; do
+          if [ -d "${D}"]; then
+            echo "Copying files for $d"
+            if [ $d != "7Cav-Alive.Altis/" ]; then
+              echo "Starting to process $d"
+              ls -d $d/* | grep -v "mission.sqm" | xargs rm -rf
+              ls -d ./7Cav-Alive.Altis/* | grep -v "mission.sqm" | xargs -I '{}' cp -r '{}' ./$d
+            fi
+            cd $d
+              echo "Attempting build for $d"
+              VERSION=`cat description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
+              MAP=`echo $d | grep -Po '\.(.*)' | tr -d ./`
+              armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . 7Cav_FullSpectrum_$VERSION.$MAP.pbo
+              echo "Built $d"
+            cd ..  
+          fi
+        done
