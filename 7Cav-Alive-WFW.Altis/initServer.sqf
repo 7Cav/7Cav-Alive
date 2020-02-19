@@ -6,7 +6,6 @@ diag_log "initServer start";
 missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true]; //variable init for loyalty cipher
 missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
 
- 
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
 // Disable RHS engine start up so vehicles move immediately when spawned
@@ -40,7 +39,6 @@ _date set [3, _startHour];
 _date set [4, _startMinute];
 
 setDate _date;
-
 
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
