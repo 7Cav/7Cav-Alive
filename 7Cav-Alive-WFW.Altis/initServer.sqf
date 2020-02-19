@@ -40,6 +40,7 @@ _date set [4, _startMinute];
 
 setDate _date;
 
+
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
