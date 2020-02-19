@@ -1,0 +1,45 @@
+name: Validate Pull Request
+
+on:
+  pull_request:
+    branches: 
+      - develop
+
+jobs:
+  build:
+    name: Scan for invalid file changes
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+      
+    - name: Get changed files for PR
+      id: get-files
+      continue-on-error: true
+      run: |
+        URL="https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls/${{ github.event.pull_request.number }}/files"
+        curl -s -X GET -G $URL | jq -r '.[] | .filename' > files.txt
+        grep '7Cav-Alive' files.txt | grep -v '7Cav-Alive.Altis/' | grep -v 'mission.sqm' > bad_files.txt
+        echo ::set-output name=COUNT::$(wc -l < bad_files.txt)
+    - name: Create error message
+      run: |
+        if (( ${{ steps.get-files.outputs.COUNT }} > 0 )); then
+        echo "${{ steps.get-files.outputs.COUNT }} invalid file(s) found. You may not commit these files:
+        ~~~
+        $(cat bad_files.txt)
+        ~~~" > message.txt
+        fi
+    - name: Add commit comment
+      run: |
+        if (( ${{ steps.get-files.outputs.COUNT }} > 0 )); then
+          jq -nc '{"body": $MSG}' --arg MSG "`cat message.txt`" | \
+          curl -sL  -X POST -d @- \
+            -H "Content-Type: application/json" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${{ github.event.pull_request.number }}/comments"
+        fi
+          
+    - name: Exit with code
+      id: exit
+      run: |
+        exit ${{ steps.get-files.outputs.COUNT }}

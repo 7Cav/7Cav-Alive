@@ -1,0 +1,65 @@
+name: Build and Release Master
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: Install Armake
+      id: install
+      run: |
+        sudo add-apt-repository ppa:koffeinflummi/armake -y  || exit 0
+        sudo apt-get update -y  || exit 0
+        sudo apt-get install armake -y  || exit 0
+        
+    - name: Build PBO
+      id: build
+      run: |
+        VERSION=`cat 7Cav-Alive.Altis/description.ext  | grep -o 'onLoadName = ".*"' | grep -o 'v[0-9.][0-9.]*'`
+        FILENAME=7Cav-Alive-$VERSION.zip
+        echo ::set-output name=VERSION::$VERSION
+        echo ::set-output name=FILENAME::$FILENAME
+        
+        for d in *7Cav*/; do
+          if [ -d "${D}"]; then
+            cd $d
+              echo "Attempting build for $d"
+              NAME=`echo $d | cut -f 1 -d '.'`
+              MAP=`echo $d | grep -Po '\.(.*)' | tr -d ./`
+              armake build -w unquoted-string -w redefinition-wo-undef -w excessive-concatenation -x ".*" -x "*.pbo" -x "*.md" . ../$NAME-$VERSION.$MAP.pbo
+              echo "Built $d"
+            cd ..  
+          fi
+        done
+        
+        zip $FILENAME *.pbo
+        
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.build.outputs.VERSION }}
+        release_name: Release ${{ steps.build.outputs.VERSION }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./${{ steps.build.outputs.FILENAME }}
+        asset_name: ${{ steps.build.outputs.FILENAME }}
+        asset_content_type: application/pbo
