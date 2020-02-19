@@ -403,4 +403,65 @@ class CfgOrbat
         textShort = "2-Bat";
         description= "2nd Battalion contains formations specializing in games other than ArmA 3.";
 	};
+/*                      RUSSIANS                    */    
+	class air
+	{
+		id = 1;        // Unit ID
+		idType = 3;    // Unit ID type
+		side = "East"; // Unit side from CfgChainOfCommand >> Sides
+		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
+		type = "Fighter"; // Unit type from CfgChainOfCommand >> Types
+		commander = "Visili"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
+		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
+		tags[] = {OPF_air}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
+		text = "Russian Air Commander"; // Custom text and short text, can still use some arguments when defined:
+		textShort = "Russian %4 %3";
+		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
+		assets[] = {};
+    };
+	class armor
+	{
+		id = 1;        // Unit ID
+		idType = 3;    // Unit ID type
+		side = "East"; // Unit side from CfgChainOfCommand >> Sides
+		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
+		type = "Armored"; // Unit type from CfgChainOfCommand >> Types
+		commander = "Ivanov"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
+		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
+		tags[] = {OPF_armor}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
+		text = "ARmored Corps Commander"; // Custom text and short text, can still use some arguments when defined:
+		textShort = "Russian %4 %3 ";
+		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
+		assets[] = {};
+    };
+	class mech
+	{
+		id = 1;        // Unit ID
+		idType = 3;    // Unit ID type
+		side = "East"; // Unit side from CfgChainOfCommand >> Sides
+		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
+		type = "Cavalry"; // Unit type from CfgChainOfCommand >> Types
+		commander = "Alexei"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
+		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
+		tags[] = {OPF_mech}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
+		text = "Mechanized Infantry Commander"; // Custom text and short text, can still use some arguments when defined:
+		textShort = "Russian %4 %3 ";
+		description= "Armed forces of the Russian Federation"; // A brief description of the group or unit.
+		assets[] = {};
+    };
+	class specop
+	{
+		id = 1;        // Unit ID
+		idType = 3;    // Unit ID type
+		side = "East"; // Unit side from CfgChainOfCommand >> Sides
+		size = "Battalion"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
+		type = "Recon"; // Unit type from CfgChainOfCommand >> Types
+		commander = "Anatolii"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
+		commanderRank = "Colonol"; // Rank of unit commander (by default selected based on unit size)
+		tags[] = {OPF_specop}; // Group tags. When opening ORBAT viewer, user can define what tags will be accepted.
+		text = "Special Potato Farmers"; // Custom text and short text, can still use some arguments when defined:
+		textShort = "Russian %4 %3 ";
+		description= "Russian Potato Farmers Turned Special Forces!"; // A brief description of the group or unit.
+		assets[] = {};
+    };
 };

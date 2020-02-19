@@ -1,8 +1,5 @@
 diag_log "initServer start";
 
-#include "\serverscripts\zeusserverscripts\secretKey.sqf"
-missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
-
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
 // Disable RHS engine start up so vehicles move immediately when spawned

@@ -135,7 +135,7 @@ force force ace_refuel_rate = 1.5;
 force force ace_repair_addSpareParts = true;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
 force force ace_repair_consumeItem_toolKit = 0;
-ace_repair_displayTextOnRepair = true;
+force force ace_repair_displayTextOnRepair = true;
 force force ace_repair_engineerSetting_fullRepair = 1;
 force force ace_repair_engineerSetting_repair = 1;
 force force ace_repair_engineerSetting_wheel = 0;
@@ -423,13 +423,13 @@ force force acex_fortify_settingHint = 1;
  
 // ACEX Headless
 force force acex_headless_delay = 15;
-force force acex_headless_enabled = true;
+force force acex_headless_enabled = false;
 force force acex_headless_endMission = 0;
-force force acex_headless_log = true;
+force force acex_headless_log = false;
 force force acex_headless_transferLoadout = 1;
  
 // ACEX Sitting
-force acex_sitting_enable = false;
+force force acex_sitting_enable = true;
  
 // ACEX View Restriction
 force force acex_viewrestriction_mode = 0;
@@ -457,7 +457,7 @@ acre_sys_core_postmixGlobalVolume = 1;
 acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = 1;
 acre_sys_core_spectatorVolume = 1;
-force force acre_sys_core_terrainLoss = 0.701627;
+force force acre_sys_core_terrainLoss = 1.0;
 //force force acre_sys_core_ts3ChannelName = "";
 //force force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
@@ -505,11 +505,11 @@ force force cScripts_Settings_jumpSimulationGlasses = true;
 force force cScripts_Settings_jumpSimulationHat = true;
 force force cScripts_Settings_jumpSimulationNVG = true;
 force force cScripts_Settings_setAiSystemDifficulty = 0;
-force force cScripts_Settings_setCustomHintText = "I have design this mission! Yey for me!";
-force force cScripts_Settings_setCustomHintTopic = "My custom Mission!";
+force force cScripts_Settings_setCustomHintText = "";
+force force cScripts_Settings_setCustomHintTopic = "";
 force force cScripts_Settings_setFortifyBudget = 800;
 force force cScripts_Settings_setFortifyRestriction = 1;
-force force cScripts_Settings_setMissionType = 1;
+force force cScripts_Settings_setMissionType = 4;
 force force cScripts_Settings_setPlayerRank = true;
 force force cScripts_Settings_setRadio = true;
 force force cScripts_Settings_setStartupDelay = 30;
