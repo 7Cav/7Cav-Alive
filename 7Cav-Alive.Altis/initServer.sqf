@@ -53,6 +53,9 @@ setDate _date;
 [] execVM "alive\CustomFactions.sqf";
 [] execVM "alive\Tasks.sqf";
 
+//Curatory execution
+[] execVM "scripts\server\curator.sqf";
+
 enableEnvironment [false, true];
 
 // BEGIN TASKS
