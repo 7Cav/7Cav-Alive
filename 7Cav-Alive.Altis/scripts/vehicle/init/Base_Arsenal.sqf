@@ -1,4 +1,4 @@
-_crate = _this select 0;
+private _crate = _this select 0;
 
 clearweaponcargoGlobal _crate;
 clearmagazinecargoGlobal _crate;
