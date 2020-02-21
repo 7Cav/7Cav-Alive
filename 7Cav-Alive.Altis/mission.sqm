@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=15107;
+		nextID=15109;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8012;
+		nextID=8058;
 	};
 	class Camera
 	{
-		pos[]={2936.2476,591.09448,13760.719};
-		dir[]={0.5027194,-0.63149959,-0.59037232};
-		up[]={0.40943888,0.77534425,-0.4808262};
-		aside[]={-0.76138502,1.0454096e-007,-0.64834082};
+		pos[]={14258.085,51.092903,16294.382};
+		dir[]={0.89057457,-0.23821084,0.38761133};
+		up[]={0.21846718,0.97118795,0.095085815};
+		aside[]={0.39910018,6.5169297e-007,-0.91696262};
 	};
 };
 binarizationWanted=0;
@@ -147,9 +147,9 @@ addons[]=
 	"A3_Structures_F_Exp_Military_Fortifications",
 	"A3_Structures_F_Exp_Military_ContainerBases",
 	"A3_Modules_F_Multiplayer",
-	"USAF_F35A_C",
 	"USAF_C130J_C",
-	"USAF_C17_C"
+	"USAF_C17_C",
+	"A3_Air_F_Jets_Plane_Fighter_01"
 };
 class AddonsMetaData
 {
@@ -804,22 +804,22 @@ class AddonsMetaData
 		};
 		class Item95
 		{
-			className="USAF_F35A_C";
-			name="USAF_F35A_C";
-			author="USAF Mod Team";
-			url="https://gitlab.com/usaf-a3/usaf-mod";
-		};
-		class Item96
-		{
 			className="USAF_C130J_C";
 			name="USAF_C130J_C";
 			author="USAF Mod Team";
 		};
-		class Item97
+		class Item96
 		{
 			className="USAF_C17_C";
 			name="USAF_C17_C";
 			author="USAF Mod Team";
+		};
+		class Item97
+		{
+			className="A3_Air_F_Jets";
+			name="Arma 3 Jets - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -947,7 +947,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=76;
+		items=74;
 		class Item0
 		{
 			dataType="Layer";
@@ -35677,7 +35677,7 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								init="call{call {medicStand2 addaction[""<t color='#3399ff'> Teleport to Base</t>"", {_this select 1 setpos getpos baseMarker;}];};call {medicStand2 addaction[""<t color='#32CD32'>Cycle Airbase Cleanup</t>"",""scripts\client\clearItemsBASE_switch.sqf"",[],21,true,true,"""",'((vehicle _this) == _this) && ((_this distance _target) < 5)'];};}";
+								init="call{call {medicStand2 addaction[""<t color='#3399ff'> Teleport to Base</t>"", {_this select 1 setpos getpos baseMarker;}];};}";
 								name="medicStand2";
 								disableSimulation=1;
 							};
@@ -80645,38 +80645,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15140.405,20.364702,17223.479};
-				angles[]={0,2.3038344,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=15036;
-			type="USAF_F35A_STEALTH";
-			atlOffset=0.45372391;
-		};
-		class Item58
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15118.7,20.364702,17199.205};
-				angles[]={0,2.3387413,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=15037;
-			type="USAF_F35A";
-			atlOffset=0.45372391;
-		};
-		class Item59
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={15075.047,20.328857,17150.266};
 				angles[]={0,2.0245819,0};
 			};
@@ -80688,7 +80656,7 @@ class Mission
 			type="USAF_A10";
 			atlOffset=0.40704727;
 		};
-		class Item60
+		class Item58
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80728,7 +80696,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item61
+		class Item59
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80768,7 +80736,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item62
+		class Item60
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80808,7 +80776,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item63
+		class Item61
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80825,41 +80793,7 @@ class Mission
 			id=15053;
 			type="USAF_missileCart_AGM3";
 		};
-		class Item64
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15141.291,17.900858,17215.49};
-				angles[]={0,2.3387411,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="LOCKED";
-			};
-			id=15054;
-			type="USAF_missileCart_AA2";
-		};
-		class Item65
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15116.279,17.900858,17190.252};
-				angles[]={0,2.3387411,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				lock="LOCKED";
-			};
-			id=15055;
-			type="USAF_missileCart_AA2";
-		};
-		class Item66
+		class Item62
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80876,7 +80810,7 @@ class Mission
 			id=15059;
 			type="USAF_missileCart_AGM1";
 		};
-		class Item67
+		class Item63
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80893,7 +80827,7 @@ class Mission
 			id=15074;
 			type="USAF_missileCart_AGM1";
 		};
-		class Item68
+		class Item64
 		{
 			dataType="Object";
 			class PositionInfo
@@ -80910,7 +80844,7 @@ class Mission
 			id=15075;
 			type="USAF_missileCart_AGM1";
 		};
-		class Item69
+		class Item65
 		{
 			dataType="Marker";
 			position[]={14627.887,17.91,16645.201};
@@ -80920,7 +80854,7 @@ class Mission
 			angle=130.99995;
 			id=15085;
 		};
-		class Item70
+		class Item66
 		{
 			dataType="Group";
 			side="West";
@@ -81028,7 +80962,7 @@ class Mission
 			id=15091;
 			atlOffset=-8.5830688e-005;
 		};
-		class Item71
+		class Item67
 		{
 			dataType="Object";
 			class PositionInfo
@@ -81092,7 +81026,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item72
+		class Item68
 		{
 			dataType="Marker";
 			position[]={4841.7412,341.02701,21945.992};
@@ -81101,7 +81035,7 @@ class Mission
 			id=15103;
 			atlOffset=-0.00039672852;
 		};
-		class Item73
+		class Item69
 		{
 			dataType="Marker";
 			position[]={26807.695,23.707001,24573.977};
@@ -81110,7 +81044,7 @@ class Mission
 			id=15104;
 			atlOffset=0.00033950806;
 		};
-		class Item74
+		class Item70
 		{
 			dataType="Marker";
 			position[]={3648.7629,7.7979999,13755.637};
@@ -81119,7 +81053,7 @@ class Mission
 			id=15105;
 			atlOffset=0.00026321411;
 		};
-		class Item75
+		class Item71
 		{
 			dataType="Marker";
 			position[]={20747.867,28.952999,7240.5601};
@@ -81127,6 +81061,38 @@ class Mission
 			type="Empty";
 			id=15106;
 			atlOffset=-0.00038528442;
+		};
+		class Item72
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15118.7,20.859051,17197.705};
+				angles[]={0,2.3387413,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=15107;
+			type="B_Plane_Fighter_01_F";
+			atlOffset=0.45400047;
+		};
+		class Item73
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15140.405,20.859051,17221.979};
+				angles[]={0,2.3038347,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=15108;
+			type="B_Plane_Fighter_01_Stealth_F";
+			atlOffset=0.45400047;
 		};
 	};
 	class Connections
