@@ -123,4 +123,12 @@ enableEnvironment [false, true];
   false //Visible in 3d space
 ] call BIS_fnc_taskCreate;
 
+//ALiVE headless
+if (!hasInterface && !isDedicated) then {
+headlessClients = [];
+headlessClients set [(count headlessClients), player];
+publicVariable "headlessClients";
+isHC = true;
+};
+
 diag_log "initServer end";
