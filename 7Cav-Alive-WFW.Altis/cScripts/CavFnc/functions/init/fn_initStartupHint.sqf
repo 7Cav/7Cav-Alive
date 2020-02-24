@@ -65,7 +65,7 @@ private _text_HaveFun_P         = "<t font='PuristaMedium' size='1.1'>Have fun!<
 private _text_Standby           = "<t font='PuristaMedium' size='1.1'>Standby!</t>";
 
 private _public_alive_welcome   = format["<t color='#ffc61a' size='1.2' shadow='1' shadowColor='#000000' align='center'>%1</t><br /><br />", _operationName];
-private _public_alive_body      = format["<t font='PuristaMedium' size='1.1'>Welcome, <t color='#ffc61a'>%1</t>, to the 7th Cavalry Tactical Realism 2 server! You are currently slotted in as <t color='#ffc61a'>%2</t> %3. Have fun and don't forget to read the rules!</t><br />", _player_name, _player_role, _player_group];
+private _public_alive_body      = format["<t font='PuristaMedium' size='1'>Welcome, <t color='#ffc61a'>%1</t>, to the 7th Cavalry Tactical Realism 2 server! You are currently slotted in as <t color='#ffc61a'>%2 %3</t>.<br /><br /><br /><t font='PuristaMedium' size='1.2' color='#FF0000'>Don't forget to read the rules located at spawn!</t><br /><br /><t font='PuristaMedium' size='1.2' color='#01aae1'>Teamspeak Info</t><br /><t font='PuristaMedium' size='1'>Name: ts3.7cav.us<br />Password: 7thCavalry</t>", _player_name, _player_role, _player_group];
 private _public_alive_standby   = "<t font='PuristaMedium' size='1.1'>Plese standby while we get things ready! </t>";
 
 // Images
