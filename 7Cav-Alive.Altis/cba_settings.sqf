@@ -1,10 +1,10 @@
 // ACE Advanced Ballistics
-ace_advanced_ballistics_ammoTemperatureEnabled = true;
-ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
-ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_enabled = false;
-ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
-ace_advanced_ballistics_simulationInterval = 0.05;
+force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
+force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
+force force ace_advanced_ballistics_bulletTraceEnabled = true;
+force force ace_advanced_ballistics_enabled = true;
+force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
+force force ace_advanced_ballistics_simulationInterval = 0.05;
  
 // ACE Advanced Fatigue
 force force ace_advanced_fatigue_enabled = true;
@@ -178,7 +178,7 @@ ace_maptools_rotateModifierKey = 1;
  
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.01;
+force force ace_medical_AIDamageThreshold = 0.1;
 force force ace_medical_bleedingCoefficient = 0.8;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
