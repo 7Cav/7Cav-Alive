@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8334;
+		nextID=8380;
 	};
 	class Camera
 	{
-		pos[]={14214.599,44.591557,16363.943};
-		dir[]={-0.1840896,-0.38075262,0.90620434};
-		up[]={-0.075818628,0.92464042,0.37322488};
-		aside[]={0.98002368,-1.3198005e-006,0.19908254};
+		pos[]={14214.491,27.390612,16364.028};
+		dir[]={0.045355316,-0.37153986,-0.92735791};
+		up[]={0.01815439,0.92837834,-0.37119889};
+		aside[]={-0.99885702,-9.1365291e-007,-0.048847917};
 	};
 };
 binarizationWanted=0;
@@ -10072,7 +10072,7 @@ class Mission
 							};
 							id=14911;
 							type="rhsusf_m998_d_4dr_fulltop";
-							atlOffset=0.12625694;
+							atlOffset=0.12626457;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35280,6 +35280,7 @@ class Mission
 							};
 							id=14835;
 							type="B_supplyCrate_F";
+							atlOffset=9.9182129e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35537,6 +35538,7 @@ class Mission
 							};
 							id=14838;
 							type="I_E_CargoNet_01_ammo_F";
+							atlOffset=7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -48061,7 +48063,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="0";
+											value="10";
 										};
 									};
 								};
@@ -48080,7 +48082,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="10";
+											value="15";
 										};
 									};
 								};
@@ -77895,7 +77897,7 @@ class Mission
 					};
 					id=14351;
 					type="rhs_mags_crate";
-					atlOffset=0.083944321;
+					atlOffset=0.083930969;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -77975,7 +77977,7 @@ class Mission
 					};
 					id=14353;
 					type="rhs_mags_crate";
-					atlOffset=0.045995712;
+					atlOffset=0.04598999;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -78015,7 +78017,7 @@ class Mission
 					};
 					id=14354;
 					type="rhs_mags_crate";
-					atlOffset=0.024551392;
+					atlOffset=0.02454567;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -78055,7 +78057,7 @@ class Mission
 					};
 					id=14349;
 					type="rhs_launcher_crate";
-					atlOffset=0.042331696;
+					atlOffset=0.042293549;
 					class CustomAttributes
 					{
 						class Attribute0
