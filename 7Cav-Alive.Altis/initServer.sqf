@@ -1,11 +1,5 @@
 diag_log "initServer start";
 
-#include "\serverscripts\zeusserverscripts\secretKey.sqf" //Includes the zeus security key.sqf so we can reference it for zeus IDs
-#include "scripts\server\baseCleanup.sqf" //Includes the baseCleanup script so everything can reference it 
-
-missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true]; //variable init for loyalty cipher
-missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
-
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
 // Disable RHS engine start up so vehicles move immediately when spawned
@@ -48,13 +42,6 @@ setDate _date;
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
 
 // [] execVM "scripts\fortifyInit.sqf";
-
-// Alive initialization
-[] execVM "alive\CustomFactions.sqf";
-[] execVM "alive\Tasks.sqf";
-
-//Curatory execution
-[] execVM "scripts\server\curator.sqf";
 
 enableEnvironment [false, true];
 
