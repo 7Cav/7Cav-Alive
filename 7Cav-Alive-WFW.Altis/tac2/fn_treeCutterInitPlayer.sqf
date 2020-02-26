@@ -30,4 +30,3 @@ private _treeNearby = {
 
 private _action = ["TreeCutterParent", "Remove Closest Tree/Bush", "", _cutDownTree, _treeNearby] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
-
