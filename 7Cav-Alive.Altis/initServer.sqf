@@ -2,6 +2,7 @@ diag_log "initServer start";
 
 #include "\serverscripts\zeusserverscripts\secretKey.sqf"
 missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
+missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
 
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
@@ -37,6 +38,9 @@ _date set [4, _startMinute];
 
 setDate _date;
 
+// Alive initialization
+[] execVM "alive\CustomFactions.sqf";
+[] execVM "alive\Tasks.sqf";
 
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
