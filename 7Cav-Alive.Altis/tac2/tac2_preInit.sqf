@@ -30,4 +30,3 @@ _vehDialog = [] spawn compile PreprocessFileLineNumbers "Tac2\loyalty\loyalty_fn
 		sleep 900;
 	};
 };
-

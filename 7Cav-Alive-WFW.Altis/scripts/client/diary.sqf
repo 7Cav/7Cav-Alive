@@ -4,7 +4,7 @@ waitUntil {!isNull player};
 
 player createDiaryRecord ["diary", ["Unit callsigns",
 "
-<br/><font face='TahomaB' size='12'>Personnel</font>
+<br/><font face=PuristaSemiBold' size='12'>Personnel</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
 <br/>JTAC                           Infidel
@@ -12,7 +12,7 @@ player createDiaryRecord ["diary", ["Unit callsigns",
 <br/>Field Medical                  Mustang
 <br/>Air traffic control            Telos Tower
 <br/></font>
-<br/><font face='TahomaB' size='12'>Transport Aircraft</font>
+<br/><font face=PuristaSemiBold' size='12'>Transport Aircraft</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
 <br/>UH-60 Blackhawk                Buffalo 1/2
@@ -21,7 +21,7 @@ player createDiaryRecord ["diary", ["Unit callsigns",
 <br/>V-44X Blackfish (transport)    Titan
 </font>
 <br/>
-<br/><font face='TahomaB' size='12'>Attack Aircraft</font>
+<br/><font face=PuristaSemiBold' size='12'>Attack Aircraft</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
 <br/>A-10 Thunderbolt               Hog
@@ -32,7 +32,7 @@ player createDiaryRecord ["diary", ["Unit callsigns",
 </font>
 <br/>
 <br/>
-<br/><font face='TahomaB' size='12'>Armor</font>
+<br/><font face=PuristaSemiBold' size='12'>Armor</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
 <br/>M1 Abramms                     Sabre 1/2
@@ -115,23 +115,23 @@ player createDiarySubject ["ALiVE","How-To-ALiVE"];
 
 //Alive How-To
 player createDiaryRecord ["ALiVE", ["Introduction to ALiVE",
-"<font face='TahomaB' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
-<br/><br/><font face='TahomaB' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
+"<font face=PuristaSemiBold' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
+<br/><br/><font face=PuristaSemiBold' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--How ALiVE Spawns Units--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>ALiVE creates groups in 'Virtual Space'. These units are not spawned in until you are within
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--How ALiVE Spawns Units--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>ALiVE creates groups in 'Virtual Space'. These units are not spawned in until you are within
 1 Kilometer. When you are within 1 Kilometer of a profiled unit ALiVE will spawn that profiled unit onto the map.
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--What Happens When A Unit/Group Is Spawned In--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>When units are spawned onto the map, VCOM AI takes over AI calculations. VCOM AI allows for units inside AI groups to communicate with eachother. Nearby groups can 
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--What Happens When A Unit/Group Is Spawned In--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>When units are spawned onto the map, VCOM AI takes over AI calculations. VCOM AI allows for units inside AI groups to communicate with eachother. Nearby groups can 
 communicate with eachother as well. So when ALiVE spawns a group, they might begin
 moving toward your direction. This isn't because they know where you are, it's because
 they were told about your position by another enemy AI group. Moreover, VCOM AI can steal
 vehicles and deploy crew served weapons. 
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Grid Squares and Enemy Activity--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>ALiVe will color individual grid squares. The darker the color, the more enemies are in that
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Grid Squares and Enemy Activity--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>ALiVe will color individual grid squares. The darker the color, the more enemies are in that
 area. Simply put, these squares indicate areas of enemy activity. Whenever a group
 moves to another grid square, that grid square will also light up red.
 <br/>
@@ -139,8 +139,8 @@ moves to another grid square, that grid square will also light up red.
 turn green. If there are more OPFOR in that grid square than BLUFOR, it will turn
 purple. If there are more BLUFOR than OPFOR, it will turn a lighter shade of purple.</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Persistence--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>ALiVE has the possibility of maintaining persistence between server restarts. By default, the
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Persistence--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>ALiVE has the possibility of maintaining persistence between server restarts. By default, the
 missions in standard rotation are not persistent. However, COIN and warfare wednesday
 variants of missions are persistent. This means that, if you take a town and setup a
 forward base, when the mission restarts, that town will remain cleared and the base 
@@ -151,69 +151,74 @@ that was setup will remain there.</t>
 ]];
 //Mission Objectives
 player createDiaryRecord ["ALiVE", ["Mission Objectives",
-"<font face='TahomaB' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
-<br/><br/><font face='TahomaB' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
+"<font face=PuristaSemiBold' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
+<br/><br/><font face=PuristaSemiBold' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Basic Mission Objectives--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>1. Move to and clear enemy held towns and military compounds.
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Basic Mission Objectives--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>1. Move to and clear enemy held towns and military compounds.
 <br/>2. Secure and hold enemy towns and military compounds.
 <br/>3. Deactivate enemy strongpoints.
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Where should I attack?--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>ALiVE puts enemies everywhere on the map, they're just not spawned in immediately.
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Where should I attack?--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>ALiVE puts enemies everywhere on the map, they're just not spawned in immediately.
 when the mission is first loaded. When you move towards a given area, enemies will begin spawning in. This essentially means that,
 no matter where you go, there will be enemies to fight. The main goal of the mission is to take over the entire island by means of force. In COIN or Warfare Wednesday missions, the mission critera changes. Make sure to speak with leadership whenever you log onto the server, as Warfare Wednesday might be taking placeor a COIN mission might be loaded.
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Counter Insurgency (COIN)--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>Simply put, counter insurgency mission files are setup in such a way, as to allow a very realistic and engaging asymetrical/unconventional warfare environment. You can expect to encounter Improvised Explosive Devices (IEDs), Vehicle Bourne Explosive Devices (VBEDs), and hostile civilains. Many times, civilains may wish to take up arms against your faction. One minute a civilian might be friendly. Ten minutes later, when he comes out of his shack, he could be wearing a suicide vest or weild an AK.
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Counter Insurgency (COIN)--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>Simply put, counter insurgency mission files are setup in such a way, as to allow a very realistic and engaging asymetrical/unconventional warfare environment. You can expect to encounter Improvised Explosive Devices (IEDs), Vehicle Bourne Explosive Devices (VBEDs), and hostile civilains. Many times, civilains may wish to take up arms against your faction. One minute a civilian might be friendly. Ten minutes later, when he comes out of his shack, he could be wearing a suicide vest or weild an AK.
 <br/>
 <br/>As you might tell from reading this, Civilian interaction is incredibly important to COIN. As such, these missions are only available when a ZEUS or ADMIN is online, so he/she can switch the map to these game-modes. These game-modes are also persistant, which means that, between server restarts, you won't lose progress on the mission. This allows you to setup FOBs, take towns, etc, without losing progress between play sessions. Think of it as CO-OP multiplayer, but without any of the hassle."
 ]];
 //Apollo and FOBs
 player createDiaryRecord ["ALiVE", ["Logistics",
-"<font face='TahomaB' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
-<br/><br/><font face='TahomaB' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
+"<font face=PuristaSemiBold' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
+<br/><br/><font face=PuristaSemiBold' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--The Role of Logistical Support--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>Apollo is the callsign we use for the server's logistical support assets. Apollo is in charge of creating Forward Operating Bases, Combat Outposts, and Forward Rearm and Repair Points. This is more important now than ever before, because fights can last hours. Without resupply or a fallback point, squads and vehicles who are in combat run the risk of running out of ammunition or fuel. Perhaps more important, vehicles such as Saber and Buffallo may need repairs, but might not be able to make it all the way back to base. Having a forward rearm point enables the possibility of long, sustained combat actions.
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--The Role of Logistical Support--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>Apollo is the callsign we use for the server's logistical support assets. Apollo is in charge of creating Forward Operating Bases, Combat Outposts, and Forward Rearm and Repair Points. This is more important now than ever before, because fights can last hours. Without resupply or a fallback point, squads and vehicles who are in combat run the risk of running out of ammunition or fuel. Perhaps more important, vehicles such as Saber and Buffallo may need repairs, but might not be able to make it all the way back to base. Having a forward rearm point enables the possibility of long, sustained combat actions.
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--FOBs and Persistance--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>In standard rotation missions, persistance isn't enabled by default. This means that, between server restarts, FOBs and progress will not be maintained. On other map variants, such as COIN or Warfare Wednesday, persistance is enabled. This means that, if you build a FOB during Warfare Wednesday, that FOb will remain there after the next server restart. This is the same for COIN operations as well.
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--FOBs and Persistance--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>In standard rotation missions, persistance isn't enabled by default. This means that, between server restarts, FOBs and progress will not be maintained. On other map variants, such as COIN or Warfare Wednesday, persistance is enabled. This means that, if you build a FOB during Warfare Wednesday, that FOb will remain there after the next server restart. This is the same for COIN operations as well.
 "
 ]];
 //View Distance
 player createDiaryRecord ["ALiVE", ["View Distance Settings",
-"<font face='TahomaB' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
-<br/><br/><font face='TahomaB' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
+"<font face=PuristaSemiBold' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
+<br/><br/><font face=PuristaSemiBold' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--ACE View Distance Limiter--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>Escape -> Configure -> Addon Options -> Ace View Distasnce Limiter
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--ACE View Distance Limiter--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>Escape -> Configure -> Addon Options -> Ace View Distasnce Limiter
 <br/>
 <br/>The settings are pretty self explanatory with the exception of Dynamic Object View
 Distance. When set to between 'Low' to 'Very High', this represents the percentage
 (between 0-100) of your view distance that objects will be rendered. 'FOV Based'
 means that, when you scope in, the object view distance will increase.
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--ALiVE Player Options--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>App Menu Button -> Player Options -> View Settings -> View Settings / Terrain Grid
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--ALiVE Player Options--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>App Menu Button -> Player Options -> View Settings -> View Settings / Terrain Grid
 <br/>
 <br/>The 'App Menu Button' is the button between the R.CTRL and R.Win button. Using this
 method immmediately overrides ACE View Distance Limiter, but is set on a per-respawn or
 per-mission basis. This means that it resets every time you log into the server and every
 time the mission file changes.
+<br/>
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--How To Rebind ALiVE Options Menu--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>Configure -> Controls -> Configure Addons -> Open Menu (Requires Restart)
+<br/>
+<br/>The 'App Menu Button' is the button between the R.CTRL and R.Win button. I reccomend changing to something like CTRL + Home or something weird that you'll never use.
 "
 ]];
 //ZEUS
 player createDiaryRecord ["ALiVE", ["How to Zeus with ALiVE",
-"<font face='TahomaB' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
-<br/><br/><font face='TahomaB' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
+"<font face=PuristaSemiBold' color='#ffc61a' size='26'>This Server is Using ALiVE!</t>
+<br/><br/><font face=PuristaSemiBold' color='#ffffff' size='20'>HELP US IMPROVE!!</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
-<br/><font face='TahomaB' color='#ffffff' size='12'>#--Working With Profiled Units--#</t>
-<br/><font face='Tahoma' color='#ffffff' size='13'>Units that are spawned by ALiVE are most always profiled. The only exception to this 
+<br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--Working With Profiled Units--#</t>
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>Units that are spawned by ALiVE are most always profiled. The only exception to this 
 are the CQB AI which are procedurally generated. To delete units from an area, for example
 if you wanted to run an MCC, you can simply press 'END' on your keyboard. This will Kill
 the unit. When the unit is killed, you can either delete the unit like you normally would
