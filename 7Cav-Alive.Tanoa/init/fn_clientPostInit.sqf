@@ -1,0 +1,1 @@
+if (not hasInterface) exitWith {};
