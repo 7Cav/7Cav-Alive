@@ -1,0 +1,13 @@
+<t align="center" size="1.2">TIPS FOR</t><br/>
+<t align="center" size="2.0">7th CAVALRY TACTICAL REALISM 1</t><br/>
+<br/>
+<t align="left">
+1. Earplugs are available by pressing the Pause/Break key.<br/>
+2. Weapons may be slung by pressing H.  Unsling by pressing F.<br/>
+2. HALO jumps are available.  Get into the Huron in the hangar by the infantry area.<br/>
+3. Heavy lift is available for all vehicles from the heavy lift area (marked on map).<br/>
+4. Rappelling is available from buildings and from aircraft.<br/>
+5. Vehicle towing is available.<br/>
+6. Enhanced logistics services exist for ammunition, fuel and repair.<br/>
+<br/>
+If you're unsure about the workings of a system, please ask for help.<br/></t>
