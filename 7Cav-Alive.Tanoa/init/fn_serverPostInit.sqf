@@ -1,0 +1,1 @@
+if (not isServer && hasInterface) exitWith {};

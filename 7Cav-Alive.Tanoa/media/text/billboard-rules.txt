@@ -1,0 +1,11 @@
+<t align="center" size="1.2">WELCOME TO</t><br/>
+<t align="center" size="2.0">7th CAVALRY TACTICAL REALISM 1</t><br/>
+<br/>
+<t align="left">
+1. No fratricide.<br/>
+2. No destruction of friendly equipment.<br/>
+3. All support elements (pilots, artillery, UAV operators, mortars) must be on TeamSpeak 3<br/>
+4. All support elements must be on call.<br/>
+5. Weapons safe on base.<br/>
+6. No foul language, racism, or insults of any type will be tolerated.<br/>
+</t>
