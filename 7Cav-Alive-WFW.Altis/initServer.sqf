@@ -48,7 +48,7 @@ setDate _date;
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
 
-// [] execVM "scripts\fortifyInit.sqf";
+[] execVM "cScripts\CavFnc\functions\init\fn_initFortify.sqf";
 
 enableEnvironment [false, true];
 
