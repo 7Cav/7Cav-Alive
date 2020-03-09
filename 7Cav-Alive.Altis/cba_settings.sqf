@@ -64,14 +64,14 @@ force force ace_cookoff_enable = 0;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = false;
 force ace_cookoff_probabilityCoef = 1;
- 
+
 // ACE Crew Served Weapons
-force force ace_csw_ammoHandling = 2;
+force force ace_csw_ammoHandling = 0;
 force force ace_csw_defaultAssemblyMode = false;
 ace_csw_dragAfterDeploy = false;
 force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
- 
+
 // ACE Explosives
 force force ace_explosives_explodeOnDefuse = true;
 force force ace_explosives_punishNonSpecialists = true;
@@ -81,8 +81,8 @@ force force ace_explosives_requireSpecialist = false;
 force force ace_frag_enabled = true;
 force force ace_frag_maxTrack = 5;
 force force ace_frag_maxTrackPerFrame = 5;
-force force ace_frag_reflectionsEnabled = false;
-force force ace_frag_spallEnabled = false;
+force force ace_frag_reflectionsEnabled = true;
+force force ace_frag_spallEnabled = true;
  
 // ACE Goggles
 ace_goggles_effects = 2;
@@ -131,9 +131,9 @@ force force ace_rearm_distance = 20;
 force force ace_rearm_level = 1;
 force force ace_rearm_supply = 0;
 force force force ace_refuel_hoseLength = 30;
-force force ace_refuel_rate = 1.5;
+force force ace_refuel_rate = 2;
 force force ace_repair_addSpareParts = true;
-force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
+force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
 force force ace_repair_displayTextOnRepair = true;
 force force ace_repair_engineerSetting_fullRepair = 1;
@@ -160,8 +160,8 @@ force force ace_map_DefaultChannel = -1;
 force force ace_map_mapGlow = true;
 force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
-force force ace_map_mapShake = false;
-force force ace_map_mapShowCursorCoordinates = false;
+force force ace_map_mapShake = true;
+force force ace_map_mapShowCursorCoordinates = true;
 ace_markers_moveRestriction = 0;
  
 // ACE Map Gestures
@@ -196,7 +196,7 @@ force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_playerDamageThreshold = 8;
 force force ace_medical_spontaneousWakeUpChance = 0.25;
-force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
+force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.5;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestTime = 270;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
@@ -219,8 +219,8 @@ force force ace_medical_treatment_locationEpinephrine = 0;
 force force ace_medical_treatment_locationPAK = 3;
 force force ace_medical_treatment_locationsBoostTraining = true;
 force force ace_medical_treatment_locationSurgicalKit = 0;
-force force ace_medical_treatment_maxLitterObjects = 100;
-force force ace_medical_treatment_medicEpinephrine = 1;
+force force ace_medical_treatment_maxLitterObjects = 0;
+force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 1;
 force force ace_medical_treatment_timeCoefficientPAK = 1;
@@ -244,11 +244,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
  
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.145573;
+force force ace_nightvision_aimDownSightsBlur = 0.1;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.1;
-force force ace_nightvision_fogScaling = 0.465734;
-force force ace_nightvision_noiseScaling = 0.1;
+force force ace_nightvision_effectScaling = 0.4;
+force force ace_nightvision_fogScaling = 0.2;
+force force ace_nightvision_noiseScaling = 0.4;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -402,10 +402,10 @@ force force ace_winddeflection_vehicleEnabled = false;
 force force ace_zeus_autoAddObjects = true;
 force force ace_zeus_canCreateZeus = 0;
 force force ace_zeus_radioOrdnance = false;
-force force ace_zeus_remoteWind = false;
+force force ace_zeus_remoteWind = true;
 force force ace_zeus_revealMines = 0;
-force force ace_zeus_zeusAscension = false;
-force force ace_zeus_zeusBird = false;
+force force ace_zeus_zeusAscension = true;
+force force ace_zeus_zeusBird = true;
  
 // ACEX Field Rations
 force force acex_field_rations_affectAdvancedFatigue = true;
