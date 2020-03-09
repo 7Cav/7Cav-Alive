@@ -43318,7 +43318,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -44109,7 +44109,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -44890,7 +44890,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -45305,7 +45305,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -45441,7 +45441,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -45876,7 +45876,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -46311,7 +46311,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -46746,7 +46746,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -47180,7 +47180,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -47633,7 +47633,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
@@ -48029,7 +48029,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="OPF_CAV_RAF_F";
+											value="OPF_CAV_AFRF_F";
 										};
 									};
 								};
