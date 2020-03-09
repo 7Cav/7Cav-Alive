@@ -1,4 +1,4 @@
-onLoadName = "7Cav Full Spectrum v5.3.3";
+onLoadName = "7Cav Full Spectrum v5.3.5";
 
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
@@ -14,7 +14,8 @@ disabledAI = true;
 disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
 forceRotorLibSimulation = 0;
 allowFunctionsLog = 0;
-Respawn = 2;
+respawnOnStart = 0;
+Respawn = 3;
 RespawnDelay = 5;
 RespawnDialog = 0;
 
@@ -25,18 +26,43 @@ corpseRemovalMinTime = 60;
 corpseRemovalMaxTime = 7200;
 minPlayerDistance = 250;
 
-class Header
-{
+class Header {
 	gameType = COOP;
 	minPlayers = 1;
 	maxPlayers = 91;
 };
 
-enableDebugConsole[] =
-{
-    "76561198064095277",    // Citarelli
-    "76561198048006094"     // Bojan (not 7th Cavalry)
+enableDebugConsole[] = {
+    // Dev Team
+    "76561198025844585",    // MacMillian.M
+    "76561198064095277",    // Citarelli.D
+    "76561198114637526",    // JB
+    "76561197998646278",    // Blake
+    "76561198073062030",    // Ocean
+    "76561197961894729",    // ODoyle
+    "76561198048006094",    // Bojan
+	"76561198043140265", 	// Centeno
+	"76561198073062030", 	// Ocean
+    // MP
+    "76561198057951824",    // Mitsuma.R
+    "76561198019973923",    // Velasquez.J
+    "76561198045729682",    // Troop.D
+    "76561198110260988",    // Curtis.J
+    "76561198014921178",    // Rogers.S
+    "76561198968070623",    // Connelly.M
+    "76561198028446303",    // Jay.M
+    // S6
+    "76561198168754324",    // Dakota.N
+    "76561198039932196",    // Jarvis.A
+    "76561198020735648",    // Ratcliff.M
+    "76561197963459537",    // Sweetwater.I
+	"76561198142446869",    // Dunn.W
+    // S3
+    "76561198099828056",    // Whitsel.M
+    "76561198007260563",    // Tharen.R
+    "76561198321204423"     // Cosme.OB
 };
+
 enableTargetDebug = 1;
 
 class Extended_PreInit_EventHandlers {
@@ -47,13 +73,12 @@ class Extended_PostInit_EventHandlers {
 	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
 	tac2_postInit = "call compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
 };
-
-#include "scripts\common.hpp"				  		// Common dialog classes
+// Common dialog classes
+#include "scripts\common.hpp"
 #include "tac2\loyalty\loyalty_gui.hpp"
 #include "tac2\loyalty\loyalty_hud.hpp"
 
-class CfgFunctions
-{
+class CfgFunctions {
 	#include "cScripts\CavFnc\CfgFunctions.hpp"
 	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
 	#include "tac2\CfgFunctions.hpp"
@@ -67,16 +92,13 @@ class CfgFunctions
 #include "cScripts\CfgLoadouts.hpp"
 
 
-class RscTitles
-{
+class RscTitles {
 	#include "tac2\loyalty\loyalty_gui.hpp"
 	#include "tac2\loyalty\loyalty_hud.hpp"
 };
 
-class CfgDebriefing
-{  
-	class RestrictedRole
-	{
+class CfgDebriefing {  
+	class RestrictedRole {
 		title = "Restricted Mission Role";
 		subtitle = "";
 		description = "Certain game roles are reserved for members of 7th Cavalry.  Please return to the lobby and select a different role.";
@@ -85,8 +107,7 @@ class CfgDebriefing
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
-	class PoliceEjection
-	{
+	class PoliceEjection {
 		title = "Military Police Action";
 		subtitle = "";
 		description = "Your game session has been ended by a member of the military police.  Please abide by all server rules and heed the warnings that you are given about your conduct while playing on this server.";
@@ -95,8 +116,7 @@ class CfgDebriefing
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
-	class BootAll
-	{
+	class BootAll {
 		title = "Military Police Action";
 		subtitle = "";
 		description = "All player sessions have been ended by a member of the military police.  This has been done in an effort to address a server issue.  You should be able to return to the game lobby and reconnect to the server.";
@@ -105,5 +125,5 @@ class CfgDebriefing
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
-
+//Orbat Groups
 #include "orbat.hpp"
