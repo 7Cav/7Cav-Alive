@@ -8,22 +8,22 @@ class EditorData
 	toggles=1029;
 	class ItemIDProvider
 	{
-		nextID=4752;
+		nextID=4753;
 	};
 	class MarkerIDProvider
 	{
-		nextID=5;
+		nextID=7;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2848;
+		nextID=2944;
 	};
 	class Camera
 	{
-		pos[]={12260.401,186.7146,12784.212};
-		dir[]={-0.86361074,-0.48109978,0.15152784};
-		up[]={-0.47396606,0.87655216,0.083164163};
-		aside[]={0.17285211,4.6822242e-007,0.9850772};
+		pos[]={7322.355,39.494812,8713.7344};
+		dir[]={-0.72284412,-0.24705581,-0.64553082};
+		up[]={-0.18437235,0.96893406,-0.16465224};
+		aside[]={-0.66616869,3.434252e-007,0.74596369};
 	};
 };
 binarizationWanted=0;
@@ -158,13 +158,14 @@ addons[]=
 	"rhsusf_c_M1239",
 	"acre_sys_radio",
 	"A3_Structures_F_Enoch_Military_Camps",
-	"A3_Static_F_Jets_SAM_System_01"
+	"A3_Static_F_Jets_SAM_System_01",
+	"cav_markers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=104;
+		items=105;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -869,6 +870,13 @@ class AddonsMetaData
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
+		class Item104
+		{
+			className="cav_markers";
+			name="7th Cavalry Addon - Markers";
+			author="7th Cavalry S3 Mod Team";
+			url="http://7cav.us";
+		};
 	};
 };
 randomSeed=6316101;
@@ -975,7 +983,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=115;
+		items=116;
 		class Item0
 		{
 			dataType="Layer";
@@ -4436,14 +4444,15 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={12110.75,6.9499998,12994.125};
-						angles[]={0,3.4030454,0};
+						position[]={12108.863,6.9529881,12990.915};
+						angles[]={0.023993526,3.4030454,0};
 					};
-					areaSize[]={43.093788,0,17.242605};
+					areaSize[]={47.11684,0,17.242605};
 					areaIsRectangle=1;
 					flags=1;
 					id=4749;
 					type="ModuleHideTerrainObjects_F";
+					atlOffset=0.0029883385;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4489,7 +4498,7 @@ class Mission
 				};
 			};
 			id=846;
-			atlOffset=-2.2330604;
+			atlOffset=-2.7883101;
 		};
 		class Item2
 		{
@@ -12729,7 +12738,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11628.75,6.9499998,13122.875};
-						angles[]={0,1.80695,0};
+						angles[]={0,1.8069568,0};
 					};
 					id=4034;
 					type="ModuleRespawnPosition_F";
@@ -12769,7 +12778,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Gunslinger";
+									value="Infantry";
 								};
 							};
 						};
@@ -12839,7 +12848,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11445.075,7.8399997,13188.275};
-						angles[]={0,1.8423808,0};
+						angles[]={0,1.842387,0};
 					};
 					id=4035;
 					type="ModuleRespawnPosition_F";
@@ -12880,7 +12889,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Saber";
+									value="Armor";
 								};
 							};
 						};
@@ -13060,11 +13069,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={12185.125,7.1461878,12954.125};
-						angles[]={0,3.4266241,0};
+						position[]={12185.125,7.1459999,12954.125};
+						angles[]={0,3.4266222,0};
 					};
 					id=4037;
 					type="ModuleRespawnPosition_F";
+					atlOffset=0.11650944;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13101,7 +13111,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Eagle";
+									value="Aircraft";
 								};
 							};
 						};
@@ -13999,11 +14009,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={11637.375,7.3276,13020};
-						angles[]={0,0.28597882,0};
+						position[]={11634,7.3280001,13014.75};
+						angles[]={0,3.6585939,0};
 					};
 					id=4689;
 					type="ModuleRespawnPosition_F";
+					atlOffset=0.00040006638;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14040,7 +14051,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="Apollo";
+									value="Combat Engineers";
 								};
 							};
 						};
@@ -14106,7 +14117,7 @@ class Mission
 				};
 			};
 			id=1028;
-			atlOffset=53.124962;
+			atlOffset=52.486275;
 		};
 		class Item3
 		{
@@ -65233,13 +65244,13 @@ class Mission
 		class Item33
 		{
 			dataType="Marker";
-			position[]={12408.625,25,12990.5};
+			position[]={12420.5,25,13008.375};
 			name="marker_80";
 			text="29";
 			type="mil_arrow";
-			angle=285.99991;
+			angle=285.75485;
 			id=4028;
-			atlOffset=36.314037;
+			atlOffset=37.360725;
 		};
 		class Item34
 		{
@@ -65248,7 +65259,7 @@ class Mission
 			name="marker_81";
 			text="11";
 			type="mil_arrow";
-			angle=104.99996;
+			angle=106.72173;
 			id=4029;
 			atlOffset=36.781113;
 		};
@@ -65394,7 +65405,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12134.25,9.2042809,12988.03};
+				position[]={12134.125,8.7645226,12987.28};
 				angles[]={0,0.27925348,0};
 			};
 			side="Empty";
@@ -65404,7 +65415,7 @@ class Mission
 			};
 			id=4044;
 			type="USAF_C130J";
-			atlOffset=2.2397585;
+			atlOffset=1.8000002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -65434,7 +65445,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12093.5,9.1976404,12999.03};
+				position[]={12093.5,8.8895168,12999.03};
 				angles[]={0,0.27925301,0};
 			};
 			side="Empty";
@@ -65444,7 +65455,7 @@ class Mission
 			};
 			id=4045;
 			type="USAF_C130J_Cargo";
-			atlOffset=2.2397642;
+			atlOffset=1.9316406;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -73723,6 +73734,16 @@ class Mission
 			angle=357.99988;
 			id=4747;
 			atlOffset=0.050000191;
+		};
+		class Item115
+		{
+			dataType="Marker";
+			position[]={12665.564,-0.003,13134.35};
+			name="marker_whateverTheFuck";
+			text="FOB COLDBLOOD";
+			type="cav_mil_cav";
+			id=4752;
+			atlOffset=22.139912;
 		};
 	};
 	class Connections
