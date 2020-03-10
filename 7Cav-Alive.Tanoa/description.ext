@@ -1,5 +1,4 @@
 onLoadName = "7Cav Full Spectrum v5.3.5";
-
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
 loadScreen = "media\images\MissionLogo.paa";
@@ -14,10 +13,10 @@ disabledAI = true;
 disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
 forceRotorLibSimulation = 0;
 allowFunctionsLog = 0;
-respawnOnStart = 0;
+respawnOnStart = -1;
 Respawn = 3;
 RespawnDelay = 5;
-RespawnDialog = 0;
+RespawnDialog = 1;
 
 // Garbage collector
 corpseManagerMode = 3;
@@ -32,6 +31,7 @@ class Header {
 	maxPlayers = 91;
 };
 
+// Debug Console
 enableDebugConsole[] = {
     // Dev Team
     "76561198025844585",    // MacMillian.M
