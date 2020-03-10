@@ -1,5 +1,5 @@
 // Intermediate Classes
-Cav_B_Charlie_base_F {
+class Cav_B_Charlie_base_F {
 };
 class Cav_B_Charlie_Trooper_Local : Cav_B_Charlie_base_F {
     
