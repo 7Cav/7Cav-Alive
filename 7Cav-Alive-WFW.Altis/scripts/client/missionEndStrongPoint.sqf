@@ -23,7 +23,7 @@ _boxNumber = _boxNumber + 1;
 [_target] remoteExec ["removeAllActions", 0]; 
 
 //Animate the box to keyframe 3
-[_target,3] remoteExec ["BIS_fnc_dataTerminalAminate", 0];
+[_target,3] remoteExec ["BIS_fnc_DataTerminalAnimate", 0];
 
 //Orbat : Switch statement for the different boxes
 switch (_term) do {
