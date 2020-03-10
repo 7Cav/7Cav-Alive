@@ -1,5 +1,5 @@
 diag_log "initServer start";
-
+//TEST
 //Server AI Skill
 if (isMultiplayer) then {
     switch (cScripts_Settings_setAiSystemDifficulty) do {

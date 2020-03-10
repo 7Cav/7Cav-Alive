@@ -20,24 +20,40 @@ private _term = str _target;
 _boxNumber = _boxNumber + 1;
  
 //Remove all the actions on the box
-removeAllActions _target;
+[_target] remoteExec ["removeAllActions", 0]; 
 
 //Animate the box to keyframe 3
-[_target,3] call BIS_fnc_DataTerminalAnimate;
-
-//Succeed the task 
-["Defend The Satellite!", "SUCCEEDED"] call BIS_fnc_taskSetState;
+[_target,3] remoteExec ["BIS_fnc_DataTerminalAnimate", 0];
 
 //Orbat : Switch statement for the different boxes
 switch (_term) do {
-  case "Term1": {[ missionConfigFile >> "CfgORBAT" >> "air" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
-  case "Term2": {[ missionConfigFile >> "CfgORBAT" >> "armor" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
-  case "Term3": {[ missionConfigFile >> "CfgORBAT" >> "mech" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
-  case "Term4": {[ missionConfigFile >> "CfgORBAT" >> "specop" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] call BIS_fnc_ORBATAddGroupOverlay};
+  case "Term1": {
+        [ missionConfigFile >> "CfgORBAT" >> "air" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] remoteExec ["BIS_fnc_ORBATAddGroupOverlay", 0];
+        ["Deactivate the Airfield!", "SUCCEEDED"] remoteExec ["BIS_fnc_taskSetState", 0];
+        [playerSide, "HQ"] sideChat "Allcon be advised, the enemy air commander has been killed. Great work, out.";
+        ["Deactivate the Airfield!"] remoteExec ["BIS_fnc_deleteTask", 0];
+  };
+  case "Term2" : {
+        [ missionConfigFile >> "CfgORBAT" >> "armor" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] remoteExec ["BIS_fnc_ORBATAddGroupOverlay", 0];
+        ["Deactivate the Armored Corps!", "SUCCEEDED"] remoteExec ["BIS_fnc_taskSetState", 0];
+        [playerSide, "HQ"] sideChat "Allcon be advised, the enemy armor commander has been killed. Great work, out.";
+        ["Deactivate the Armored Corps!"] remoteExec ["BIS_fnc_deleteTask", 0];
+  };
+  case "Term3" : {
+        [ missionConfigFile >> "CfgORBAT" >> "mech" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] remoteExec ["BIS_fnc_ORBATAddGroupOverlay", 0];
+        ["Deactivate the Mechanized Corps!", "SUCCEEDED"] remoteExec ["BIS_fnc_taskSetState", 0];
+        [playerSide, "HQ"] sideChat "Allcon be advised, the enemy mechanized commander has been killed. Great work, out.";
+        ["Deactivate the Mechanized Corps!"] remoteExec ["BIS_fnc_deleteTask", 0];
+  case "Term4" : {
+        [ missionConfigFile >> "CfgORBAT" >> "specop" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true ] remoteExec ["BIS_fnc_ORBATAddGroupOverlay", 0];
+        ["Deactivate the Specops headquarters!", "SUCCEEDED"] remoteExec ["BIS_fnc_taskSetState", 0];
+        [playerSide, "HQ"] sideChat "Allcon be advised, the enemy special forces commander has been killed. Great work, out.";
+        ["Deactivate the Specops headquarters!"] remoteExec ["BIS_fnc_deleteTask", 0];
+  };
 };
 
 //set the missionNameSpace variable endMissionNumber equal to boxNumber.
 missionNameSpace setVariable ["endMissionNumber", _boxNumber]; 
 
 // End the mission if _boxNumber is greater than or equal to 3.
-if (_boxNumber >= 3) then {"EveryoneWon" call BIS_fnc_endMissionServer};
+if (_boxNumber >= 3) then {"EveryoneWon" remoteExec ["BIS_fnc_endMissionServer", 2]};
