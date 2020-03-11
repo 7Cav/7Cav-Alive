@@ -43,7 +43,7 @@ enableDebugConsole[] = {
     "76561198039932196",    // Jarvis.A
     "76561198020735648",    // Ratcliff.M
     "76561197963459537",    // Sweetwater.I
-	"76561198142446869",    // Dunn.W
+	"76561198142446869"    // Dunn.W
 };
 
 enableTargetDebug = 1;
