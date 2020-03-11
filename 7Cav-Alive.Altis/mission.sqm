@@ -41463,6 +41463,22 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item145
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={14819.25,17.91,16636.25};
+								angles[]={0,3.9109521,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=15120;
+							type="Land_JumpTarget_F";
+						};
 					};
 					id=12272;
 					atlOffset=4.2386932;
@@ -81004,7 +81020,7 @@ class Mission
 					};
 					id=14351;
 					type="rhs_mags_crate";
-					atlOffset=0.083944321;
+					atlOffset=0.083930969;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -81084,7 +81100,7 @@ class Mission
 					};
 					id=14353;
 					type="rhs_mags_crate";
-					atlOffset=0.045995712;
+					atlOffset=0.04598999;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -81124,7 +81140,7 @@ class Mission
 					};
 					id=14354;
 					type="rhs_mags_crate";
-					atlOffset=0.024551392;
+					atlOffset=0.02454567;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -81164,7 +81180,7 @@ class Mission
 					};
 					id=14349;
 					type="rhs_launcher_crate";
-					atlOffset=0.042331696;
+					atlOffset=0.042293549;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -84603,6 +84619,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_A10.sqf"";}";
 			};
 			id=15488;
 			type="Land_HBarrier_Big_F";
@@ -85168,6 +85185,8 @@ class Mission
 			};
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_fixedWing.sqf"";}";
+				textures="DarkGreyCamo";
 			};
 			class CrewLinks
 			{
