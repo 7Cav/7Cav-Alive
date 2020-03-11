@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1037;
+	toggles=13;
 	class ItemIDProvider
 	{
-		nextID=15516;
+		nextID=16039;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7906;
+		nextID=8020;
 	};
 	class Camera
 	{
-		pos[]={20763.492,63.924103,7220.4614};
-		dir[]={0.66914195,-0.21145356,-0.71255666};
-		up[]={0.14480528,0.97736222,-0.15420069};
-		aside[]={-0.72904271,1.6373233e-006,-0.68462956};
+		pos[]={20800.094,49.695045,7212.8901};
+		dir[]={-0.76661927,-0.64164591,0.028591773};
+		up[]={-0.64126718,0.76687098,0.023917001};
+		aside[]={0.037267882,-6.1329047e-007,0.9994297};
 	};
 };
 binarizationWanted=0;
@@ -6849,7 +6849,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14345;
 							type="PortableHelipadLight_01_red_F";
@@ -6890,7 +6889,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14346;
 							type="PortableHelipadLight_01_red_F";
@@ -6931,7 +6929,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14347;
 							type="PortableHelipadLight_01_red_F";
@@ -6972,7 +6969,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14348;
 							type="PortableHelipadLight_01_red_F";
@@ -7013,7 +7009,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14349;
 							type="PortableHelipadLight_01_red_F";
@@ -7054,7 +7049,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14350;
 							type="PortableHelipadLight_01_red_F";
@@ -7095,7 +7089,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14351;
 							type="PortableHelipadLight_01_red_F";
@@ -7136,7 +7129,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14352;
 							type="PortableHelipadLight_01_red_F";
@@ -7177,7 +7169,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14353;
 							type="PortableHelipadLight_01_red_F";
@@ -7218,7 +7209,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14354;
 							type="PortableHelipadLight_01_red_F";
@@ -7259,7 +7249,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14355;
 							type="PortableHelipadLight_01_red_F";
@@ -7300,7 +7289,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14356;
 							type="PortableHelipadLight_01_red_F";
@@ -7341,7 +7329,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14357;
 							type="PortableHelipadLight_01_red_F";
@@ -7382,7 +7369,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14358;
 							type="PortableHelipadLight_01_red_F";
@@ -7423,7 +7409,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14359;
 							type="PortableHelipadLight_01_red_F";
@@ -7464,7 +7449,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14360;
 							type="PortableHelipadLight_01_red_F";
@@ -7505,7 +7489,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14361;
 							type="PortableHelipadLight_01_red_F";
@@ -7546,7 +7529,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14362;
 							type="PortableHelipadLight_01_red_F";
@@ -7587,7 +7569,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14363;
 							type="PortableHelipadLight_01_red_F";
@@ -7628,7 +7609,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14364;
 							type="PortableHelipadLight_01_red_F";
@@ -7965,7 +7945,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14371;
 							type="PortableHelipadLight_01_red_F";
@@ -8006,7 +7985,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14372;
 							type="PortableHelipadLight_01_red_F";
@@ -8047,7 +8025,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14373;
 							type="PortableHelipadLight_01_red_F";
@@ -8088,7 +8065,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14374;
 							type="PortableHelipadLight_01_red_F";
@@ -8189,7 +8165,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14376;
 							type="PortableHelipadLight_01_red_F";
@@ -8230,7 +8205,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14377;
 							type="PortableHelipadLight_01_red_F";
@@ -8271,7 +8245,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14378;
 							type="PortableHelipadLight_01_red_F";
@@ -8312,7 +8285,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14379;
 							type="PortableHelipadLight_01_red_F";
@@ -21561,8 +21533,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={20739,31.127186,7182.2998};
-												angles[]={6.2645216,6.0020561,6.2805109};
+												position[]={20739,31.126106,7182.2998};
+												angles[]={6.2645278,6.0020475,6.2805147};
 											};
 											side="West";
 											flags=6;
@@ -21571,7 +21543,7 @@ class Mission
 												rank="SERGEANT";
 												init="call{this setgroupID[""GUNSLINGER-1""];}";
 												name="GUNS_1";
-												description="Squad Leader @GUNSLINGER-1";
+												description="Squad Leader @MISFIT-1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -21738,7 +21710,6 @@ class Mission
 											};
 											id=14395;
 											type="rhsusf_army_ocp_arb_squadleader";
-											atlOffset=0.0010795593;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -24078,11 +24049,9 @@ class Mission
 									{
 									};
 									id=14394;
-									atlOffset=0.0010795593;
 								};
 							};
 							id=13844;
-							atlOffset=0.0010795593;
 						};
 						class Item2
 						{
@@ -24104,7 +24073,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={20748.75,30.497845,7185.2998};
-												angles[]={6.2378831,5.6237431,0.030656165};
+												angles[]={6.2378764,5.6237478,0.030647982};
 											};
 											side="West";
 											flags=6;
@@ -24113,7 +24082,7 @@ class Mission
 												rank="SERGEANT";
 												init="call{this setgroupID[""GUNSLINGER-2""];}";
 												name="GUNS_2";
-												description="Squad Leader @GUNSLINGER-2";
+												description="Squad Leader @MISFIT-2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -26662,8 +26631,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={20756.07,30.555283,7194.4033};
-												angles[]={0.0066592805,5.653079,6.2658563};
+												position[]={20756.07,30.555185,7194.4038};
+												angles[]={0.0066671576,5.6530867,6.2658539};
 											};
 											side="West";
 											flags=6;
@@ -26672,7 +26641,7 @@ class Mission
 												rank="SERGEANT";
 												init="call{this setgroupID[""GUNSLINGER-3""];}";
 												name="GUNS_3";
-												description="Squad Leader@GUNSLINGER-3";
+												description="Squad Leader @LANCER-1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -26839,7 +26808,7 @@ class Mission
 											};
 											id=14415;
 											type="rhsusf_army_ocp_arb_squadleader";
-											atlOffset=0.0080928802;
+											atlOffset=0.0079994202;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -29179,7 +29148,7 @@ class Mission
 									{
 									};
 									id=14414;
-									atlOffset=0.0080928802;
+									atlOffset=0.0079994202;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -29206,7 +29175,7 @@ class Mission
 								};
 							};
 							id=13842;
-							atlOffset=0.0080928802;
+							atlOffset=0.0079994202;
 						};
 						class Item4
 						{
@@ -29227,8 +29196,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={20765.75,30.187418,7202.2998};
-												angles[]={0.02399601,5.6407704,6.2445378};
+												position[]={20765.75,30.187046,7202.2998};
+												angles[]={0.023998277,5.6407642,6.244544};
 											};
 											side="West";
 											flags=6;
@@ -29237,7 +29206,7 @@ class Mission
 												rank="SERGEANT";
 												init="call{this setgroupID[""GUNSLINGER-4""];}";
 												name="GUNS_4";
-												description="Squad Leader@GUNSLINGER-4";
+												description="Squad Leader@LANCER-2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -29404,7 +29373,7 @@ class Mission
 											};
 											id=14425;
 											type="rhsusf_army_ocp_arb_squadleader";
-											atlOffset=0.0023727417;
+											atlOffset=0.0020008087;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -31744,7 +31713,7 @@ class Mission
 									{
 									};
 									id=14424;
-									atlOffset=0.0023727417;
+									atlOffset=0.0020008087;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -31771,11 +31740,11 @@ class Mission
 								};
 							};
 							id=13847;
-							atlOffset=0.0023727417;
+							atlOffset=0.0020008087;
 						};
 					};
 					id=13841;
-					atlOffset=-0.13247681;
+					atlOffset=-0.13274765;
 				};
 				class Item1
 				{
@@ -37545,407 +37514,6 @@ class Mission
 							side="West";
 							class Entities
 							{
-								items=6;
-								class Item0
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20744.504,30.83271,7180.3433};
-										angles[]={0,5.6850052,0};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										description="Recon Rifleman";
-										isPlayable=1;
-									};
-									id=14468;
-									type="rhsusf_army_ocp_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male04ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20746.777,30.626186,7180.1953};
-										angles[]={0,5.6850052,0};
-									};
-									side="West";
-									flags=5;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										description="Recon Rifleman";
-										isPlayable=1;
-									};
-									id=14873;
-									type="rhsusf_army_ocp_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male04ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item2
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20745.326,30.841164,7179.2764};
-										angles[]={0.086450629,5.6326451,6.1901212};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										description="Recon Auto Rifleman";
-										isPlayable=1;
-									};
-									id=15422;
-									type="rhsusf_army_ocp_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male01ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item3
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20746.885,30.775232,7178.3594};
-										angles[]={0.086450629,5.6850052,6.1901212};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										description="Recon CLS";
-										isPlayable=1;
-									};
-									id=15423;
-									type="rhsusf_army_ocp_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ace_isMedic";
-											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male08ENG";
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item4
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20745.98,30.599876,7181.3564};
-										angles[]={0.086450629,5.6151919,6.1901212};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										description="Recon Marksman";
-										isPlayable=1;
-									};
-									id=15424;
-									type="rhsusf_army_ocp_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male05ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item5
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={20744.5,30.704266,7181.7998};
-										angles[]={0.086450629,5.6151919,6.1756024};
-									};
-									side="West";
-									flags=6;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										name="HUNT_1";
-										description="Recon Team Leader @VIKING-1";
-										isPlayable=1;
-									};
-									id=15425;
-									type="rhsusf_army_ocp_rifleman";
-									atlOffset=-0.0025997162;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male08ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.95999998;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-							};
-							class Attributes
-							{
-							};
-							id=14466;
-							atlOffset=-0.0025997162;
-						};
-						class Item1
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
 								items=2;
 								class Item0
 								{
@@ -38076,9 +37644,433 @@ class Mission
 							};
 							id=14475;
 						};
+						class Item1
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=6;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20744.5,30.703865,7181.7998};
+										angles[]={0.086446159,5.6151953,6.1756029};
+									};
+									side="West";
+									flags=6;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										name="HUNT_1";
+										description="Recon Team Leader @VIKING-1";
+										isPlayable=1;
+									};
+									id=16032;
+									type="rhsusf_army_ocp_arb_rifleman";
+									atlOffset=-0.0030002594;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male08ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.95999998;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20744.504,30.83271,7180.3433};
+										angles[]={0,5.6850052,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										description="Recon Rifleman";
+										isPlayable=1;
+									};
+									id=14468;
+									type="rhsusf_army_ocp_rifleman";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male04ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.99000001;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20746.777,30.626186,7180.1953};
+										angles[]={0,5.6850052,0};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										description="Recon Rifleman";
+										isPlayable=1;
+									};
+									id=14873;
+									type="rhsusf_army_ocp_rifleman";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male04ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.99000001;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20745.326,30.841164,7179.2764};
+										angles[]={0.086450629,5.6326451,6.1901212};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										description="Recon Auto Rifleman";
+										isPlayable=1;
+									};
+									id=15422;
+									type="rhsusf_army_ocp_rifleman";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male01ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.99000001;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20746.885,30.775232,7178.3594};
+										angles[]={0.086450629,5.6850052,6.1901212};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										description="Recon CLS";
+										isPlayable=1;
+									};
+									id=15423;
+									type="rhsusf_army_ocp_rifleman";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male08ENG";
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=3;
+									};
+								};
+								class Item5
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={20745.98,30.599876,7181.3564};
+										angles[]={0.086450629,5.6151919,6.1901212};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="call{this setgroupID[""VIKING-1""];}";
+										description="Recon Marksman";
+										isPlayable=1;
+									};
+									id=15424;
+									type="rhsusf_army_ocp_rifleman";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Male05ENG";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.99000001;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+							};
+							class Attributes
+							{
+							};
+							id=16038;
+							atlOffset=-0.0030002594;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="groupID";
+									expression="[_this, _value] call CBA_fnc_setCallsign";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="VIKING-1";
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=13850;
-					atlOffset=-0.92674255;
+					atlOffset=-0.92694283;
 				};
 				class Item4
 				{
@@ -39310,16 +39302,16 @@ class Mission
 											class PositionInfo
 											{
 												position[]={20850.117,24.49115,7329.8696};
-												angles[]={0.029324362,2.4657981,6.2645216};
+												angles[]={0.029321531,2.4658012,6.2645278};
 											};
 											side="West";
-											flags=4;
+											flags=6;
 											class Attributes
 											{
 												rank="MAJOR";
 												init="call{this setUnitRank ""MAJOR"";" \n "this setGroupid [""BUFFALO-2""];}";
 												name="BUF_22";
-												description="Pilot (UH-60M/MH-6) @BUFFALO-2";
+												description="Pilot (UH-60M) @BUFFALO-2";
 												isPlayable=1;
 												class Inventory
 												{
@@ -39607,7 +39599,7 @@ class Mission
 												angles[]={0.029324362,2.492327,6.2645216};
 											};
 											side="West";
-											flags=6;
+											flags=4;
 											class Attributes
 											{
 												rank="MAJOR";
@@ -39897,12 +39889,10 @@ class Mission
 									class Attributes
 									{
 									};
-									id=14483;
-									atlOffset=0.0019779205;
+									id=16022;
 								};
 							};
 							id=13871;
-							atlOffset=0.0019779205;
 						};
 						class Item2
 						{
@@ -39923,8 +39913,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={20853.961,24.364359,7331.8115};
-												angles[]={0.02666023,2.3900335,6.2671871};
+												position[]={20861.75,25.501928,7322.7998};
+												angles[]={0.12730432,2.3900363,0.11021754};
 											};
 											side="West";
 											flags=6;
@@ -39933,7 +39923,7 @@ class Mission
 												rank="LIEUTENANT";
 												init="call{this setGroupid [""RAVEN-1""];" \n "player setUnitRank ""LIEUTENANT""}";
 												name="SPR_1";
-												description="Pilot (AH-6)@RAVEN";
+												description="Pilot (MH-6) @RAVEN-1";
 												isPlayable=1;
 												class Inventory
 												{
@@ -40131,7 +40121,7 @@ class Mission
 											};
 											id=14487;
 											type="B_T_Helipilot_F";
-											atlOffset=-2.0980835e-005;
+											atlOffset=0.0020008087;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -40218,8 +40208,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={20852.863,24.406654,7331.0039};
-												angles[]={0.029324362,2.4658,6.2645216};
+												position[]={20860.652,25.483765,7321.9917};
+												angles[]={0.12730432,2.4658012,0.11021754};
 											};
 											side="West";
 											flags=4;
@@ -40426,6 +40416,7 @@ class Mission
 											};
 											id=14488;
 											type="B_T_Helipilot_F";
+											atlOffset=0.0020008087;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -40511,12 +40502,12 @@ class Mission
 									class Attributes
 									{
 									};
-									id=14486;
-									atlOffset=-2.0980835e-005;
+									id=16024;
+									atlOffset=0.0020008087;
 								};
 							};
 							id=13872;
-							atlOffset=-2.0980835e-005;
+							atlOffset=0.0020008087;
 						};
 						class Item3
 						{
@@ -41616,7 +41607,7 @@ class Mission
 						};
 					};
 					id=13851;
-					atlOffset=0.022464752;
+					atlOffset=0.086420059;
 				};
 				class Item5
 				{
@@ -42081,7 +42072,7 @@ class Mission
 				};
 			};
 			id=13840;
-			atlOffset=-0.31286812;
+			atlOffset=-0.29631424;
 		};
 		class Item4
 		{
@@ -44903,7 +44894,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14173;
 							type="PortableHelipadLight_01_blue_F";
@@ -44944,7 +44934,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14174;
 							type="PortableHelipadLight_01_blue_F";
@@ -44985,7 +44974,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14175;
 							type="PortableHelipadLight_01_blue_F";
@@ -45026,7 +45014,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14176;
 							type="PortableHelipadLight_01_blue_F";
@@ -45067,7 +45054,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14177;
 							type="PortableHelipadLight_01_blue_F";
@@ -45168,7 +45154,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14179;
 							type="PortableHelipadLight_01_blue_F";
@@ -46681,7 +46666,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14599;
 							type="PortableHelipadLight_01_blue_F";
@@ -46722,7 +46706,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14600;
 							type="PortableHelipadLight_01_blue_F";
@@ -46763,7 +46746,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14601;
 							type="PortableHelipadLight_01_blue_F";
@@ -46804,7 +46786,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14602;
 							type="PortableHelipadLight_01_blue_F";
@@ -46844,7 +46825,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14603;
 							type="PortableHelipadLight_01_blue_F";
@@ -46884,7 +46864,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14605;
 							type="PortableHelipadLight_01_blue_F";
@@ -46925,7 +46904,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14616;
 							type="PortableHelipadLight_01_blue_F";
@@ -46966,7 +46944,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14617;
 							type="PortableHelipadLight_01_blue_F";
@@ -47007,7 +46984,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14618;
 							type="PortableHelipadLight_01_blue_F";
@@ -47048,7 +47024,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14619;
 							type="PortableHelipadLight_01_blue_F";
@@ -47089,7 +47064,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14620;
 							type="PortableHelipadLight_01_blue_F";
@@ -47130,7 +47104,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=14622;
 							type="PortableHelipadLight_01_blue_F";
@@ -49708,7 +49681,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15157;
 							type="PortableHelipadLight_01_blue_F";
@@ -49749,7 +49721,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15158;
 							type="PortableHelipadLight_01_blue_F";
@@ -49790,7 +49761,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15159;
 							type="PortableHelipadLight_01_blue_F";
@@ -49831,7 +49801,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15160;
 							type="PortableHelipadLight_01_blue_F";
@@ -49871,7 +49840,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15161;
 							type="PortableHelipadLight_01_blue_F";
@@ -49911,7 +49879,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15162;
 							type="PortableHelipadLight_01_blue_F";
@@ -50820,7 +50787,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15412;
 							type="PortableHelipadLight_01_blue_F";
@@ -50861,7 +50827,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15413;
 							type="PortableHelipadLight_01_blue_F";
@@ -50902,7 +50867,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15414;
 							type="PortableHelipadLight_01_blue_F";
@@ -50943,7 +50907,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15415;
 							type="PortableHelipadLight_01_blue_F";
@@ -50984,7 +50947,6 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15416;
 							type="PortableHelipadLight_01_blue_F";
@@ -51024,7 +50986,6 @@ class Mission
 							side="Empty";
 							class Attributes
 							{
-								disableSimulation=1;
 							};
 							id=15417;
 							type="PortableHelipadLight_01_blue_F";
@@ -53664,7 +53625,6 @@ class Mission
 			};
 			id=15037;
 			type="RHS_Stinger_AA_pod_WD";
-			atlOffset=0.0011901855;
 			class CustomAttributes
 			{
 				class Attribute0
