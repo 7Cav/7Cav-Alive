@@ -18,7 +18,7 @@ _spawn_box = {
   _params params ["_class", "_marker"];
 
   // Spawn a box on the marker
-  private _crate = _class createVehicle (getMarkerPos _marker);
+  _crate = _class createVehicle (getMarkerPos _marker);
 
   // Empty the crate
   clearweaponcargoGlobal _crate;
@@ -112,8 +112,6 @@ _spawn_night_box = {
   clearbackpackcargoGlobal _crate;
 
   _crate addItemCargoGlobal ["ACE_NVG_Wide", 12]; 
-  _crate addItemCargoGlobal ["ACRE_PRC343", 5];
-  _crate addItemCargoGlobal ["ACRE_PRC152", 5];
 
   _crate addMagazineCargoGlobal ["ACE_Chemlight_UltraHiOrange", 20]; 
   _crate addMagazineCargoGlobal ["ACE_Chemlight_HiYellow", 20]; 
@@ -127,10 +125,6 @@ _spawn_night_box = {
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_White", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 10]; 
-  _crate addMagazineCargoGlobal ["SmokeShellBlue", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellPurple", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
 
 //  [[_crate]] call SERVER_CurateEditableObjects;
 };

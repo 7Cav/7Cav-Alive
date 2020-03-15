@@ -46,12 +46,11 @@ _spawn_medical_box = {
   _crate addItemCargoGlobal ["ACE_morphine", 20]; 
   _crate addItemCargoGlobal ["ACE_EarPlugs", 5]; 
   _crate addItemCargoGlobal ["ACE_surgicalKit", 4]; 
-  _crate addItemCargoGlobal ["ACE_elasticBandage", 100]; 
+  _crate addItemCargoGlobal ["ACE_elasticBandage", 200]; 
   _crate addItemCargoGlobal ["ACE_personalAidKit", 8]; 
   _crate addItemCargoGlobal ["ACE_splint", 30]; 
-  _crate addItemCargoGlobal ["ACE_salineIV", 30]; 
+  _crate addItemCargoGlobal ["ACE_salineIV", 60]; 
   _crate addItemCargoGlobal ["ACE_tourniquet", 30]; 
-  _crate addItemCargoGlobal ["ACE_packingBandage", 100];
 
 
   [[_crate]] call SERVER_CurateEditableObjects;
@@ -133,10 +132,6 @@ _spawn_night_box = {
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_White", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 10]; 
-  _crate addMagazineCargoGlobal ["SmokeShellBlue", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellPurple", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
 
   [[_crate]] call SERVER_CurateEditableObjects;
 };
