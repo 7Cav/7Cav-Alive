@@ -1,4 +1,4 @@
-onLoadName = "7Cav Full Spectrum v5.3.5";
+onLoadName = "7Cav Full Spectrum v5.3.6";
 
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
@@ -21,7 +21,8 @@ RespawnDialog = 0;
 
 // Garbage collector
 corpseManagerMode = 3;
-corpseLimit = 25;
+corpseLimit = 20;
+wreckLimit = 10; 
 corpseRemovalMinTime = 60;
 corpseRemovalMaxTime = 7200;
 minPlayerDistance = 250;
@@ -32,6 +33,7 @@ class Header {
 	maxPlayers = 91;
 };
 
+enableTargetDebug = 1;
 enableDebugConsole[] = {
     // Dev Team
     "76561198025844585",    // MacMillian.M
@@ -48,10 +50,8 @@ enableDebugConsole[] = {
     "76561198039932196",    // Jarvis.A
     "76561198020735648",    // Ratcliff.M
     "76561197963459537",    // Sweetwater.I
-	"76561198142446869",    // Dunn.W
+	"76561198142446869"     // Dunn.W
 };
-
-enableTargetDebug = 1;
 
 class Extended_PreInit_EventHandlers {
 	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
@@ -79,6 +79,8 @@ class CfgFunctions {
 #include "cScripts\CfgUnitInsignia.hpp"
 #include "cScripts\CfgLoadouts.hpp"
 
+//Orbat Groups
+#include "orbat.hpp"
 
 class RscTitles {
 	#include "tac2\loyalty\loyalty_gui.hpp"
@@ -113,5 +115,3 @@ class CfgDebriefing {
 		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
-//Orbat Groups
-#include "orbat.hpp"
