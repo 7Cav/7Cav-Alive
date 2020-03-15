@@ -89,7 +89,7 @@ _spawn_ammo_box = {
   _crate addMagazineCargoGlobal ["rhs_200rnd_556x45_mixed_soft_pouch_coyote", 20]; 
   _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 20]; 
   _crate addMagazineCargoGlobal ["rhs_mag_m67", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 20; 
+  _crate addMagazineCargoGlobal ["SmokeShell", 20]; 
   _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
   _crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
   _crate addMagazineCargoGlobal ["rhs_mag_M441_HE", 20]; 
