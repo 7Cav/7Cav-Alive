@@ -3,7 +3,8 @@ This pull request will:
 
 
 This pull request resloves the following issues:
-- #number
-- i.e. #1
+Fixes #
+i.e.
+Fixes #1
 
 Notes:
