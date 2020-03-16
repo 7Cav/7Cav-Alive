@@ -1,4 +1,4 @@
-diag_log "initServer start";
+diag_log "init start";
 //TEST
 //Server AI Skill
 if (isMultiplayer) then {
@@ -37,5 +37,4 @@ if (isMultiplayer) then {
 } else {
     ["Mission is running on singelplayer enviroment. Some systems may differ of have been turned off."] call FUNC(logWarning);
 };
-
-diag_log "initPlayerLocal end";
+diag_log "init end";
