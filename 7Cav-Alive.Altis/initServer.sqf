@@ -10,8 +10,8 @@ missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionE
 RHS_ENGINE_STARTUP_OFF = 1;
 
 // Increase ACE max carry and drag weights
-ACE_maxWeightCarry = 750;
-ACE_maxWeightDrag = 1000;
+ACE_maxWeightCarry = 900;
+ACE_maxWeightDrag = 20000;
 
 // Make sure armed civilians won't attack NATO
 civilian setFriend [west, 1];

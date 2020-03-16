@@ -4,30 +4,25 @@ Authors: JB
 
 CLIENT_DisableActionMenuLevel = 0;
 
-CLIENT_DisableActionMenu =
-{
+CLIENT_DisableActionMenu = {
 	CLIENT_DisableActionMenuLevel = CLIENT_DisableActionMenuLevel + 1;
 };
 
-CLIENT_EnableActionMenu =
-{
+CLIENT_EnableActionMenu = {
 	CLIENT_DisableActionMenuLevel = CLIENT_DisableActionMenuLevel - 1;
 };
 
-CLIENT_ActionMenuNextHandler =
-{
+CLIENT_ActionMenuNextHandler = {
 	CLIENT_DisableActionMenuLevel > 0
 };
 
-CLIENT_ActionMenuPrevHandler =
-{
+CLIENT_ActionMenuPrevHandler = {
 	CLIENT_DisableActionMenuLevel > 0
 };
 
 CLIENT_ActionMenuActionHandlers = [];
 
-CLIENT_ActionMenuActionHandler =
-{
+CLIENT_ActionMenuActionHandler = {
 	if (CLIENT_DisableActionMenuLevel > 0) exitWith { true };
 
 	private _override = false;
@@ -40,8 +35,7 @@ CLIENT_ActionMenuActionHandler =
 };
 
 CLIENT_OverriddenActions = [];
-CLIENT_OverrideActionHandler =
-{
+CLIENT_OverrideActionHandler = {
 	private _name = _this select 3;
 	private _index = CLIENT_OverriddenActions findIf { _x select 0 == _name };
 
@@ -52,8 +46,7 @@ CLIENT_OverrideActionHandler =
 
 CLIENT_ActionMenuActionHandlers pushBack CLIENT_OverrideActionHandler;
 
-[] spawn
-{
+[] spawn {
 	waitUntil { not isNull (findDisplay 46) };
 
 	(findDisplay 46) displayAddEventHandler ["KeyDown",
@@ -83,8 +76,7 @@ CLIENT_OverrideAction =
 // Lets keep doing this every few seconds to make sure permissions are always set
 // ACE and ACEX like to fiddle with these settings as well, so we need to make sure we reset
 // them after
-[] spawn
-{
+[] spawn {
  while { true } do
  {
 	inGameUISetEventHandler ["Action", "_this call CLIENT_ActionMenuActionHandler"];

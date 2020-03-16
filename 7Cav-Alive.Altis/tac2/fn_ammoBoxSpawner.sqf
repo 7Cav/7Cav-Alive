@@ -18,7 +18,7 @@ _spawn_box = {
   _params params ["_class", "_marker"];
 
   // Spawn a box on the marker
-  _crate = _class createVehicle (getMarkerPos _marker);
+  private _crate = _class createVehicle (getMarkerPos _marker);
 
   // Empty the crate
   clearweaponcargoGlobal _crate;
@@ -46,13 +46,12 @@ _spawn_medical_box = {
   _crate addItemCargoGlobal ["ACE_morphine", 20]; 
   _crate addItemCargoGlobal ["ACE_EarPlugs", 5]; 
   _crate addItemCargoGlobal ["ACE_surgicalKit", 4]; 
-  _crate addItemCargoGlobal ["ACE_elasticBandage", 100];
-  _crate addItemCargoGlobal ["ACE_personalAidKit", 20]; 
-  _crate addItemCargoGlobal ["ACE_splint", 40];
-  _crate addItemCargoGlobal ["ACE_salineIV", 15]; 
-  _crate addItemCargoGlobal ["ACE_bloodIV", 15]; 
+  _crate addItemCargoGlobal ["ACE_elasticBandage", 200]; 
+  _crate addItemCargoGlobal ["ACE_personalAidKit", 8]; 
+  _crate addItemCargoGlobal ["ACE_splint", 30]; 
+  _crate addItemCargoGlobal ["ACE_salineIV", 60]; 
   _crate addItemCargoGlobal ["ACE_tourniquet", 30]; 
-  _crate addItemCargoGlobal ["ACE_packingBandage", 100];
+
 
   [[_crate]] call SERVER_CurateEditableObjects;
 };
@@ -90,17 +89,17 @@ _spawn_ammo_box = {
   _crate addItemCargoGlobal ["ACE_EarPlugs", 5];  
   _crate addItemCargoGlobal ["ACE_CableTie", 10];  
  
-  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 20]; 
-  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 20]; 
-  _crate addMagazineCargoGlobal ["rhs_200rnd_556x45_M_SAW", 9]; 
-  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m61_ap", 5]; 
-  _crate addMagazineCargoGlobal ["rhs_mag_m67", 10]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 10]; 
-  _crate addMagazineCargoGlobal ["SmokeShellRed", 5]; 
-  _crate addMagazineCargoGlobal ["SmokeShellBlue", 5]; 
-  _crate addMagazineCargoGlobal ["ACE_M84", 2]; 
-  _crate addMagazineCargoGlobal ["rhs_mag_M441_HE", 15]; 
-  _crate addMagazineCargoGlobal ["rhs_mag_m714_White", 5];
+  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 60]; 
+  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_MK318_PMAG", 60]; 
+  _crate addMagazineCargoGlobal ["rhs_200rnd_556x45_mixed_soft_pouch_coyote", 20]; 
+  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 20]; 
+  _crate addMagazineCargoGlobal ["rhs_mag_m67", 20]; 
+  _crate addMagazineCargoGlobal ["SmokeShell", 20; 
+  _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
+  _crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
+  _crate addMagazineCargoGlobal ["rhs_mag_M441_HE", 20]; 
+  _crate addMagazineCargoGlobal ["rhs_mag_m714_White", 10];
+  _crate addMagazineCargoGlobal ["rhs_mag_m713_Red", 10];
   
   [[_crate]] call SERVER_CurateEditableObjects;
 };
@@ -133,10 +132,6 @@ _spawn_night_box = {
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Red", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_White", 10]; 
   _crate addMagazineCargoGlobal ["ACE_HandFlare_Yellow", 10]; 
-  _crate addMagazineCargoGlobal ["SmokeShellBlue", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellPurple", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
 
   [[_crate]] call SERVER_CurateEditableObjects;
 };
