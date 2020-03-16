@@ -4,7 +4,9 @@ This pull request will:
 
 This pull request resloves the following issues:
 Fixes #
+
 i.e.
+
 Fixes #1
 
 Notes:
