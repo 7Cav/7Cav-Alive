@@ -9,11 +9,6 @@ if (is3DEN) exitWith {};
     ["postInit Initializing."] call FUNC(logInfo);
 #endif
 
-// Add diary records on mission start
-if (EGVAR(Settings,showDiaryRecords)) then {
-    call FUNC(initDocuments);
-};
-
 if (EGVAR(Settings,allowCustomInit)) then {
     // Change inventory content of supply crates on mission start.
     if (EGVAR(Settings,useCustomVehicleSettings)) then {

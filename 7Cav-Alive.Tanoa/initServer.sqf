@@ -10,8 +10,8 @@ missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionE
 RHS_ENGINE_STARTUP_OFF = 1;
 
 // Increase ACE max carry and drag weights
-ACE_maxWeightCarry = 900;
-ACE_maxWeightDrag = 20000;
+ACE_maxWeightCarry = 9000;
+ACE_maxWeightDrag = 200000;
 
 // Make sure armed civilians won't attack NATO
 civilian setFriend [west, 1];
@@ -51,6 +51,8 @@ setDate _date;
 [] execVM "cScripts\CavFnc\functions\init\fn_initFortify.sqf";
 
 enableEnvironment [false, true];
+
+SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
 
 // BEGIN TASKS
 [ //TERMINAL 1 ( Term1 )
