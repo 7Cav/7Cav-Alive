@@ -24,6 +24,10 @@ independent setFriend [west, 0];
 //BUG: Fool BIS_fnc_drawMinefields into believing that it's already running.  This turns off the automatic display of minefields on the map.  The difficulty setting in the server configuration file doesn't seem to work.
 bis_fnc_drawMinefields_active = true;
 
+//Make the RHS M119 towable
+//Sweetwater
+SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
+
 // Start times selected randomly throughout the daylight hours between sunrise and one hour before sunset
 waitUntil { time > 0 }; // Allow time subsystem to initialize so that missionStart is correct
 private _date = missionStart select [0, 5];
@@ -51,8 +55,6 @@ setDate _date;
 [] execVM "cScripts\CavFnc\functions\init\fn_initFortify.sqf";
 
 enableEnvironment [false, true];
-
-SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
 
 // BEGIN TASKS
 [ //TERMINAL 1 ( Term1 )
