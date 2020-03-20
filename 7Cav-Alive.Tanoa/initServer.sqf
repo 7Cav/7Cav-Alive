@@ -10,8 +10,8 @@ missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionE
 RHS_ENGINE_STARTUP_OFF = 1;
 
 // Increase ACE max carry and drag weights
-ACE_maxWeightCarry = 900;
-ACE_maxWeightDrag = 20000;
+ACE_maxWeightCarry = 9000;
+ACE_maxWeightDrag = 200000;
 
 // Make sure armed civilians won't attack NATO
 civilian setFriend [west, 1];
@@ -23,6 +23,10 @@ independent setFriend [west, 0];
 
 //BUG: Fool BIS_fnc_drawMinefields into believing that it's already running.  This turns off the automatic display of minefields on the map.  The difficulty setting in the server configuration file doesn't seem to work.
 bis_fnc_drawMinefields_active = true;
+
+//Make the RHS M119 towable
+//Sweetwater
+SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
 
 // Start times selected randomly throughout the daylight hours between sunrise and one hour before sunset
 waitUntil { time > 0 }; // Allow time subsystem to initialize so that missionStart is correct

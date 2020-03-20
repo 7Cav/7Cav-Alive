@@ -85,13 +85,13 @@ _spawn_ammo_box = {
   clearitemcargoGlobal _crate; 
   clearbackpackcargoGlobal _crate; 
  
-  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 60]; 
-  _crate addMagazineCargoGlobal ["rhs_200rnd_556x45_mixed_soft_pouch_coyote", 20]; 
-  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 20]; 
-  _crate addMagazineCargoGlobal ["rhs_mag_m67", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShell", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellRed", 20]; 
-  _crate addMagazineCargoGlobal ["SmokeShellBlue", 20];
+  _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 24]; 
+  _crate addMagazineCargoGlobal ["rhsusf_200rnd_556x45_mixed_soft_pouch_coyote", 10]; 
+  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 10]; 
+  _crate addMagazineCargoGlobal ["rhs_mag_m67", 10]; 
+  _crate addMagazineCargoGlobal ["SmokeShell", 10]; 
+  _crate addMagazineCargoGlobal ["SmokeShellRed", 10]; 
+  _crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
   _crate addMagazineCargoGlobal ["rhs_mag_M441_HE", 20]; 
   _crate addMagazineCargoGlobal ["rhs_mag_m714_White", 10];
   _crate addMagazineCargoGlobal ["rhs_mag_m713_Red", 10];

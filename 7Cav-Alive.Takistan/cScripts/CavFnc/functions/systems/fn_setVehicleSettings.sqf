@@ -69,23 +69,25 @@ private _fixedWingTransport = [
     "USAF_C130J"
 ];
 
-private _logisticalVehicles = [
-    "B_Truck_01_Repair_F",
-    "B_T_Truck_01_Repair_F",
-    "rhsusf_M977A4_REPAIR_usarmy_d",
-    "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
-    "rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
-    "rhsusf_M977A4_REPAIR_usarmy_wd",
-    "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
-    "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
-    "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy",
-    "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy",
-    "rhsusf_M1239_socom_d",
-    "rhsusf_M1239_M2_socom_d",
-    "rhsusf_M1239_MK19_socom_d",
-    "rhsusf_M1239_M2_Deploy_socom_d",
-    "rhsusf_M1239_MK19_Deploy_socom_d"
-];
+/*
+ *private _logisticalVehicles = [
+ *   "B_Truck_01_Repair_F",
+ *   "B_T_Truck_01_Repair_F",
+ *   "rhsusf_M977A4_REPAIR_usarmy_d",
+ *   "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
+ *   "rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
+ *   "rhsusf_M977A4_REPAIR_usarmy_wd",
+ *   "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
+ *   "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
+ *   "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy",
+ *   "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy",
+ *   "rhsusf_M1239_socom_d",
+ *   "rhsusf_M1239_M2_socom_d",
+ *   "rhsusf_M1239_MK19_socom_d",
+ *   "rhsusf_M1239_M2_Deploy_socom_d",
+ *    "rhsusf_M1239_MK19_Deploy_socom_d"
+ *];
+ */
 
 switch (true) do {
     case (typeOf _vehicle in _transportRotary): {
@@ -97,9 +99,9 @@ switch (true) do {
     case (typeOf _vehicle in _fixedWingTransport): {
         [_vehicle] call FUNC(addJump);
     };
-    case (typeOf _vehicle in _logisticalVehicles): {
-        [_vehicle] call FUNC(addFortifyArea);
-    };
+//    case (typeOf _vehicle in _logisticalVehicles): {
+//      [_vehicle] call FUNC(addFortifyArea);
+//    };
 };
 
 _vehicle setVariable [QEGVAR(Vehicle,Settings), true];
