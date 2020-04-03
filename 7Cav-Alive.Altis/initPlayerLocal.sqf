@@ -46,5 +46,14 @@ player addEventHandler ["HandleRating", { 0 }];
 // };
 // [CLIENT_CommandChatHandler] call JB_fnc_chatAddEventHandler;
 
+// Load no fire on base script
+player addEventHandler ["Fired", {
+	if ((getPos (_this select 0)) inArea headquarters)  then	
+	{
+		deleteVehicle (_this select 6);
+		titleText ["Firing weapons and placing / throwing explosives at base is STRICTLY PROHIBITED!", "PLAIN", 3];
+	};
+}]; 
+
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";
