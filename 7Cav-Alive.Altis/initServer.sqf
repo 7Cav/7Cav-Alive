@@ -13,13 +13,17 @@ RHS_ENGINE_STARTUP_OFF = 1;
 ACE_maxWeightCarry = 9000;
 ACE_maxWeightDrag = 200000;
 
-// Make sure armed civilians won't attack NATO
+// Side Relations
 civilian setFriend [west, 1];
-// Make sure AAF won't attack CSAT
-independent setFriend [east, 1];
-east setFriend [independent, 1];
-// Make sure AAF will attack NATO
+//
+independent setFriend [east, 0];
 independent setFriend [west, 0];
+//
+east setFriend [independent, 0];
+east setFriend [west, 0];
+//
+west setFriend [independent, 0];
+west setFriend [east, 0];
 
 //BUG: Fool BIS_fnc_drawMinefields into believing that it's already running.  This turns off the automatic display of minefields on the map.  The difficulty setting in the server configuration file doesn't seem to work.
 bis_fnc_drawMinefields_active = true;
@@ -45,13 +49,10 @@ setDate _date;
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
 [] execVM "alive\Tasks.sqf";
-
 ["Initialize"] call BIS_fnc_dynamicGroups;
-
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
-
 [] execVM "cScripts\CavFnc\functions\init\fn_initFortify.sqf";
 
 enableEnvironment [false, true];
