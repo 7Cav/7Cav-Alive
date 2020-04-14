@@ -125,5 +125,18 @@ sleep 5;
 	"ALiVE_Handgrenade_can",
 	"ALiVE_Handgrenade_bottle",
 	"ACE_CTS9",
+	"launch_MRAWS_sand_F",
+	"launch_MRAWS_olive_F",
+	"launch_MRAWS_green_F",
+	"launch_MRAWS_green_rail_F",
+	"launch_MRAWS_sand_rail_F",
+	"launch_MRAWS_olve_rail_F",
+	"launch_O_Vorona_brown_F",
+	"launch_O_Vorona_green_F",
+	"rhs_weap_panzerfaust60",
+	"launch_NLAW_F",
+	"launch_RPG32_F",
+	"launch_RPG32_green_F",
+	"launch_RPG32_ghex_F",
 	"ALIVE_Tablet"
 ]] call ace_arsenal_fnc_removeVirtualItems;

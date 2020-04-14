@@ -2,7 +2,7 @@
 (_this select 0) setVariable ["AT_DONOTTOW", true, true];
 (_this select 0) setVariable ["ASL_DONOTSLING", true, true];
 (_this select 0) addEventHandler ["Fired", { (_this select 0) setVehicleAmmo 1 }];
-
+/*
 // Only shoot at armed aircraft
 _this spawn
 {
@@ -22,3 +22,4 @@ _this spawn
 		sleep 0.5;
 	};
 };
+*/
