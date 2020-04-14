@@ -3,10 +3,13 @@ diag_log "onPlayerRespawn start";
 waitUntil { not isNull player };
 waitUntil { not isNil "CLIENT_InitPlayerLocalComplete" };
 
-// Set position and direction
-private _respawn = player getVariable ["CLIENT_PlayerPosition", []];
-player setPosASL (_respawn select 0);
-player setDir (_respawn select 1);
+/*
+ * Set position and direction
+ * private _respawn = player getVariable ["CLIENT_PlayerPosition", []];
+ * player setPosASL (_respawn select 0);
+ * player setDir (_respawn select 1);
+ *
+ */
 
 // Initialize Zeus for player
 [player] remoteExec ["SERVER_CuratePlayer", 2];
