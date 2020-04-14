@@ -50,7 +50,6 @@ _spawn_medical_box = {
   _crate addItemCargoGlobal ["ACE_personalAidKit", 8]; 
   _crate addItemCargoGlobal ["ACE_splint", 30]; 
   _crate addItemCargoGlobal ["ACE_salineIV", 20]; 
-  _crate addItemCargoGlobal ["ACE_tourniquet", 30]; 
 
 // [[_crate]] call SERVER_CurateEditableObjects;
 };

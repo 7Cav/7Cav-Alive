@@ -18,7 +18,7 @@ _spawn_box = {
   _params params ["_class", "_marker"];
 
   // Spawn a box on the marker
-  _crate = _class createVehicle (getMarkerPos _marker);
+  private _crate = _class createVehicle (getMarkerPos _marker);
 
   // Empty the crate
   clearweaponcargoGlobal _crate;
