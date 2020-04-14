@@ -14,7 +14,7 @@ disabledAI = true;
 disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
 forceRotorLibSimulation = 0;
 allowFunctionsLog = 0;
-respawnOnStart = -1;
+respawnOnStart = 0;
 Respawn = 3;
 RespawnDelay = 5;
 RespawnDialog = 1;
@@ -74,7 +74,6 @@ class CfgFunctions {
 };
 
 #include "cScripts\Loadouts\script\CfgPoppy.hpp"
-#include "cScripts\CfgUnitInsignia.hpp"
 #include "cScripts\CfgLoadouts.hpp"
 
 //Orbat Groups

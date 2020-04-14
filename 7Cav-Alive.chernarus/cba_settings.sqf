@@ -67,7 +67,7 @@ force ace_cookoff_probabilityCoef = 1;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
-force force ace_csw_defaultAssemblyMode = true;
+force force ace_csw_defaultAssemblyMode = false;
 ace_csw_dragAfterDeploy = false;
 force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
@@ -160,7 +160,7 @@ force force ace_map_DefaultChannel = -1;
 force force ace_map_mapGlow = true;
 force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
-force force ace_map_mapShake = false;
+force force ace_map_mapShake = true;
 force force ace_map_mapShowCursorCoordinates = false;
 ace_markers_moveRestriction = 0;
 
@@ -713,7 +713,7 @@ force force cScripts_Settings_jumpSimulationNVG = true;
 force force cScripts_Settings_setAiSystemDifficulty = 1;
 force force cScripts_Settings_setCustomHintText = "";
 force force cScripts_Settings_setCustomHintTopic = "";
-force force cScripts_Settings_setFortifyBudget = 800;
+force force cScripts_Settings_setFortifyBudget = 950;
 force force cScripts_Settings_setFortifyRestriction = 1;
 force force cScripts_Settings_setMissionType = 4;
 force force cScripts_Settings_setPlayerRank = true;
@@ -737,7 +737,7 @@ STHud_Settings_TextShadow = 1;
 STHud_Settings_UnconsciousFadeEnabled = true;
 
 // USAF
-force USAF_allowNuke = true;
+force USAF_allowNuke = false;
 force force usaf_serviceMenu_setting_allowHangarRearm = true;
 force force usaf_serviceMenu_setting_allowHangarRefuel = true;
 force force usaf_serviceMenu_setting_allowHangarRepair = true;

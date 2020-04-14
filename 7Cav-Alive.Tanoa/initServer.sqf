@@ -2,7 +2,7 @@ diag_log "initServer start";
 
 #include "\serverscripts\zeusserverscripts\secretKey.sqf"
 missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
-missionNamespace setVariable["endMissionNumber",0]; //Variable init for missionEnd scripts located in scripts/missionEnd
+missionNamespace setVariable["endMissionNumber", 0, true]; //Variable init for missionEnd scripts located in scripts/missionEnd
 
 // _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
 
@@ -13,17 +13,13 @@ RHS_ENGINE_STARTUP_OFF = 1;
 ACE_maxWeightCarry = 9000;
 ACE_maxWeightDrag = 200000;
 
-// Side Relations
+// Make sure armed civilians won't attack NATO
 civilian setFriend [west, 1];
-//
-independent setFriend [east, 0];
+// Make sure AAF won't attack CSAT
+independent setFriend [east, 1];
+east setFriend [independent, 1];
+// Make sure AAF will attack NATO
 independent setFriend [west, 0];
-//
-east setFriend [independent, 0];
-east setFriend [west, 0];
-//
-west setFriend [independent, 0];
-west setFriend [east, 0];
 
 //BUG: Fool BIS_fnc_drawMinefields into believing that it's already running.  This turns off the automatic display of minefields on the map.  The difficulty setting in the server configuration file doesn't seem to work.
 bis_fnc_drawMinefields_active = true;

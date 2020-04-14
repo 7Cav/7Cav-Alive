@@ -6,14 +6,33 @@ class cScripts {
         class initSupply {};
         class initVehicle {};
 
+        class initDocuments {};
+
         class initStartupHint {};
 
         class initModules {};
         class initTagging {};
 
         class initFortify {};
-
+        class initItemReplace {};
+        
         class initCuratorObjectPlaced {};
+    };
+    class documents {
+        file = "cScripts\cavFnc\functions\documents";
+        class Doc_Info {};
+        class Doc_MissionControl {};
+
+        class DocRadio_LACEACE {};
+        class DocRadio_MEDEVAC {};
+        class DocRadio_ROTARYPICKUP {};
+        class DocRadio_SPOTREP {};
+
+        class DocChklist_CFF {};
+        class DocChklist_JMTASKS {};
+        class DocChklist_LZSPECS {};
+        class DocChklist_LZINSERT {};
+        class DocChklist_LZEXTRACT {};
     };
     class logistics {
         file = "cScripts\cavFnc\functions\logistics";
@@ -22,14 +41,7 @@ class cScripts {
         class doFieldHospital {};
 
         class doSupplyCrate {};
-
-        class doAmmoCrate {};
-        class doExplosivesCrate {};
-        class doGrenadesCrate {};
-        class doLaunchersCrate {};
         class doMedicalCrate {};
-        class doSpecialWeaponsCrate {};
-        class doWeaponsCrate {};
 
         class doEmptyCrate {};
     };
@@ -54,7 +66,8 @@ class cScripts {
 
         class getRadioChannel {};
         class setRadioChannel {};
-
+        class setActiveRadio {};
+        
         class getCompanyVariable {};
         class hasCompanyVariable {};
         
@@ -128,7 +141,7 @@ class cScripts {
 
     class helpers {
         file = "cScripts\cavFnc\functions\helpers";
-        class exportBoxToArsenal {};
+        class exportContainerToArsenal {};
         class exportLoadoutsToArsenal {};
     };
 

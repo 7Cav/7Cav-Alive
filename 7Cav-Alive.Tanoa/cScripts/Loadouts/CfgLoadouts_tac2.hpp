@@ -1,7 +1,3 @@
-//Common Blufor
-class CommonBlufor {
-};
-
 /*-------------------BASE LOADOUTS-------------------*/
 class tac2_base : CommonBlufor {
     backpack[] = {"B_AssaultPack_mcamo"};
