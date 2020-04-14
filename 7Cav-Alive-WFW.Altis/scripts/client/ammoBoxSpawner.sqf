@@ -51,6 +51,7 @@ _spawn_medical_box = {
   _crate addItemCargoGlobal ["ACE_splint", 30]; 
   _crate addItemCargoGlobal ["ACE_salineIV", 20]; 
 
+
 // [[_crate]] call SERVER_CurateEditableObjects;
 };
 
