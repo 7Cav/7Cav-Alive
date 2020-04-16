@@ -69,7 +69,7 @@ force ace_cookoff_probabilityCoef = 1;
 force force ace_csw_ammoHandling = 2;
 force force ace_csw_defaultAssemblyMode = true;
 ace_csw_dragAfterDeploy = false;
-force force ace_csw_handleExtraMagazines = true;
+force force ace_csw_handleExtraMagazines = false;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
