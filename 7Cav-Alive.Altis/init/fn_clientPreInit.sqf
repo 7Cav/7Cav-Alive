@@ -29,3 +29,15 @@ if (isNumber (missionConfigFile >> "briefing") && { getNumber (missionConfigFile
 
 // Vehicle permissions framework
 #include "..\scripts\client\vehiclePermissions.sqf";
+
+// Logistics framework
+#include "..\scripts\client\logistics\ammoModule.sqf";
+#include "..\scripts\client\logistics\logisticsLoading.sqf";
+#include "..\scripts\client\logistics\logisticsModules.sqf";
+#include "..\scripts\client\logistics\personnelModule.sqf";
+#include "..\scripts\client\logistics\supplyModule.sqf";
+#include "..\scripts\client\logistics\vehicleModule.sqf";
+
+
+// Ammo box types
+#include "..\scripts\client\ammoBoxList.sqf";
