@@ -110,6 +110,36 @@ player createDiaryRecord ["diary", ["Rules of conduct",
 <br/>If you see a player in violation of any of the above, contact a moderator or administrator (TeamSpeak).  For more information on these rules, see the billboards at base.
 "
 ]];
+
+
+player createDiaryRecord ["diary", ["FOB Building",
+"
+<br/><font face='EtelkaMonospacePro' size='10'>Overview</font>
+<br/>Building a FOB involves several modules, which all work together to allow players to build complex and useful FOBs around the map.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Fortify Truck</font>
+<br/>The basic FOB tool is the Fortify Truck, which is an empty flatbed utility vehicle that permits players to place down fortifications using the fortify tool in a radius around it.
+In order to place down fortify objects, you must have a fortify tool (looks like a hammer) and be near the Fortify Truck. Proximity to this truck is required for other modules to be activated.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Ammo Module</font>
+<br/>The Ammo Module, a Huron Rearm Pod, allows Apollo to purchase ammunication crates, similar to the ammo crate spawner at base.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Vehicle Module</font>
+<br/>The Vehicle Module, a Huron Repair Pod, allows Apollo to purchase limited vehicles for players spawning at the FOB.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Personnel Module</font>
+<br/>The Personnel Module, a Huron Medical Pod, allows Apollo to enable a mobile spawn, provided enemies are not within 500m of the module. If enemies approach the module, it will disable
+and will require manual intervation to renable. Each teleport consumes points, and may be disabled by Apollo if they are low on supplies.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Supply Module and Points</font>
+<br/>The Supply Module, when activated, adds points to the supply budget. The supply budget is shared by all modules, as well as the fortify items.
+<br/><br/>
+<br/><font face='EtelkaMonospacePro' size='10'>Transporting Modules</font>
+<br/>Each crate module can be loaded onto flatbed vehicles, sling loaded by a helicopter, or loaded into certain transport fixed-wing aircraft. They cannot be loaded in the Blackfish.
+"
+]];
+
+
 //Add a new thing called How-To-ALiVE
 player createDiarySubject ["ALiVE","How-To-ALiVE"];
 

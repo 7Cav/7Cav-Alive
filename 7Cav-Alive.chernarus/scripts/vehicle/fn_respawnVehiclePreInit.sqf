@@ -83,6 +83,14 @@ JB_RV_HasRespawnParameters =
 };
 
 /*
+	Determain if the vehicle should be ignored by the system
+*/
+JB_RV_HasIgnoreParameters =
+{
+	not isNil { (_this select 0) getVariable "JB_RV_Ignore" }
+};
+
+/*
 	Mark the vehicle such that it is no longer tracked by this system.
 */
 JB_RV_RemoveRespawnParameters =

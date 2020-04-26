@@ -4,7 +4,7 @@ Author: Bojan
 Allows players to "cut down" nearby trees
 */
 
-#define CUTTING_TIME 10
+#define CUTTING_TIME 5
 
 private _cutDownTree = {
 	[
@@ -12,7 +12,7 @@ private _cutDownTree = {
 		[], 
 		{
 			// Action
-			private _nearestTree = (nearestTerrainObjects [player,["tree", "bush"],20] select 0);
+			private _nearestTree = (nearestTerrainObjects [player,["tree", "bush", "tree small"],20] select 0);
 			[_nearestTree, true] remoteExec ["hideObjectGlobal", 2];
 		}, 
 		{
