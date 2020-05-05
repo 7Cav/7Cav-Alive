@@ -25,7 +25,7 @@
 
   [_object] spawn {
     params ["_object"];
-    sleep 0.5;
+    sleep 1.5;
     _object animate ['panel_1_hide', 1];
     _object animate ['panel_2_hide', 1];
     _object animate ['panel_3_hide', 1];
