@@ -41,3 +41,6 @@ if (isNumber (missionConfigFile >> "briefing") && { getNumber (missionConfigFile
 
 // Ammo box types
 #include "..\scripts\client\ammoBoxList.sqf";
+
+// Commands
+#include "..\scripts\client\chatCommands.sqf";
