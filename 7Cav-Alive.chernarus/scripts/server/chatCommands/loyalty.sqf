@@ -25,13 +25,13 @@ SERVER_CMD_HandleCommandLoyaltyCooldown =
 {
 	params ["_arguments", "_caller"];
 	_arguments params ["_name", "_cooldown"];
-	if (count _arguments != 3) exitWith { ["Invalid format. Expected: #mc loyalty cooldown <name of player> <length in minutes>"] call SERVER_CMD_MessageCaller; };
+	if (count _arguments != 2) exitWith { ["Invalid format. Expected: #mc loyalty cooldown <name of player> <length in minutes>"] call SERVER_CMD_MessageCaller; };
 
 	private _subjectObject = [_name] call SERVER_CMD_GetPlayerByName;
 	if (isNull _subjectObject) exitWith {};
 
 	[[_cooldown], LOYALTY_fnc_setCooldownLocal] remoteExec ["call", _subjectObject];
-	[format ["%1 minutes of cooldown has been set for %2", name _subjectObject]] call SERVER_CMD_MessageCaller;
+	[format ["%1 minutes of cooldown has been set for %2", _cooldown, name _subjectObject]] call SERVER_CMD_MessageCaller;
 };
 
 SERVER_CMD_HandleCommandLoyaltyCavBucks =
@@ -54,7 +54,7 @@ SERVER_CMD_HandleCommandLoyaltyCavBucks =
 	} forEach _targets;
 
 
-	[format ["%1 loyalty points have been added", _amount]] call SERVER_CMD_MessageCaller;
+	[format ["%1 CavBucks(tm) have been added", _amount]] call SERVER_CMD_MessageCaller;
 };
 
 SERVER_CMD_HandleCommandLoyalty =
