@@ -6,5 +6,8 @@ if (not isServer && hasInterface) exitWith {};
 #include "..\scripts\client\logistics\logisticsModules.sqf";
 #include "..\scripts\server\logistics\personnelModule.sqf";
 
+// Chat commands
+#include "..\scripts\server\chatCommands.sqf";
+
 //Curator execution
 [] execVM "scripts\server\curator.sqf";

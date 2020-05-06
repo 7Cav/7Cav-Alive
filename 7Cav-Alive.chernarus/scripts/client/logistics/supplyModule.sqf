@@ -7,7 +7,7 @@ CLIENT_AddSupply =
 
 	_crate setPos [0, 0, 0];
 	_crate setDamage 1;
-	[west, 500, true] call acex_fortify_fnc_updateBudget;
+	[west, 750, true] call acex_fortify_fnc_updateBudget;
 };
 
 CLIENT_CanRedeemSupply = 
@@ -30,7 +30,7 @@ CLIENT_InitializeSupplyModule =
 	params ["_crate"];
 	if (isNull _crate) exitWith {};
 
-	[_crate, "Logistics Supply Crate (1000pts)"] call CLIENT_AddModuleTitleAction;
+	[_crate, "Logistics Supply Crate (750pts)"] call CLIENT_AddModuleTitleAction;
 
 	[_crate] call CLIENT_AddLoadCrateAction;
 	[_crate] call CLIENT_AddUnloadCrateAction;
