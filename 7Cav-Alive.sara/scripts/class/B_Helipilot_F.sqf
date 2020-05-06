@@ -23,5 +23,5 @@ if (_state == "init") then
 
 if (_state == "respawn") then
 {
-
+	player setvariable ["ACE_IsEngineer", 2];
 };
