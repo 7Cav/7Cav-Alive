@@ -110,11 +110,6 @@ SERVER_CuratorType =
 {
 	params ["_player"];
 
-	// Override variable to add arbitrary users
-	SuperUsers = [];
-	if ((getPlayerUID _player) in SuperUsers) exitWith { "MC" };
-
-	private _curatorType = "";
 	private _curatorTypeByID = "";
 	private _curatorTypeByRole = "";
 
@@ -123,12 +118,11 @@ SERVER_CuratorType =
 
 	_curatorTypeByRole = [roleDescription _player] call SERVER_CuratorTypeByRole;
 
-	if (_curatorTypeByID == "MC" && _curatorTypeByRole == "MC") exitWith { _curatorType = "MC" };
-	if (_curatorTypeByID in ["MC", "MP"] && _curatorTypeByRole in ["MC", "MP"]) exitWith { _curatorType = "MP" };
-	if (_curatorTypeByID in ["MC", "MP", "CO"] && _curatorTypeByRole in ["MC", "MP", "CO"]) exitWith { _curatorType = "CO" };
+	if (_curatorTypeByID == "MC" && _curatorTypeByRole == "MC") exitWith { "MC" };
+	if (_curatorTypeByID in ["MC", "MP"] && _curatorTypeByRole in ["MC", "MP"]) exitWith { "MP" };
+	if (_curatorTypeByID in ["MC", "MP", "CO"] && _curatorTypeByRole in ["MC", "MP", "CO"]) exitWith { "CO" };
 
-
-	_curatorType
+	""
 };
 
 // Get the curator type based on the players steam ID
@@ -136,34 +130,12 @@ SERVER_CuratorTypeBySteamID =
 {
 	params ["_uid"];
 
-	private _uids = call SERVER_ZeusGuids;
-
-	_uids params ["_uidDevelopers", "_uidMissionControllers", "_uidMilitaryPolice", "_uidCameraOperators"];
-
-	if (_uid in _uidDevelopers) exitWith { "DD" };
-	if (_uid in _uidMissionControllers) exitWith { "MC" };
-	if (_uid in _uidMilitaryPolice) exitWith { "MP" };
-	if (_uid in _uidCameraOperators) exitWith { "CO" };
-
-	""
-};
-
-// Helper function to fetch player GUIDs and their level of Zeus permission
-// To be refactored to use some sort of database in the future
-SERVER_ZeusGuids = 
-{
 	private _uidDevelopers = [];
-	private _uidMissionControllers = [];
-	private _uidMilitaryPolice = [];
-	private _uidCameraOperators = [];
-
-	#include "\serverscripts\zeusserverscripts\tac2_zeus_guids.sqf"
-
 	_uidDevelopers pushBackUnique "76561198048006094"; // Bojan
+	if (_uid in _uidDevelopers) exitWith { "DD" };
 
-	[_uidDevelopers, _uidMissionControllers, _uidMilitaryPolice, _uidCameraOperators]
+	(["players", _uid] call SERVER_DB_SelectFirst) select 4
 };
-
 
 // Get the curator type based on the players role (slot)
 SERVER_CuratorTypeByRole = 
