@@ -1,7 +1,7 @@
 SERVER_CMD_HandleCommandTeleport = 
 {
 	params ["_arguments", "_caller"];
-	if (count _arguments != 4) exitWith { ["Invalid format. Expected: #mp tp [player|vehicle] <name> [player] <name>"] call SERVER_CMD_MessageCaller; };
+	if (count _arguments != 4) exitWith { ["Invalid format. Expected: #mp teleport [player|vehicle] <name> [player] <name>"] call SERVER_CMD_MessageCaller; };
 	_arguments params ["_subjectType", "_subject", "_targetType", "_target"];
 
 	private _subjectObject = [_subject] call SERVER_CMD_GetPlayerByName;
