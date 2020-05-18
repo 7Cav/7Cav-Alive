@@ -17,7 +17,7 @@ jobs:
       id: get-files
       continue-on-error: true
       run: |
-        for d in *7Cav*/; do
+        for d in *7Cav-Alive.*/; do
           if [ -d "${D}"]; then
             if [ $d != "7Cav-Alive.Altis/" ]
               then
