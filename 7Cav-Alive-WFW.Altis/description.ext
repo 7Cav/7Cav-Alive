@@ -1,0 +1,48 @@
+onLoadName = "7Cav Full Spectrum v5.6";
+onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
+author = "7th Cavalry Regiment!";
+loadScreen = "media\images\MissionLogo.paa";
+overviewPicture = "";
+
+// Rules
+cba_settings_hasSettingsFile = 1;
+disabledAI = true;
+disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
+forceRotorLibSimulation = 0;
+allowFunctionsLog = 0;
+respawnOnStart = 0;
+Respawn = BASE;
+RespawnDelay = 5;
+RespawnDialog = 1;
+
+// Garbage collector
+corpseManagerMode = 3;
+corpseLimit = 20;
+wreckLimit = 10; 
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 7200;
+minPlayerDistance = 250;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 91;
+};
+
+// Debug Console
+enableTargetDebug = 1;
+enableDebugConsole[] = {
+    // Dev Team
+    "76561198025844585",    // MacMillian.M
+    "76561198064095277",    // Citarelli.D
+    "76561198114637526",    // JB
+    "76561198048006094",    // Bojan
+	"76561198043140265", 	// Centeno
+	"76561198073062030", 	// Ocean
+    // S6
+    "76561198168754324",    // Dakota.N
+    "76561198039932196",    // Jarvis.A
+    "76561198020735648",    // Ratcliff.M
+    "76561197963459537",    // Sweetwater.I
+	"76561198142446869"     // Dunn.W
+};

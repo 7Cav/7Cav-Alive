@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1183;
+		nextID=1234;
 	};
 	class Camera
 	{
-		pos[]={12428.636,26.67532,3498.5947};
-		dir[]={-0.91261786,-0.34862113,-0.21407656};
-		up[]={-0.33944154,0.93724817,-0.079624042};
-		aside[]={-0.22840677,-6.9651287e-007,0.97370118};
+		pos[]={10240.241,16.547562,1549.6565};
+		dir[]={-0.71214724,-0.016649455,-0.70200837};
+		up[]={-0.011917345,0.99985194,-0.011746557};
+		aside[]={-0.7021153,1.5448022e-006,0.71224982};
 	};
 };
 binarizationWanted=0;
@@ -13087,6 +13087,7 @@ class Mission
 							name="grenfor_comm_civ";
 							id=1828;
 							type="ALiVE_civ_placement";
+							atlOffset=-7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -83538,7 +83539,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10132.009,8.4134989,1612.6617};
-				angles[]={-0,0.20975938,0};
+				angles[]={0,0.20975938,0};
 			};
 			side="Empty";
 			flags=4;
@@ -83557,7 +83558,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10136.83,8.4134989,1611.4843};
-				angles[]={-0,0.19491139,0};
+				angles[]={0,0.19491139,0};
 			};
 			side="Empty";
 			flags=4;
@@ -83576,7 +83577,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10142.11,8.0852861,1610.679};
-				angles[]={-0,0.16210242,0};
+				angles[]={0,0.16210242,0};
 			};
 			side="Empty";
 			flags=4;
@@ -83595,7 +83596,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10147.252,8.0852861,1610.0458};
-				angles[]={-0,0.13535754,0};
+				angles[]={0,0.13535754,0};
 			};
 			side="Empty";
 			flags=4;
