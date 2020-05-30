@@ -61,3 +61,9 @@ SERVER_DB_Update =
 	if (_callback isEqualTo {}) exitWith { _response };
 	[[_response], _callBack] remoteExec ["call", remoteExecutedOwner];
 };
+
+SERVER_DB_Exec =
+{
+	params ["_query", "_callBack"];
+	[[["executeQuery", _query] call EXTDB3], _callBack] remoteExec ["call", remoteExecutedOwner];
+};
