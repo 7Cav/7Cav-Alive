@@ -1,6 +1,6 @@
 SERVER_DB_OnPlayerLogin = 
 {
-	params ["_player"];
+	params ["_player", "_callBack"];
 	private _playerObj = ["players", getPlayerUID _player] call SERVER_DB_SelectFirst;
 	if (_playerObj isEqualTo []) then {
 
@@ -8,7 +8,7 @@ SERVER_DB_OnPlayerLogin =
 			["id", getPlayerUID _player], 
 			["name", name _player]
 		]] call CBA_fnc_hashCreate;
-		["players", _newPlayerParams] call SERVER_DB_Insert;
+		["players", _newPlayerParams, _callBack] call SERVER_DB_Insert;
 
 	} else {
 
@@ -16,6 +16,6 @@ SERVER_DB_OnPlayerLogin =
 			["name", name _player],
 			["last_login", "#>now()"]
 		]] call CBA_fnc_hashCreate;
-		["players",  getPlayerUID _player, _updatePlayerParams] call SERVER_DB_Update;
+		["players",  getPlayerUID _player, _updatePlayerParams, _callBack] call SERVER_DB_Update;
 	};
 };
