@@ -10,31 +10,39 @@
  */
 diag_log "Strongpoint Start.";
 
-//Addaction return values for the boxes, so we can get the global variable
+// Addaction return values for the boxes, so we can get the global variable
 params ["_target", "_caller", "_actionId", "_arguments"];
 
-//Set the local variable equal to the global variable
+// Set the local variable equal to the global variable
 private _boxNumber = missionNameSpace getVariable "endMissionNumber";
 private _term = vehicleVarName _target;
 _term = toLower(_term);
 
-//Increase the local variable by 1
+// Increase the local variable by 1
 _boxNumber = _boxNumber + 1;
- 
-//Remove all the actions on the box
+//Set the local variable equal to the global variable
+private _boxNumber = missionNameSpace getVariable "endMissionNumber";
+
+// The Patton Stopper v1.0
+private _enemies = ((getPos _target) nearEntities ["Man", 250]) select { side _x == east || side _x == independent };
+if (count _enemies > 0) exitWith { 
+      hint parseText "<t color='#FF0000' font='PuristaBold' size=1><img size='5' image='cScripts\Data\Images\7CAV_LOGO_01.paa' align='center'/><br/><br/>There are still<br/>hostiles in the area!</t>";
+};
+
+// Remove all the actions on the box
 [_target] remoteExec ["removeAllActions", 0]; 
 
-//Animate the box to keyframe 3
+// Animate the box to keyframe 3
 [_target,3] remoteExec ["BIS_fnc_DataTerminalAnimate", 0];
 
-//Terminal Diagnostic
+// Terminal Diagnostic
 if (_term == "") exitWith {diag_log "ERROR: Empty varname."};
 if (_term == "term1" ) then {diag_log "term1"};
 if (_term == "term2" ) then {diag_log "term2"};
 if (_term == "term3" ) then {diag_log "term3"};
 if (_term == "term4" ) then {diag_log "term4"};
 
-//Orbat : Switch statement for the different boxes
+// Orbat : Switch statement for the different boxes
 switch (_term) do {
   case "term1": {
         [missionConfigFile >> "CfgORBAT" >> "air" , "mil_destroy", [1,0.1,0.1,1], 1, 1, 0, "Killed", true] remoteExec ["BIS_fnc_ORBATAddGroupOverlay", 0];
@@ -66,8 +74,8 @@ switch (_term) do {
   };
 };
 
-//set the missionNameSpace variable endMissionNumber equal to boxNumber.
-missionNameSpace setVariable ["endMissionNumber", _boxNumber]; 
+// Set the missionNameSpace variable endMissionNumber equal to boxNumber.
+missionNameSpace setVariable ["endMissionNumber", _boxNumber];
 
 // End the mission if _boxNumber is greater than or equal to 3.
 if (_boxNumber >= 3) then {"EveryoneWon" remoteExec ["BIS_fnc_endMissionServer", 2]};
