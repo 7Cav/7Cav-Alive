@@ -134,7 +134,32 @@ SERVER_CuratorTypeBySteamID =
 	_uidDevelopers pushBackUnique "76561198048006094"; // Bojan
 	if (_uid in _uidDevelopers) exitWith { "DD" };
 
-	(["players", _uid] call SERVER_DB_SelectFirst) select 4
+	// To be re-enabled once S6 comes up with a way of handling this
+	// (["players", _uid] call SERVER_DB_SelectFirst) select 4
+
+	private _uids = call SERVER_ZeusGuids;
+
+	_uids params ["_uidDevelopers", "_uidMissionControllers", "_uidMilitaryPolice", "_uidCameraOperators"];
+
+	if (_uid in _uidDevelopers) exitWith { "DD" };
+	if (_uid in _uidMissionControllers) exitWith { "MC" };
+	if (_uid in _uidMilitaryPolice) exitWith { "MP" };
+	if (_uid in _uidCameraOperators) exitWith { "CO" };
+
+	""
+};
+
+// To be replaced by database
+SERVER_ZeusGuids = 
+{
+	private _uidDevelopers = [];
+	private _uidMissionControllers = [];
+	private _uidMilitaryPolice = [];
+	private _uidCameraOperators = [];
+
+	#include "\serverscripts\zeusserverscripts\tac2_zeus_guids.sqf"
+
+	[_uidDevelopers, _uidMissionControllers, _uidMilitaryPolice, _uidCameraOperators]
 };
 
 // Get the curator type based on the players role (slot)
