@@ -15,6 +15,7 @@ CLIENT_EnableMobileSpawn =
 	};
 
 	[_crate] remoteExec ["SERVER_InitPersonnelTrigger"];
+	[_crate] remoteExec ["SERVER_InitEnemyAttack"];
 };
 
 CLIENT_DisableMobileSpawn = 

@@ -278,13 +278,20 @@ LOYALTY_fnc_addPointsLocal =
 {
 	params ["_points", ["_reason", ""]];
 	_playerPoints = call LOYALTY_fnc_getPointsLocal;
-	["Tac2Loyalty_PlayerPoints", _playerPoints + _points] call SECURE_setProfileVariable;
+	Tac2Loyalty_cache_playerPoints = _playerPoints + _points;
+
+	private _updatePlayerParams = [[
+		["loyalty", Tac2Loyalty_cache_playerPoints]
+	]] call CBA_fnc_hashCreate;
+	["players",  getPlayerUID player, _updatePlayerParams] call CLIENT_DB_Update;
+
 	[format ['Awarded <t color="#14871c">+%1</t> loyalty points %2', _points, _reason]] call LOYALTY_fnc_showHUD;
 };
 
 LOYALTY_fnc_getPointsLocal =
 {
-	parseNumber (["Tac2Loyalty_PlayerPoints", "0"] call SECURE_getProfileVariable);
+	if (isNil 'Tac2Loyalty_cache_playerPoints') exitWith { 0 };
+	Tac2Loyalty_cache_playerPoints
 };
 
 LOYALTY_fnc_getCooldownLocal =
@@ -302,7 +309,13 @@ LOYALTY_fnc_addCavBucksLocal =
 {
 	params ["_cavBucks", ["_reason", ""]];
 	_playerCavBucks = call LOYALTY_fnc_getCavBucksLocal;
-	["Tac2Loyalty_PlayerCavBucks", _playerCavBucks + _cavBucks] call SECURE_setProfileVariable;
+	Tac2Loyalty_cache_cavBucks = _playerCavBucks + _cavBucks;
+
+	private _updatePlayerParams = [[
+		["cavbucks", Tac2Loyalty_cache_cavBucks]
+	]] call CBA_fnc_hashCreate;
+	["players",  getPlayerUID player, _updatePlayerParams] call CLIENT_DB_Update;
+
 	titleText [format ['Awarded +%1 CavBucks %2', _cavBucks, _reason], "plain"]; 
 };
 
@@ -310,10 +323,43 @@ LOYALTY_fnc_spendCavBucksLocal =
 {
 	params ["_cost"];
 	_playerCavBucks = call LOYALTY_fnc_getCavBucksLocal;
-	["Tac2Loyalty_PlayerCavBucks", _playerCavBucks - _cost] call SECURE_setProfileVariable;
+	Tac2Loyalty_cache_cavBucks = _playerCavBucks - _cost;
+
+	private _updatePlayerParams = [[
+		["cavbucks", Tac2Loyalty_cache_cavBucks]
+	]] call CBA_fnc_hashCreate;
+	["players",  getPlayerUID player, _updatePlayerParams] call CLIENT_DB_Update;
 };
 
 LOYALTY_fnc_getCavBucksLocal =
 {
+	if (isNil 'Tac2Loyalty_cache_cavBucks') exitWith { 0 };
+	Tac2Loyalty_cache_cavBucks
+};
+
+LOYALTY_fnc_oldGetPointsLocal =
+{
+	parseNumber (["Tac2Loyalty_PlayerPoints", "0"] call SECURE_getProfileVariable);
+};
+
+LOYALTY_fnc_oldGetCavBucksLocal =
+{
 	parseNumber (["Tac2Loyalty_PlayerCavBucks", "0"] call SECURE_getProfileVariable);
+};
+
+LOYALTY_InitDataStores =
+{
+	waitUntil { sleep 0.01; not isNil "CLIENT_InitPlayerLocalComplete" };
+
+	["players", getPlayerUID player, {
+		private _result = _this select 0;
+		_result params ["_id", "_name", "_loyalty", "_cavbucks"];
+
+		Tac2Loyalty_cache_playerPoints = _loyalty max (call LOYALTY_fnc_oldGetPointsLocal);
+		Tac2Loyalty_cache_cavBucks = _cavbucks max (call LOYALTY_fnc_oldGetCavBucksLocal);
+		["Tac2Loyalty_PlayerCavBucks", 0] call SECURE_setProfileVariable;
+
+		private _updateParams = [[["loyalty", Tac2Loyalty_cache_playerPoints], ["cavbucks", Tac2Loyalty_cache_cavBucks]]] call CBA_fnc_hashCreate;
+		["players", getPlayerUID player, _updateParams] call SERVER_DB_Update;
+	}] call CLIENT_DB_SelectFirst;
 };

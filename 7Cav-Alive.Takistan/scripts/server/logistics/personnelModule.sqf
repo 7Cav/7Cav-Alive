@@ -46,3 +46,60 @@ SERVER_DisableMobileSpawn =
 		'Mobile spawn disabled.' remoteExec ["hint"];
 	};
 };
+
+SERVER_FOB_POSITION = [0,0,0];
+
+SERVER_InitEnemyAttack =
+{
+	params ["_crate"];
+
+	if ( not call SERVER_FOBAttackEnabled ) exitWith {};
+
+	private _cratePosition = getPos _crate;
+	if ((_cratePosition distance2D SERVER_FOB_POSITION) < 500) exitWith {};
+
+	SERVER_FOB_POSITION = _cratePosition;
+
+	[_crate] spawn {
+		params ["_crate"];
+		sleep 120;
+
+		if (getPos _crate isEqualTo SERVER_FOB_POSITION && { not call SERVER_EnemyObjectiveInitialized }) then {
+			[SERVER_FOB_POSITION] call SERVER_CreateEnemyAttack;
+		} else {
+			call SERVER_DisableEnemyAttack;
+			[SERVER_FOB_POSITION] call SERVER_CreateEnemyAttack;
+		};
+	}
+};
+
+SERVER_FOBAttackEnabled =
+{
+	(['settings', str 'fob.enemy_attacks'] call SERVER_DB_SelectFirst) select 1;
+};
+
+SERVER_FOBAttackPriority =
+{
+	(['settings', str 'fob.enemy_attacks.priority'] call SERVER_DB_SelectFirst) select 1;
+};
+
+SERVER_FOBAttackSize =
+{
+	(['settings', str 'fob.enemy_attacks.size'] call SERVER_DB_SelectFirst) select 1;
+};
+
+SERVER_EnemyObjectiveInitialized = 
+{
+	count (([OPCOM_INSTANCES select 0,"objectives"] call ALiVE_fnc_HashGet) apply { [_x, 'objectiveID'] call ALiVE_fnc_HashGet } select { _x find "OPCOM_custom_FOB" >= 0 }) > 0
+};
+
+SERVER_CreateEnemyAttack = 
+{
+	params ["_pos"];
+	[OPCOM_INSTANCES select 0,"addObjective", ["OPCOM_custom_FOB", _pos, call SERVER_FOBAttackSize, "MIL", call SERVER_FOBAttackPriority]] call ALiVE_fnc_OPCOM;
+};
+
+SERVER_DisableEnemyAttack = 
+{
+	[OPCOM_INSTANCES select 0,"removeObjective", "OPCOM_custom_FOB" ] call ALiVE_fnc_OPCOM;
+};
