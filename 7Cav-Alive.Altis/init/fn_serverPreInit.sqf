@@ -9,5 +9,17 @@ if (not isServer && hasInterface) exitWith {};
 // Chat commands
 #include "..\scripts\server\chatCommands.sqf";
 
-//Curator execution
+// Curator execution
 [] execVM "scripts\server\curator.sqf";
+
+// Database connectors
+#include "..\scripts\server\database\database.sqf"
+#include "..\scripts\server\database\player.sqf"
+
+// Database drivers
+[] call compile preprocessFileLineNumbers "lib\extdb3\oo_extdb3.sqf";
+EXTDB3 = "new" call OO_EXTDB3;
+["setIniSectionDatabase", "Database"] call EXTDB3;
+["setDatabaseName", "arma"] call EXTDB3;
+["setQueryType", "SQL"] call EXTDB3;
+"connect" call EXTDB3;
