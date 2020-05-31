@@ -62,7 +62,7 @@ SERVER_InitEnemyAttack =
 
 	[_crate] spawn {
 		params ["_crate"];
-		sleep 120;
+		sleep 600;
 
 		if (getPos _crate isEqualTo SERVER_FOB_POSITION && { not call SERVER_EnemyObjectiveInitialized }) then {
 			[SERVER_FOB_POSITION] call SERVER_CreateEnemyAttack;
