@@ -360,6 +360,6 @@ LOYALTY_InitDataStores =
 		["Tac2Loyalty_PlayerCavBucks", 0] call SECURE_setProfileVariable;
 
 		private _updateParams = [[["loyalty", Tac2Loyalty_cache_playerPoints], ["cavbucks", Tac2Loyalty_cache_cavBucks]]] call CBA_fnc_hashCreate;
-		["players", getPlayerUID player, _updateParams] call SERVER_DB_Update;
+		["players", getPlayerUID player, _updateParams] call CLIENT_DB_Update;
 	}] call CLIENT_DB_SelectFirst;
 };
