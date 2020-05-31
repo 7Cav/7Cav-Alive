@@ -279,11 +279,11 @@ force force ace_pylons_searchDistance = 15;
 force force ace_pylons_timePerPylon = 5;
 
 // ACE Quick Mount
-force ace_quickmount_distance = 3;
-force ace_quickmount_enabled = true;
-ace_quickmount_enableMenu = 3;
+force ace_quickmount_distance = 0;
+force ace_quickmount_enabled = false;
+ace_quickmount_enableMenu = 0;
 ace_quickmount_priority = 0;
-force ace_quickmount_speed = 18;
+force ace_quickmount_speed = 0;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;

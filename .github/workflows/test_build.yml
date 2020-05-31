@@ -21,7 +21,7 @@ jobs:
     - name: Build PBOs
       id: build
       run: |
-        for d in *7Cav*/; do
+        for d in *7Cav-Alive.*/; do
           if [ -d "${D}"]; then
             echo "Copying files for $d"
             if [ $d != "7Cav-Alive.Altis/" ]; then

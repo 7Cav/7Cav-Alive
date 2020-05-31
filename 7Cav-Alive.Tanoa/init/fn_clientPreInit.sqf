@@ -38,9 +38,11 @@ if (isNumber (missionConfigFile >> "briefing") && { getNumber (missionConfigFile
 #include "..\scripts\client\logistics\supplyModule.sqf";
 #include "..\scripts\client\logistics\vehicleModule.sqf";
 
-
 // Ammo box types
 #include "..\scripts\client\ammoBoxList.sqf";
 
 // Commands
 #include "..\scripts\client\chatCommands.sqf";
+
+// Database connectors
+#include "..\scripts\client\database.sqf"

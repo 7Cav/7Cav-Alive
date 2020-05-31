@@ -67,9 +67,9 @@ force ace_cookoff_probabilityCoef = 1;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
-force force ace_csw_defaultAssemblyMode = true;
+force force ace_csw_defaultAssemblyMode = false;
 ace_csw_dragAfterDeploy = false;
-force force ace_csw_handleExtraMagazines = false;
+force force ace_csw_handleExtraMagazines = true;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Explosives
@@ -161,7 +161,7 @@ force force ace_map_mapGlow = true;
 force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
 force force ace_map_mapShake = true;
-force force ace_map_mapShowCursorCoordinates = false;
+force force ace_map_mapShowCursorCoordinates = true;
 ace_markers_moveRestriction = 0;
 
 // ACE Map Gestures
@@ -280,7 +280,7 @@ force force ace_pylons_timePerPylon = 5;
 
 // ACE Quick Mount
 force ace_quickmount_distance = 3;
-force ace_quickmount_enabled = true;
+force ace_quickmount_enabled = false;
 ace_quickmount_enableMenu = 3;
 ace_quickmount_priority = 0;
 force ace_quickmount_speed = 18;
@@ -387,17 +387,17 @@ ace_viewdistance_viewDistanceOnFoot = 0;
 ace_common_persistentLaserEnabled = false;
 force force ace_laserpointer_enabled = true;
 ace_reload_displayText = true;
-ace_reload_showCheckAmmoSelf = false;
+ace_reload_showCheckAmmoSelf = true;
 ace_weaponselect_displayText = true;
 
 // ACE Weather
-force force ace_weather_enabled = true;
-ace_weather_showCheckAirTemperature = true;
+force force ace_weather_enabled = false;
+ace_weather_showCheckAirTemperature = false;
 force ace_weather_updateInterval = 60;
 force force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
-force force ace_winddeflection_enabled = true;
+force force ace_winddeflection_enabled = false;
 force force ace_winddeflection_simulationInterval = 0.05;
 force force ace_winddeflection_vehicleEnabled = false;
 
@@ -411,7 +411,7 @@ force force ace_zeus_zeusAscension = false;
 force force ace_zeus_zeusBird = false;
 
 // ACEX Field Rations
-force force acex_field_rations_affectAdvancedFatigue = true;
+force force acex_field_rations_affectAdvancedFatigue = false;
 force force acex_field_rations_enabled = false;
 acex_field_rations_hudShowLevel = 0;
 acex_field_rations_hudTransparency = -1;
@@ -713,7 +713,7 @@ force force cScripts_Settings_jumpSimulationNVG = true;
 force force cScripts_Settings_setAiSystemDifficulty = 1;
 force force cScripts_Settings_setCustomHintText = "";
 force force cScripts_Settings_setCustomHintTopic = "";
-force force cScripts_Settings_setFortifyBudget = 950;
+force force cScripts_Settings_setFortifyBudget = 800;
 force force cScripts_Settings_setFortifyRestriction = 1;
 force force cScripts_Settings_setMissionType = 4;
 force force cScripts_Settings_setPlayerRank = true;
@@ -735,15 +735,3 @@ STHud_Settings_RemoveDeadViaProximity = true;
 STHud_Settings_SquadBar = false;
 STHud_Settings_TextShadow = 1;
 STHud_Settings_UnconsciousFadeEnabled = true;
-
-// USAF
-force USAF_allowNuke = false;
-force force usaf_serviceMenu_setting_allowHangarRearm = true;
-force force usaf_serviceMenu_setting_allowHangarRefuel = true;
-force force usaf_serviceMenu_setting_allowHangarRepair = true;
-force force usaf_serviceMenu_setting_allowLoadoutModification = true;
-force force usaf_serviceMenu_setting_enabled = true;
-force force usaf_serviceMenu_setting_refuelTime = "100";
-force force usaf_serviceMenu_setting_reloadTime = "2";
-force force usaf_serviceMenu_setting_repairTime = "100";
-force force usaf_serviceMenu_setting_replaceSources = false;

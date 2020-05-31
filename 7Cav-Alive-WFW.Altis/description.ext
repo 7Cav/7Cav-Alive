@@ -1,12 +1,8 @@
-onLoadName = "7Cav Full Spectrum v5.8";
-
+onLoadName = "7Cav Full Spectrum v5.6";
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
 loadScreen = "media\images\MissionLogo.paa";
 overviewPicture = "";
-
-briefing = 0;
-debriefing = 0;
 
 // Rules
 cba_settings_hasSettingsFile = 1;
@@ -15,7 +11,7 @@ disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
 forceRotorLibSimulation = 0;
 allowFunctionsLog = 0;
 respawnOnStart = 0;
-Respawn = 3;
+Respawn = BASE;
 RespawnDelay = 5;
 RespawnDialog = 1;
 
@@ -49,66 +45,4 @@ enableDebugConsole[] = {
     "76561198020735648",    // Ratcliff.M
     "76561197963459537",    // Sweetwater.I
 	"76561198142446869"     // Dunn.W
-};
-
-class Extended_PreInit_EventHandlers {
-	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
-	tac2_preInit = "call compile preprocessFileLineNumbers 'tac2\tac2_preInit.sqf'";
-};
-class Extended_PostInit_EventHandlers {
-	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
-	tac2_postInit = "call compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
-};
-// Common dialog classes
-#include "scripts\common.hpp"
-#include "tac2\loyalty\loyalty_gui.hpp"
-#include "tac2\loyalty\loyalty_hud.hpp"
-
-class CfgFunctions {
-	#include "cScripts\CavFnc\CfgFunctions.hpp"
-	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
-	#include "tac2\CfgFunctions.hpp"
-	#include "utils\CfgFunctions.hpp"
-	#include "scripts\vehicle\CfgFunctions.hpp"
-	#include "init\CfgFunctions.hpp"
-};
-
-#include "cScripts\Loadouts\script\CfgPoppy.hpp"
-#include "cScripts\CfgLoadouts.hpp"
-
-//Orbat Groups
-#include "orbat.hpp"
-
-class RscTitles {
-	#include "tac2\loyalty\loyalty_gui.hpp"
-	#include "tac2\loyalty\loyalty_hud.hpp"
-};
-
-class CfgDebriefing {  
-	class RestrictedRole {
-		title = "Restricted Mission Role";
-		subtitle = "";
-		description = "Certain game roles are reserved for members of 7th Cavalry.  Please return to the lobby and select a different role.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class PoliceEjection {
-		title = "Military Police Action";
-		subtitle = "";
-		description = "Your game session has been ended by a member of the military police.  Please abide by all server rules and heed the warnings that you are given about your conduct while playing on this server.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class BootAll {
-		title = "Military Police Action";
-		subtitle = "";
-		description = "All player sessions have been ended by a member of the military police.  This has been done in an effort to address a server issue.  You should be able to return to the game lobby and reconnect to the server.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0.0,0.3,0.6,1};
-	};
 };

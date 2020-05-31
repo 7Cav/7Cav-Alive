@@ -28,7 +28,7 @@ jobs:
         echo ::set-output name=VERSION::$VERSION
         echo ::set-output name=FILENAME::$FILENAME
         
-        for d in *7Cav*/; do
+        for d in *7Cav-Alive.*/; do
           if [ -d "${D}"]; then
             cd $d
               echo "Attempting build for $d"

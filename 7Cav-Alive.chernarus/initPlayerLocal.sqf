@@ -11,10 +11,6 @@ enableSaving [false, false];
 
 // Enable group selection ('U' group menu)
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
-/*
- * Initialize player spawn position
- * player setVariable ["CLIENT_PlayerPosition", [getPosASL player, getDir player]];
- */
  
 // [[code, whatever], [code, whatever], ...]
 CLIENT_PlayerDisconnectedHandlers = [];
@@ -36,17 +32,6 @@ player addEventHandler ["HandleRating", { 0 }];
 // Execute class-specific init
 ["init"] call compile preProcessFile format ["scripts\class\%1.sqf", typeOf player];
 
-// CLIENT_CommandChatHandler =
-// {
-// 	params ["_channel", "_text"];
-
-// 	if (_text find "gm " == 0 || _text find "mc " == 0 || _text find "mp " == 0) then
-// 	{
-// 		[_text] remoteExec ["SERVER_ExecuteCommand", 2];
-// 	};
-// };
-// [CLIENT_CommandChatHandler] call JB_fnc_chatAddEventHandler;
-
 // Load no fire on base script
 player addEventHandler ["Fired", {
 	if ((getPos (_this select 0)) inArea headquarters)  then	
@@ -55,6 +40,12 @@ player addEventHandler ["Fired", {
 		titleText ["Firing weapons and placing / throwing explosives at base is STRICTLY PROHIBITED!", "PLAIN", 3];
 	};
 }]; 
+
+
+[player, {
+	[] spawn { call LOYALTY_InitDataStores };
+}] remoteExec ['SERVER_DB_OnPlayerLogin', 2];
+
 
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";
