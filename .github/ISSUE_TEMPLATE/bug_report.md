@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+**Map & Version**
+I.e; Altis 5.6.0
+
 **Description:**
 A clear and concise description of what the bug is.
 
