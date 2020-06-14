@@ -20,6 +20,6 @@ if (not isServer && hasInterface) exitWith {};
 [] call compile preprocessFileLineNumbers "lib\extdb3\oo_extdb3.sqf";
 EXTDB3 = "new" call OO_EXTDB3;
 ["setIniSectionDatabase", "Database"] call EXTDB3;
-["setDatabaseName", "arma"] call EXTDB3;
+["setDatabaseName", "7cav_arma3_tact2"] call EXTDB3;
 ["setQueryType", "SQL"] call EXTDB3;
 "connect" call EXTDB3;
