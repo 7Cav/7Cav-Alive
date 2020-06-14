@@ -34,8 +34,12 @@ CLIENT_SpawnAtBox = {
 
   _crate = [_position, "Box_NATO_WpsLaunch_F"] call CLIENT_SpawnBox;
 
-  _crate addWeaponCargoGlobal ["launch_MRAWS_green_F", 3];  
-  _crate addMagazineCargoGlobal ["MRAWS_HEAT_F", 17];
+  _crate addWeaponCargoGlobal ["rhs_weap_maaws", 2];  
+  _crate addMagazineCargoGlobal ["rhs_mag_maaws_HEAT", 10];
+  _crate addMagazineCargoGlobal ["rhs_mag_maaws_HEDP", 5];
+  _crate addItemCargoGlobal ["rhs_optic_maaws", 2];
+  _crate addWeaponCargoGlobal ["rhs_weap_m72a7", 4];
+  _crate addWeaponCargoGlobal ["rhs_weap_M136_hedp", 2];
 };
 
 CLIENT_SpawnAmmoBox = {
@@ -83,4 +87,65 @@ CLIENT_SpawnJavelinBox = {
 
   _crate addWeaponCargoGlobal ["rhs_weap_fgm148", 1]; 
   _crate addMagazineCargoGlobal ["rhs_fgm148_magazine_AT", 5]; 
+};
+
+CLIENT_SpawnHMGBox = {
+  params ["_position"];
+
+  _crate = [_position, "Box_NATO_Equip_F"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["ace_csw_m3CarryTripodLow", 2]; 
+  _crate addWeaponCargoGlobal ["ace_csw_m3CarryTripod", 2];
+  _crate addWeaponCargoGlobal ["ace_compat_rhs_usf3_m2_carry", 2];
+  _crate addMagazineCargoGlobal ["ace_csw_100Rnd_127x99_mag_red", 20];
+};
+
+CLIENT_SpawnGMGBox = {
+  params ["_position"];
+
+  _crate = [_position, "Box_NATO_Equip_F"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["ace_csw_m3CarryTripodLow", 2]; 
+  _crate addWeaponCargoGlobal ["ace_compat_rhs_usf3_mk19_carry", 2];
+  _crate addMagazineCargoGlobal ["ace_compat_rhs_usf3_48Rnd_40mm_MK19_M430A1", 20];
+};
+
+CLIENT_SpawnTOWBox = {
+  params ["_position"];
+
+  _crate = [_position, "rhsusf_spec_weapons_crate"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["ace_csw_m220CarryTripod", 1]; 
+  _crate addWeaponCargoGlobal ["ace_compat_rhs_usf3_tow_carry", 1];
+  _crate addMagazineCargoGlobal ["ace_compat_rhs_usf3_mag_TOW2b", 6];
+  _crate addMagazineCargoGlobal ["ace_compat_rhs_usf3_mag_TOW2bb", 2];
+};
+
+CLIENT_SpawnAABox = {
+  params ["_position"];
+
+  _crate = [_position, "Box_EAF_WpsLaunch_F"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["rhs_weap_fim92", 1]; 
+  _crate addMagazineCargoGlobal ["rhs_fim92_mag", 6];
+};
+
+CLIENT_SpawnAABox = {
+  params ["_position"];
+
+  _crate = [_position, "rhsusf_weapon_crate"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["rhs_weap_M107", 1]; 
+  _crate addMagazineCargoGlobal ["rhsusf_mag_10Rnd_STD_50BMG_mk211", 5];
+  _crate addMagazineCargoGlobal ["rhsusf_mag_10Rnd_STD_50BMG_M33", 15];
+};
+
+CLIENT_SpawnAABox = {
+  params ["_position"];
+
+  _crate = [_position, "Box_NATO_Wps_F"] call CLIENT_SpawnBox;
+
+  _crate addWeaponCargoGlobal ["rhs_weap_m240G", 2]; 
+  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m80a1epr", 15];
+  _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m61_ap", 5];
 };
