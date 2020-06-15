@@ -28,8 +28,8 @@ params [
 
 private _newLocation = [_vehicle, _radius, _radius, 0, false];
 private _fortifyLocations = missionNamespace getVariable ["acex_fortify_locations", []];
-_fortifyLocations pushBack _newLocation;
-missionNamespace setVariable ["acex_fortify_locations", _fortifyLocations];
+_fortifyLocations pushBackUnique  _newLocation;
+missionNamespace setVariable ["acex_fortify_locations", _fortifyLocations, true];
 
 private _restriction = "";
 switch (EGVAR(Settings,setFortifyRestriction)) do {

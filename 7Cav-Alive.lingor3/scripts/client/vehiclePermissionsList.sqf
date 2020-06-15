@@ -103,7 +103,9 @@ TypeFilter_ArmoredVehicles =
 	["MBT_03_base_F", true], // Leopard 2
 	["MBT_01_base_F", true], // Most other western tanks (Abrams, Merkava)
 	["RHS_M2A3*", true], // Add Bradleys here too so Manual Drive works for all
-	["B_AFV_Wheeled_01_cannon_F", true], // Rookiat tank destoryer
+	["B_AFV_Wheeled_01*", true], // Rookiat tank destoryer
+	["B_APC_Wheeled_01*", true],
+	["rhsusf_stryker*", true],
 	["All", false]
 ];
 

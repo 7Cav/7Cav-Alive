@@ -32,11 +32,18 @@ _this params ["_object", "_marker", "_items"];
 } forEach _items;
 
 private _ammoboxTypes = [
-  [format ["<t color='#0000FF'>Spawn Medical Crate</t>"], CLIENT_SpawnMedicalBox],
-  [format ["<t color='#0000FF'>Spawn AT Crate</t>"], CLIENT_SpawnAtBox],
-  [format ["<t color='#0000FF'>Spawn Ammo Crate</t>"], CLIENT_SpawnAmmoBox],
-  [format ["<t color='#0000FF'>Spawn Javelin Crate</t>"], CLIENT_SpawnJavelinBox],
-  [format ["<t color='#0000FF'>Spawn Night Supply Crate</t>"], CLIENT_SpawnNightBox]
+  [format ["<t color='#25b34b'>Medical Crate</t>"], CLIENT_SpawnMedicalBox],
+  [format ["<t color='#ff0000'>Mixed AT Crate</t>"], CLIENT_SpawnAtBox],
+  [format ["<t color='#0000FF'>Ammo Crate</t>"], CLIENT_SpawnAmmoBox],
+  [format ["<t color='#ff0000'>Javelin Crate</t>"], CLIENT_SpawnJavelinBox],
+  [format ["<t color='#0000FF'>Night Supply Crate</t>"], CLIENT_SpawnNightBox],
+  [format ["<t color='#ff0000'>.50Cal HMG Crate</t>"], CLIENT_SpawnHMGBox],
+  [format ["<t color='#ff0000'>Mk.19 GMG Crate</t>"], CLIENT_SpawnGMGBox],
+  [format ["<t color='#ff0000'>TOW AT Crate</t>"], CLIENT_SpawnTOWBox],
+  [format ["<t color='#ff0000'>Stinger AA Crate</t>"], CLIENT_SpawnAABox],
+  [format ["<t color='#0000FF'>Barrett .50 Anti-Materiel Crate</t>"], CLIENT_SpawnAMBox],
+  [format ["<t color='#0000FF'>240G GPMG Crate</t>"], CLIENT_SpawnGPMGBox],
+
 ];
 
 
