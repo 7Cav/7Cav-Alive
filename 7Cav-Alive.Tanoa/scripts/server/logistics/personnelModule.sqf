@@ -1,4 +1,4 @@
-SERVER_LogisticMobileSpawnEnemyRadius = 500;
+SERVER_LogisticMobileSpawnEnemyRadius = 300;
 
 SERVER_InitPersonnelTrigger = 
 {

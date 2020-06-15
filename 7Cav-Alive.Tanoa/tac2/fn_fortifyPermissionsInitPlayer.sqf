@@ -21,6 +21,11 @@
 
 ['acex_fortify_objectPlaced', {
   params ["_unit", "_side", "_object"];
+
+  if (typeof _object == "MASH") then {
+    _object setVariable ["ace_medical_isMedicalFacility", true, true];
+  };
+
   if (typeof _object != "CargoPlaftorm_01_jungle_F") exitWith {true};
 
   [_object] spawn {

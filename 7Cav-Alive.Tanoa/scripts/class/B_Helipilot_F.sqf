@@ -7,6 +7,14 @@ if (_state == "init") then
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	
 	{
+		player setVariable [_x, [[TypeFilter_AttackRotory, [], {}]] + (player getVariable _x)];
+	} forEach ["VP_Pilot", "VP_Turret"];
+
+	{
+		player setVariable [_x, [[TypeFilter_BaseServiceVehicles, [], {}]] + (player getVariable _x)];
+	} forEach ["VP_Driver"];
+
+	{
 		player setVariable [_x, [[TypeFilter_TransportRotory, [], {}]] + (player getVariable _x)];
 	} forEach ["VP_Pilot"];
 	{

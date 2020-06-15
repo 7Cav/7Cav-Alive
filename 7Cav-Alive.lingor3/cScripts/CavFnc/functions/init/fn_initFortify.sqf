@@ -45,7 +45,7 @@ _fortificationStructures = [
     ["Land_ClutterCutter_medium_F", 1],
     ["CargoPlaftorm_01_jungle_F", 50],
     ["Land_fort_rampart_EP1",5],
-    ["Land_fort_artillery_nest_EP1",10],
+    ["MASH",150],
     ["Land_Razorwire_F",2],
     ["Land_CamoNetVar_NATO_EP1",5],
     ["CUP_A2_Road_Bridge_wood_25", 25],
