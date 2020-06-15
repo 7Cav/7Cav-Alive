@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2091;
+		nextID=2183;
 	};
 	class Camera
 	{
-		pos[]={2031.937,26.182796,9894.7695};
-		dir[]={0.30741936,-0.77372038,-0.55416006};
-		up[]={0.37535262,0.63345581,-0.67661119};
-		aside[]={-0.87455606,1.6219856e-006,-0.48515436};
+		pos[]={2028.5042,22.187773,9905.0332};
+		dir[]={0.42211553,-0.61851716,-0.66294205};
+		up[]={0.33225277,0.78567171,-0.52180332};
+		aside[]={-0.8436138,7.3757838e-007,-0.53714931};
 	};
 };
 binarizationWanted=0;
@@ -54800,8 +54800,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={2041.444,5.6046081,9871.1855};
-												angles[]={0,5.8690434,0};
+												position[]={2041.444,5.6044393,9871.1855};
+												angles[]={0,5.8690362,0};
 											};
 											side="West";
 											flags=6;
@@ -54810,7 +54810,7 @@ class Mission
 												rank="LIEUTENANT";
 												init="call{this setGroupid [""RAVEN-1""];" \n "player setUnitRank ""LIEUTENANT""}";
 												name="RVN_2";
-												description="Pilot (AH-6)@RAVEN";
+												description="Pilot (MH-6)@RAVEN";
 												isPlayable=1;
 												class Inventory
 												{
@@ -55008,7 +55008,7 @@ class Mission
 											};
 											id=6484;
 											type="B_T_Helipilot_F";
-											atlOffset=0.0014948845;
+											atlOffset=0.0013260841;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -55390,15 +55390,15 @@ class Mission
 									{
 									};
 									id=6483;
-									atlOffset=0.0014948845;
+									atlOffset=0.0013260841;
 								};
 							};
 							id=6482;
-							atlOffset=0.0014948845;
+							atlOffset=0.0013260841;
 						};
 					};
 					id=6457;
-					atlOffset=0.67972374;
+					atlOffset=0.67963934;
 				};
 				class Item5
 				{
@@ -55869,7 +55869,7 @@ class Mission
 				};
 			};
 			id=6361;
-			atlOffset=-0.016906261;
+			atlOffset=-0.016927242;
 		};
 		class Item4
 		{
@@ -63246,7 +63246,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={2034.5,5,9887.625};
-								angles[]={-0,3.8255544,0};
+								angles[]={0,3.8255544,0};
 							};
 							name="quad_respawn";
 							id=2879;
@@ -69785,29 +69785,29 @@ class Mission
 							dataType="Layer";
 							name="Lights";
 							id=7134;
-							atlOffset=168.61536;
+							atlOffset=17.280001;
 						};
 					};
 					id=7133;
-					atlOffset=168.61536;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="Buildings";
 					id=7136;
-					atlOffset=173.79016;
+					atlOffset=17.280001;
 				};
 				class Item2
 				{
 					dataType="Layer";
 					name="Spawn_1";
 					id=7138;
-					atlOffset=131.45912;
+					atlOffset=17.280001;
 				};
 			};
 			id=7132;
-			atlOffset=151.33093;
+			atlOffset=17.280001;
 		};
 		class Item112
 		{
@@ -69821,7 +69821,7 @@ class Mission
 					dataType="Layer";
 					name="Billboards";
 					id=7146;
-					atlOffset=0.14657593;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -69829,7 +69829,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2041.5,5,9876.5};
-						angles[]={-0,1.3439035,0};
+						angles[]={0,1.3439035,0};
 					};
 					id=7148;
 					type="ModuleRespawnPosition_F";
@@ -69935,7 +69935,7 @@ class Mission
 				};
 			};
 			id=7145;
-			atlOffset=0.10834885;
+			atlOffset=-22.17675;
 		};
 		class Item113
 		{
@@ -69956,21 +69956,22 @@ class Mission
 							dataType="Layer";
 							name="6 - Titan 1_1";
 							id=7151;
-							atlOffset=0.00048828125;
+							atlOffset=17.280001;
 						};
 						class Item1
 						{
 							dataType="Layer";
 							name="7 - Eagle 1_1";
 							id=7154;
+							atlOffset=17.280001;
 						};
 					};
 					id=7150;
-					atlOffset=0.00024366379;
+					atlOffset=17.280001;
 				};
 			};
 			id=7149;
-			atlOffset=0.00024366379;
+			atlOffset=17.280001;
 		};
 		class Item114
 		{
@@ -69984,25 +69985,25 @@ class Mission
 					dataType="Layer";
 					name="Walls_1";
 					id=7158;
-					atlOffset=164.04413;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="Spawn_2";
 					id=7161;
-					atlOffset=164.04417;
+					atlOffset=17.280001;
 				};
 			};
 			id=7157;
-			atlOffset=164.04416;
+			atlOffset=17.280001;
 		};
 		class Item115
 		{
 			dataType="Layer";
 			name="Terrain Modifiers_1";
 			id=7174;
-			atlOffset=164.04413;
+			atlOffset=17.280001;
 		};
 		class Item116
 		{
@@ -70016,7 +70017,7 @@ class Mission
 					dataType="Layer";
 					name="Billboards_1";
 					id=7177;
-					atlOffset=164.64337;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -70130,7 +70131,7 @@ class Mission
 				};
 			};
 			id=7176;
-			atlOffset=81.8899;
+			atlOffset=-24.154291;
 		};
 		class Item117
 		{
@@ -70151,39 +70152,39 @@ class Mission
 							dataType="Layer";
 							name="1 - Gun 6/5/7_1";
 							id=7183;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 						class Item1
 						{
 							dataType="Layer";
 							name="2 - Gun 1_1";
 							id=7187;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 						class Item2
 						{
 							dataType="Layer";
 							name="3 - Gun 2_1";
 							id=7198;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 						class Item3
 						{
 							dataType="Layer";
 							name="4 - Gun 3_1";
 							id=7209;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 						class Item4
 						{
 							dataType="Layer";
 							name="5 - Gun 4_1";
 							id=7220;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 					};
 					id=7182;
-					atlOffset=163.99802;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -70197,18 +70198,18 @@ class Mission
 							dataType="Layer";
 							name="4 - Havoc 1_1";
 							id=7232;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 					};
 					id=7231;
-					atlOffset=164.04413;
+					atlOffset=17.280001;
 				};
 				class Item2
 				{
 					dataType="Layer";
 					name="5 - Recon Elelments_1";
 					id=7239;
-					atlOffset=164.04413;
+					atlOffset=17.280001;
 				};
 				class Item3
 				{
@@ -70222,22 +70223,22 @@ class Mission
 							dataType="Layer";
 							name="1 - Zues_1";
 							id=7253;
-							atlOffset=164.04449;
+							atlOffset=17.280001;
 						};
 						class Item1
 						{
 							dataType="Layer";
 							name="2 - MP Department_1";
 							id=7258;
-							atlOffset=164.04413;
+							atlOffset=17.280001;
 						};
 					};
 					id=7252;
-					atlOffset=164.04431;
+					atlOffset=17.280001;
 				};
 			};
 			id=7181;
-			atlOffset=164.04422;
+			atlOffset=17.280001;
 		};
 		class Item118
 		{
@@ -70251,18 +70252,18 @@ class Mission
 					dataType="Layer";
 					name="Buildings_1";
 					id=7270;
-					atlOffset=176.28143;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="Spawn_3";
 					id=7272;
-					atlOffset=171.38348;
+					atlOffset=17.280001;
 				};
 			};
 			id=7269;
-			atlOffset=173.83336;
+			atlOffset=17.280001;
 		};
 		class Item119
 		{
@@ -70276,7 +70277,7 @@ class Mission
 					dataType="Layer";
 					name="Billboards_2";
 					id=7285;
-					atlOffset=176.27533;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -70390,7 +70391,7 @@ class Mission
 				};
 			};
 			id=7284;
-			atlOffset=87.63739;
+			atlOffset=-21.030497;
 		};
 		class Item120
 		{
@@ -70411,15 +70412,15 @@ class Mission
 							dataType="Layer";
 							name="1 - Mustang 1_1";
 							id=7290;
-							atlOffset=176.87827;
+							atlOffset=17.280001;
 						};
 					};
 					id=7289;
-					atlOffset=176.87827;
+					atlOffset=17.280001;
 				};
 			};
 			id=7288;
-			atlOffset=176.87827;
+			atlOffset=17.280001;
 		};
 		class Item121
 		{
@@ -70449,18 +70450,18 @@ class Mission
 					dataType="Layer";
 					name="Buildings_2";
 					id=7297;
-					atlOffset=157.71429;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="Spawn_5";
 					id=7299;
-					atlOffset=118.89309;
+					atlOffset=17.280001;
 				};
 			};
 			id=7296;
-			atlOffset=138.30368;
+			atlOffset=17.280001;
 		};
 		class Item123
 		{
@@ -70474,7 +70475,7 @@ class Mission
 					dataType="Layer";
 					name="Billboards_3";
 					id=7310;
-					atlOffset=157.71431;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -70482,7 +70483,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1969.875,6.2200947,9991.375};
-						angles[]={-0,1.3439035,0};
+						angles[]={0,1.3439035,0};
 					};
 					id=7313;
 					type="ModuleRespawnPosition_F";
@@ -70588,7 +70589,7 @@ class Mission
 				};
 			};
 			id=7309;
-			atlOffset=79.472748;
+			atlOffset=-19.836578;
 		};
 		class Item124
 		{
@@ -70609,16 +70610,18 @@ class Mission
 							dataType="Layer";
 							name="1 - Saber 1_1";
 							id=7316;
+							atlOffset=17.280001;
 						};
 						class Item1
 						{
 							dataType="Layer";
 							name="2 - Saber 2_1";
 							id=7322;
+							atlOffset=17.280001;
 						};
 					};
 					id=7315;
-					atlOffset=-0.00044345856;
+					atlOffset=17.280001;
 				};
 				class Item1
 				{
@@ -70632,13 +70635,15 @@ class Mission
 							dataType="Layer";
 							name="3 - Apollo 1_1";
 							id=7329;
+							atlOffset=17.280001;
 						};
 					};
 					id=7328;
+					atlOffset=17.280001;
 				};
 			};
 			id=7314;
-			atlOffset=-0.0004234314;
+			atlOffset=17.280001;
 		};
 	};
 	class Connections
