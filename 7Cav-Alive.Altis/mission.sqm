@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14354.305,58.083733,16293.655};
-		dir[]={0.68699366,-0.43412861,0.58290219};
-		up[]={0.33110559,0.90079045,0.28093657};
-		aside[]={0.64703166,-7.4505806e-009,-0.76258081};
+		pos[]={13009.299,96.25135,15441.874};
+		dir[]={-0.80975693,-0.56339544,-0.16455935};
+		up[]={-0.55214554,0.82615966,-0.11220872};
+		aside[]={-0.19916886,4.0914529e-007,0.98007029};
 	};
 };
 binarizationWanted=0;
@@ -1033,7 +1033,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=63;
+		items=62;
 		class Item0
 		{
 			dataType="Layer";
@@ -86907,36 +86907,6 @@ class Mission
 		};
 		class Item60
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12948.617,21.806122,15351.025};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=16527;
-					type="B_soldier_AAT_F";
-					atlOffset=3.4332275e-005;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=16526;
-			atlOffset=3.4332275e-005;
-		};
-		class Item61
-		{
 			dataType="Marker";
 			position[]={14601.875,17.801664,16903.75};
 			name="marker_87";
@@ -86945,7 +86915,7 @@ class Mission
 			angle=0.99999398;
 			id=16696;
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Marker";
 			position[]={16300.625,0,14317.5};
