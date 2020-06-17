@@ -25,7 +25,7 @@
     if (typeof _object == "Land_PortableServer_01_olive_F") then {
     fobRadio = _object;
     publicVariable "fobRadio";
-    [_object, true, [0, 2, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable",1];
+    [_object, true, [0, 2, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable",2];
     fobRadio addAction ["Set Up FOB Radio", {
       [fobRadio] remoteExec ["acre_api_fnc_initVehicleRacks", 0];  
       [fobRadio, ["ACRE_VRC110", "FOB Radio", "ERadio", false, ["external"], [], "ACRE_PRC152", [], []],false, {true}] remoteExec ["acre_api_fnc_addRackToVehicle", 0];
