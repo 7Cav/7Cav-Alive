@@ -48,7 +48,7 @@ _fortificationStructures = [
     ["MASH",150],
     ["Land_Razorwire_F",2],
     ["Land_CamoNetVar_NATO_EP1",5],
-    ["rhs_pontoon_static", 25],
+    ["rhs_pontoon_static", 10],
     ["Land_Hlaska",30]
 ];
 
