@@ -42,7 +42,7 @@ private _ammoboxTypes = [
   [format ["<t color='#ff0000'>TOW AT Crate</t>"], CLIENT_SpawnTOWBox],
   [format ["<t color='#ff0000'>Stinger AA Crate</t>"], CLIENT_SpawnAABox],
   [format ["<t color='#0000FF'>Barrett .50 Anti-Materiel Crate</t>"], CLIENT_SpawnAMBox],
-  [format ["<t color='#0000FF'>240G GPMG Crate</t>"], CLIENT_SpawnGPMGBox],
+  [format ["<t color='#0000FF'>240G GPMG Crate</t>"], CLIENT_SpawnGPMGBox]
 
 ];
 

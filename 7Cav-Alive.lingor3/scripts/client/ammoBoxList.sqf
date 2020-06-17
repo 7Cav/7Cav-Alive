@@ -113,7 +113,7 @@ CLIENT_SpawnGMGBox = {
 CLIENT_SpawnTOWBox = {
   params ["_position"];
 
-  _crate = [_position, "rhsusf_spec_weapons_crate"] call CLIENT_SpawnBox;
+  _crate = [_position, "B_supplyCrate_F"] call CLIENT_SpawnBox;
 
   _crate addWeaponCargoGlobal ["ace_csw_m220CarryTripod", 1]; 
   _crate addWeaponCargoGlobal ["ace_compat_rhs_usf3_tow_carry", 1];
@@ -130,17 +130,17 @@ CLIENT_SpawnAABox = {
   _crate addMagazineCargoGlobal ["rhs_fim92_mag", 6];
 };
 
-CLIENT_SpawnAABox = {
+CLIENT_SpawnAMBox = {
   params ["_position"];
 
-  _crate = [_position, "rhsusf_weapon_crate"] call CLIENT_SpawnBox;
+  _crate = [_position, "Box_T_NATO_WpsSpecial_F"] call CLIENT_SpawnBox;
 
   _crate addWeaponCargoGlobal ["rhs_weap_M107", 1]; 
   _crate addMagazineCargoGlobal ["rhsusf_mag_10Rnd_STD_50BMG_mk211", 5];
   _crate addMagazineCargoGlobal ["rhsusf_mag_10Rnd_STD_50BMG_M33", 15];
 };
 
-CLIENT_SpawnAABox = {
+CLIENT_SpawnGPMGBox = {
   params ["_position"];
 
   _crate = [_position, "Box_NATO_Wps_F"] call CLIENT_SpawnBox;
