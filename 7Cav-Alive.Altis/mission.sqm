@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10212;
+		nextID=10256;
 	};
 	class Camera
 	{
@@ -52200,7 +52200,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="50";
+											value="25";
 										};
 									};
 								};
@@ -52219,7 +52219,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="25";
+											value="20";
 										};
 									};
 								};
@@ -84042,7 +84042,7 @@ class Mission
 					};
 					id=14351;
 					type="rhs_mags_crate";
-					atlOffset=0.083944321;
+					atlOffset=0.083930969;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -84124,7 +84124,7 @@ class Mission
 					};
 					id=14353;
 					type="rhs_mags_crate";
-					atlOffset=0.045995712;
+					atlOffset=0.04598999;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -84165,7 +84165,7 @@ class Mission
 					};
 					id=14354;
 					type="rhs_mags_crate";
-					atlOffset=0.024551392;
+					atlOffset=0.02454567;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -84206,7 +84206,7 @@ class Mission
 					};
 					id=14349;
 					type="rhs_launcher_crate";
-					atlOffset=0.042331696;
+					atlOffset=0.042293549;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -86107,7 +86107,7 @@ class Mission
 				};
 			};
 			id=15495;
-			atlOffset=0.22834396;
+			atlOffset=0.22880173;
 		};
 		class Item35
 		{
@@ -86130,7 +86130,7 @@ class Mission
 			};
 			id=15496;
 			type="B_SAM_System_01_F";
-			atlOffset=0.22834396;
+			atlOffset=0.22880173;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -86829,7 +86829,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="20";
+							value="10";
 						};
 					};
 				};
@@ -86886,7 +86886,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="50";
+							value="25";
 						};
 					};
 				};
