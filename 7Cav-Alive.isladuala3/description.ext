@@ -1,4 +1,4 @@
-onLoadName = "7Cav Full Spectrum v5.9";
+onLoadName = "7Cav Full Spectrum v5.9.2";
 
 onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
 author = "7th Cavalry Regiment!";
@@ -37,12 +37,15 @@ class Header {
 enableTargetDebug = 1;
 enableDebugConsole[] = {
     // Dev Team
-    "76561198025844585",    // MacMillian.M
     "76561198064095277",    // Citarelli.D
     "76561198114637526",    // JB
     "76561198048006094",    // Bojan
 	"76561198043140265", 	// Centeno
 	"76561198073062030", 	// Ocean
+	"76561198089309425",	// Currier
+	"76561198042501866",	// Spiers
+	"76561198149329790",	// Mazinski
+	"76561197991479113",	// Zlobin
     // S6
     "76561198168754324",    // Dakota.N
     "76561198039932196",    // Jarvis.A
