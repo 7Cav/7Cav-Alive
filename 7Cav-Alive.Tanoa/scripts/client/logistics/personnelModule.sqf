@@ -1,5 +1,5 @@
-CLIENT_LogisticMobileSpawnEnemyRadius = 500;
-CLIENT_LogisticMobileSpawnCost = 100;
+CLIENT_LogisticMobileSpawnEnemyRadius = 300;
+CLIENT_LogisticMobileSpawnCost = 50;
 
 CLIENT_EnableMobileSpawn = 
 {

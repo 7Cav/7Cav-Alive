@@ -3,4 +3,4 @@
 	[[(_this select 0)]] call SERVER_CurateEditableObjects;
 }] call vehicle_fnc_respawnVehicleInitialize;
 [_this select 0, 420] call vehicle_fnc_respawnVehicleWhenKilled;
-[_this select 0, 50, 600] call vehicle_fnc_respawnVehicleWhenAbandoned;
+[_this select 0, 50, 900] call vehicle_fnc_respawnVehicleWhenAbandoned;

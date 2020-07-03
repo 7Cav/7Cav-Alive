@@ -4,7 +4,8 @@ CLIENT_LogiVehicles = [
 	["rhsusf_m998_d_2dr", 300, "", {}, {}],
 	["rhsusf_m1025_d_m2", 500, "", {}, {}],
 	["rhsusf_m1240a1_m240_usarmy_d", 800, "", {}, {}],
-	["RHS_M2StaticMG_D", 150, "", {}, {}]
+	["RHS_M119_D", 500, "", {}, {}],
+	["I_HMG_02_high_F", 150, "", {}, {}]
 ];
 
 CLIENT_LogiSpawnVehicle = 

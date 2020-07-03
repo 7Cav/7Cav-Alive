@@ -5,4 +5,4 @@
 	}
 ] call vehicle_fnc_respawnVehicleInitialize;
 [_this select 0, 60] call vehicle_fnc_respawnVehicleWhenKilled;
-[_this select 0, 300] call vehicle_fnc_respawnVehicleWhenAbandoned;
+[_this select 0, 500, 1800] call vehicle_fnc_respawnVehicleWhenAbandoned;
