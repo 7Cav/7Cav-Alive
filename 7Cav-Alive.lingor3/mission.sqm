@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2651;
+		nextID=2745;
 	};
 	class Camera
 	{
-		pos[]={1967.4639,28.935177,10062.962};
-		dir[]={-0.86393231,-0.25716051,-0.43303081};
-		up[]={-0.22990894,0.96636546,-0.11523729};
-		aside[]={-0.44810095,4.019239e-007,0.89399713};
+		pos[]={1945.6951,40.157982,10027.978};
+		dir[]={-0.42739388,-0.42410067,-0.79843754};
+		up[]={-0.20015047,0.90561128,-0.37391084};
+		aside[]={-0.88165009,3.867317e-007,0.47193632};
 	};
 };
 binarizationWanted=0;
@@ -51681,7 +51681,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6204.25,12.43084,6734.75};
-						angles[]={-0,5.4019485,0};
+						angles[]={0,5.4019485,0};
 					};
 					side="Empty";
 					flags=4;
@@ -51693,6 +51693,7 @@ class Mission
 					};
 					id=6767;
 					type="Land_DataTerminal_01_F";
+					atlOffset=0.24999905;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -52620,12 +52621,13 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={2314.75,56.789066,3158.875};
-								angles[]={5.9429517,0,0.4069418};
+								position[]={2314.75,56.78907,3158.875};
+								angles[]={5.9429512,0,0.40694097};
 							};
 							name="opf_comm_logistics";
 							id=2906;
 							type="ALiVE_mil_logistics";
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -52643,7 +52645,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -52738,7 +52740,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -52776,7 +52778,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -52795,7 +52797,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -53223,7 +53225,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={6166.75,12.17,6770};
-								angles[]={-0,1.5645132,0};
+								angles[]={0,1.5645132,0};
 							};
 							name="opf_comm_Central_Command";
 							id=4650;
@@ -64663,7 +64665,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6208.9512,12.17,6733.0386};
-				angles[]={-0,0.66322541,0};
+				angles[]={0,0.66322541,0};
 			};
 			side="Empty";
 			flags=4;

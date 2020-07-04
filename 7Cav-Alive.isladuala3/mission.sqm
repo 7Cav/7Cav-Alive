@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2256;
+		nextID=2358;
 	};
 	class Camera
 	{
-		pos[]={5702.8008,39.27219,6072.6816};
-		dir[]={-0.89450139,-0.43312752,-0.11138052};
-		up[]={-0.4298417,0.90131432,-0.05352059};
-		aside[]={-0.12356631,1.4301622e-007,0.99240136};
+		pos[]={10018.055,71.782059,9233.3232};
+		dir[]={-0.88183224,-0.35346764,0.31215632};
+		up[]={-0.33320978,0.9354462,0.11795136};
+		aside[]={0.33369696,4.5423803e-008,0.94268501};
 	};
 };
 binarizationWanted=0;
@@ -100,7 +100,6 @@ addons[]=
 	"alive_mil_c2istar",
 	"alive_sys_logistics",
 	"alive_main",
-	"alive_sys_data",
 	"alive_sys_playeroptions",
 	"A3_Modules_F_StrategicMap",
 	"alive_mil_opcom",
@@ -161,7 +160,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=107;
+		items=106;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -550,323 +549,317 @@ class AddonsMetaData
 		};
 		class Item58
 		{
-			className="ALiVE_sys_data";
-			name="alive_sys_data";
-			author="ALiVE Mod Team";
-		};
-		class Item59
-		{
 			className="ALiVE_SYS_playeroptions";
 			name="alive_sys_playeroptions";
 			author="ALiVE Mod Team";
 		};
-		class Item60
+		class Item59
 		{
 			className="ALiVE_mil_OPCOM";
 			name="alive_mil_opcom";
 			author="ALiVE Mod Team";
 		};
-		class Item61
+		class Item60
 		{
 			className="ALiVE_mil_ato";
 			name="alive_mil_ato";
 			author="ALiVE Mod Team";
 		};
-		class Item62
+		class Item61
 		{
 			className="ALiVE_mil_logistics";
 			name="alive_mil_logistics";
 			author="ALiVE Mod Team";
 		};
-		class Item63
+		class Item62
 		{
 			className="ALiVE_civ_placement";
 			name="alive_civ_placement";
 			author="ALiVE Mod Team";
 		};
-		class Item64
+		class Item63
 		{
 			className="ALiVE_mil_placement_custom";
 			name="alive_mil_placement_custom";
 			author="ALiVE Mod Team";
 		};
-		class Item65
+		class Item64
 		{
 			className="ALiVE_mil_placement";
 			name="alive_mil_placement";
 			author="ALiVE Mod Team";
 		};
-		class Item66
+		class Item65
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item66
 		{
 			className="rhs_c_mig29";
 			name="RHS Mig-29 Jets";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item68
+		class Item67
 		{
 			className="rhs_c_a2port_air";
 			name="A2 ported air";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item69
+		class Item68
 		{
 			className="FIR_F16D_F";
 			name="FIR_F16D_F";
 		};
-		class Item70
+		class Item69
 		{
 			className="FIR_F16_F";
 			name="FIR_F16_F";
 		};
-		class Item71
+		class Item70
 		{
 			className="FIR_A10C_F";
 			name="FIR_A10C_F";
 		};
-		class Item72
+		class Item71
 		{
 			className="FIR_AirWeaponSystem_US";
 			name="FIR_AirWeaponSystem_US";
 		};
-		class Item73
+		class Item72
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item74
+		class Item73
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item75
+		class Item74
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item76
+		class Item75
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item77
+		class Item76
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item78
+		class Item77
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item79
+		class Item78
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item80
+		class Item79
 		{
 			className="acre_sys_prc343";
 			name="ACRE2 - AN/PRC-343";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item81
+		class Item80
 		{
 			className="acre_sys_prc152";
 			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item82
+		class Item81
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item83
+		class Item82
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item84
+		class Item83
 		{
 			className="ace_huntir";
 			name="ACE3 - HuntIR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item85
+		class Item84
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item86
+		class Item85
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item87
+		class Item86
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item88
+		class Item87
 		{
 			className="rhsusf_sounds";
 			name="USF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item89
+		class Item88
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item90
+		class Item89
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item91
+		class Item90
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item92
+		class Item91
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item93
+		class Item92
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item94
+		class Item93
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item95
+		class Item94
 		{
 			className="ace_rangecard";
 			name="ACE3 - Range Card";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item96
+		class Item95
 		{
 			className="ace_spottingscope";
 			name="ACE3 - Spotting Scope";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item97
+		class Item96
 		{
 			className="ace_tripod";
 			name="ACE3 - Tripod";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item98
+		class Item97
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item99
+		class Item98
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item100
+		class Item99
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item101
+		class Item100
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item102
+		class Item101
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item103
+		class Item102
 		{
 			className="rhsusf_main";
 			name="rhsusf_main";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item104
+		class Item103
 		{
 			className="A3_Static_F_Jets";
 			name="Arma 3 Jets - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item105
+		class Item104
 		{
 			className="CUP_CAMisc_E_WF";
 			name="CUP_CAMisc_E_WF";
 		};
-		class Item106
+		class Item105
 		{
 			className="ALiVE_sys_profile";
 			name="alive_sys_profile";
@@ -22300,8 +22293,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5659.3994,16.052422,6060.7842};
-								angles[]={0,4.7456412,0};
+								position[]={5659.3989,16.052422,6060.7842};
+								angles[]={0,4.7456374,0};
 							};
 							side="Empty";
 							flags=4;
@@ -33804,7 +33797,7 @@ class Mission
 					name="ALiVE";
 					class Entities
 					{
-						items=7;
+						items=6;
 						class Item0
 						{
 							dataType="Logic";
@@ -35204,213 +35197,6 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={9146.833,-14.894762,6085.5469};
-								angles[]={6.1924357,0,0.062917225};
-							};
-							name="alive_data";
-							id=2176;
-							type="ALiVE_sys_data";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ALiVE_sys_data_killFeed";
-									expression="_this setVariable ['killFeed',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="side";
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ALiVE_sys_data_disablePerfMon";
-									expression="_this setVariable ['disablePerfMon',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ALiVE_sys_data_source";
-									expression="_this setVariable ['source',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="pns";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="ALiVE_sys_data_customPerfMonCode";
-									expression="_this setVariable ['customPerfMonCode',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="[['entities',150],['vehicles',300],['agents',450],['allDead',600],['objects',750],['triggers',900], ['activeScripts',1050]]";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ALiVE_sys_data_debug";
-									expression="_this setVariable ['debug',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="ALiVE_sys_data_disableStats";
-									expression="_this setVariable ['disableStats',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ALiVE_sys_data_saveDateTime";
-									expression="_this setVariable ['saveDateTime',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ALiVE_sys_data_disableAAR";
-									expression="_this setVariable ['disableAAR',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ALiVE_sys_data_saveCompositions";
-									expression="_this setVariable ['saveCompositions',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="false";
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="ALiVE_sys_data_disablePerf";
-									expression="_this setVariable ['disablePerf',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="true";
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={9245.0332,-31.695841,6085.2222};
 								angles[]={6.1421285,0,5.9296856};
 							};
@@ -36106,7 +35892,7 @@ class Mission
 								nAttributes=36;
 							};
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -37406,7 +37192,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -37501,7 +37287,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -37558,7 +37344,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="true";
+											value="false";
 										};
 									};
 								};
@@ -38944,7 +38730,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={1435.506,2.8499999,705.67401};
+								position[]={1443.551,2.8499999,691.47998};
 								angles[]={0,0.019442966,0};
 							};
 							name="opfor_comm_specops";
@@ -40014,11 +39800,11 @@ class Mission
 						};
 					};
 					id=2184;
-					atlOffset=-5.7673693;
+					atlOffset=-5.8249788;
 				};
 			};
 			id=2179;
-			atlOffset=45.679394;
+			atlOffset=45.636494;
 		};
 		class Item539
 		{
@@ -40303,8 +40089,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1479.9191,4.2608399,685.89429};
-						angles[]={0,4.7985177,0};
+						position[]={1495.1122,4.2608399,683.50562};
+						angles[]={-0,4.7985177,0};
 					};
 					side="Empty";
 					flags=4;
@@ -66748,7 +66534,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1413.5293,7.7105093,697.92163};
+				position[]={1409.7842,7.7105093,696.0061};
 			};
 			areaSize[]={39.082947,0,36.300781};
 			flags=1;
@@ -66803,7 +66589,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1484.1415,4,687.58044};
+				position[]={1499.3346,4,685.19177};
 			};
 			side="Empty";
 			flags=4;
@@ -67420,6 +67206,7 @@ class Mission
 			};
 			id=2670;
 			type="rhsusf_m113_usarmy_unarmed";
+			atlOffset=-0.00038337708;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67468,11 +67255,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=26;
+			nextID=27;
 		};
 		class Links
 		{
-			items=26;
+			items=27;
 			class Item0
 			{
 				linkID=0;
@@ -67728,6 +67515,16 @@ class Mission
 				linkID=25;
 				item0=2666;
 				item1=2188;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=2621;
+				item1=2185;
 				class CustomData
 				{
 					type="Sync";
