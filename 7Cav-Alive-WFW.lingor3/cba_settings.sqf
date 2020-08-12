@@ -668,7 +668,7 @@ force acre_sys_core_ts3ChannelName = "";
 force acre_sys_core_ts3ChannelPassword = "";
 force force acre_sys_core_ts3ChannelSwitch = false;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 3;
+force force acre_sys_signal_signalModel = 0;
 
 // ACRE2 UI
 acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
