@@ -94,12 +94,9 @@ LOYALTY_fnc_vehicleInfo =
 	[
 		"
 		<t align='left'>Name: %1</t><br/>
-		<t align='left'>Level: %2 (%3 points)</t><br/>
 		<t align='left'>Cooldown: %4 minutes</t><br/>
 		<t align='left' size='0.7'>%5</t>",
 		getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName"),
-		_levelCost,
-		[_levelCost] call LOYALTY_fnc_getPointsForLevel,
 		_cooldownCost,
 		_message
 	];
