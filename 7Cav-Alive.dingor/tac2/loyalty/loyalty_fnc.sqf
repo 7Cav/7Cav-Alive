@@ -7,24 +7,10 @@ LOYALTY_fnc_OpenSpawnUI =
 	createDialog "RscTUTVehDialog";
 	
 	_serverTitleCbo = ((findDisplay 1601) displayCtrl (10));
-	_title = "7Cav Loyalty Rewards";
+	_title = "7Cav Vehicle Spawn";
 	_serverTitleCbo ctrlSetStructuredText parseText format ["<t align='left' size='1.3'>%1</t>",_title];
 
 	_serverTitleCbo = ((findDisplay 1601) displayCtrl (12));
-	_serverTitleCbo ctrlSetStructuredText parseText format [
-"
-<t align='left' size='0.9' font='EtelkaMonospacePro'>
-Current points: %1<br/>
-Current level: %2<br/>
-CavBucks: %3
-</t>
-<br/>
-<br/>
-<t align='left' size='0.9'>Players recieve 10 points every 15 minutes they are active. CavBucks are awarded to players who take
-leadership positions, and can be used on vehicles regardless of level.</t>
-"
-		, call LOYALTY_fnc_getPointsLocal, call LOYALTY_fnc_getLevelLocal, call LOYALTY_fnc_getCavBucksLocal
-	];
 
 	[] call LOYALTY_fnc_loadVehicle;
 
@@ -146,14 +132,14 @@ LOYALTY_fnc_showSpawnButton =
 		_reason = format ["Cooldown for another %1 minutes", round (((_lastSpawnTime + _lastCooldownLength) - serverTime) / 60)];
 	};
 
-	if (_playerCavBucks < _cavBuckCost) then {
-		_allowCavBucksSpawn = false;
-	};
+	//if (_playerCavBucks < _cavBuckCost) then {
+	//	_allowCavBucksSpawn = false;
+	//};
 
-	if (_playerLevel < _levelCost) then {
-		_allowRegularSpawn = false;
-		_reason = format ["Unlocked at level %1", _levelCost];
-	};
+	//if (_playerLevel < _levelCost) then {
+	//	_allowRegularSpawn = false;
+	//	_reason = format ["Unlocked at level %1", _levelCost];
+	//};
 
 	_vehicleInstances = 0;
 	{
@@ -180,15 +166,6 @@ LOYALTY_fnc_showSpawnButton =
 	} else {
 		_spawnButton ctrlEnable false;
 		_spawnButton ctrlSetText _reason;
-	};
-
-	if (_allowCavBucksSpawn) then {
-		_spawnButtonCavBucks ctrlEnable true;
-		_spawnButtonCavBucks ctrlShow true;		
-		_spawnButtonCavBucks ctrlSetText format ["Spend %1 CavBucks", _cavBuckCost];
-	} else {
-		_spawnButtonCavBucks ctrlEnable false;
-		_spawnButtonCavBucks ctrlShow false;		
 	};
 };
 

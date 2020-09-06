@@ -4,8 +4,6 @@ diag_log "initServer start";
 missionNamespace setVariable["LOYALTY_CIPHER", CIPHERSECRETKEY, true];
 missionNamespace setVariable["endMissionNumber", 0, true]; //Variable init for missionEnd scripts located in scripts/missionEnd
 
-// _null = [] execVM "scripts\sessionTimeMessagesInit.sqf";
-
 // Disable RHS engine start up so vehicles move immediately when spawned
 RHS_ENGINE_STARTUP_OFF = 1;
 
@@ -30,17 +28,6 @@ SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
 
 // Start times selected randomly throughout the daylight hours between sunrise and one hour before sunset
 waitUntil { time > 0 }; // Allow time subsystem to initialize so that missionStart is correct
-private _date = missionStart select [0, 5];
-
-private _times = [_date] call BIS_fnc_sunriseSunsetTime;
-private _startTime = (_times select 0) + (random ((_times select 1) - (_times select 0) - 1));
-private _startHour = floor _startTime;
-private _startMinute = (_startTime - _startHour) * 60;
-
-_date set [3, _startHour];
-_date set [4, _startMinute];
-
-setDate _date;
 
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
