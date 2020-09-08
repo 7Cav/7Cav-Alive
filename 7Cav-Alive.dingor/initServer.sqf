@@ -26,12 +26,10 @@ bis_fnc_drawMinefields_active = true;
 //Sweetwater
 SA_TOW_RULES_OVERRIDE = [["AllVehicles", "CAN_TOW", "RHS_M119_WD"]];
 
-// Start times selected randomly throughout the daylight hours between sunrise and one hour before sunset
 waitUntil { time > 0 }; // Allow time subsystem to initialize so that missionStart is correct
 
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
-[] execVM "alive\Tasks.sqf";
 ["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";

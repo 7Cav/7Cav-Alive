@@ -116,8 +116,6 @@ LOYALTY_fnc_showSpawnButton =
 
 	_lastSpawnTime = missionNamespace getVariable [getPlayerUID player + "Tac2Loyalty_LastSpawnTime", 0];
 	_lastCooldownLength = call LOYALTY_fnc_getCooldownLocal;
-	_playerLevel = call LOYALTY_fnc_getLevelLocal;
-	_playerCavBucks = call LOYALTY_fnc_getCavBucksLocal;
 
 	_allowRegularSpawn = true;
 	_allowCavBucksSpawn = true;
@@ -128,15 +126,6 @@ LOYALTY_fnc_showSpawnButton =
 		_allowCavBucksSpawn = false;
 		_reason = format ["Cooldown for another %1 minutes", round (((_lastSpawnTime + _lastCooldownLength) - serverTime) / 60)];
 	};
-
-	//if (_playerCavBucks < _cavBuckCost) then {
-	//	_allowCavBucksSpawn = false;
-	//};
-
-	//if (_playerLevel < _levelCost) then {
-	//	_allowRegularSpawn = false;
-	//	_reason = format ["Unlocked at level %1", _levelCost];
-	//};
 
 	_vehicleInstances = 0;
 	{
@@ -196,10 +185,6 @@ LOYALTY_fnc_vehicleCreate =
 
 		[_cooldownCost * 60] call LOYALTY_fnc_setCooldownLocal;
 		missionNamespace setVariable [getPlayerUID player + "Tac2Loyalty_LastSpawnTime", serverTime];
-		
-		if (_spawnCurrency == "CavBucks") then {
-			[_cavBuckCost] call LOYALTY_fnc_spendCavBucksLocal;
-		};
 
 		[_veh] call _callBack;
 		player setPos (getPos _veh vectorAdd (boundingBoxReal _veh select 0));	
