@@ -159,7 +159,7 @@ SERVER_ZeusGuids =
 
 	#include "\serverscripts\zeusserverscripts\tac2_zeus_guids.sqf"
 
-	[_uidDevelopers, _uidMissionControllers, _uidMilitaryPolice, _uidCameraOperators];
+	[_uidDevelopers, _uidMissionControllers, _uidMilitaryPolice, _uidCameraOperators]
 };
 
 // Get the curator type based on the players role (slot)

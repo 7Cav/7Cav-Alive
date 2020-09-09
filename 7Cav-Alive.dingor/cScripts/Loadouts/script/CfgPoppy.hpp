@@ -5,6 +5,8 @@ class CfgPoppy {
     showLoadoutInBriefing = 0;
     enableAILoadoutsSP = 1;
     handleRadioReplacements = 0;
+    //Not implemented for 1.0.0. May be implemented with CBA 2.3.0.
+    //enableAILoadoutsMP = 0;
 
     class ACRE {
         distributeGroupLeaderRadios = 0;

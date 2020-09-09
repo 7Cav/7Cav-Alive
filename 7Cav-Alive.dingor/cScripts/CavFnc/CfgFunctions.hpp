@@ -82,7 +82,6 @@ class cScripts {
         class addGetOutHelo {};
 
         class addJump {};
-        class addHaloJump {};
 
         class setVehicleLable {};
     };
@@ -94,11 +93,8 @@ class cScripts {
         class addQuickSelection {};
         class addInsigniaSelection {};
 
-        class deleteDroppedObjects {};
-
        // Plane jump
         class doJump {};
-        class doHaloJump {};
         class handleJump {};
 
         // Buttons and options
@@ -108,7 +104,9 @@ class cScripts {
         class addAceCategory {};
         class addLoadoutAction {};
 
-        class doGetOutHeloSide {};
+        // Helo get out
+        class doGetOutHeloLeft {};
+        class doGetOutHeloRight {};
 
         class addQuickSelectionList {};
         class addInsigniaSelectionList {};
@@ -121,10 +119,6 @@ class cScripts {
 
         class createVehicleLable {};
         class getVehicleLable {};
-
-        class checkVehicle {};
-
-        class getServerMetrics {};
     };
     class modules {
         file = "cScripts\cavFnc\functions\modules";
@@ -143,14 +137,12 @@ class cScripts {
         class moduleRegearTrooper {};
 
         class moduleCallEndex {};
-        class moduleAddToAlive {};
     };
 
     class helpers {
         file = "cScripts\cavFnc\functions\helpers";
         class exportContainerToArsenal {};
-        class exportLoadoutContentToArsenal {};
-        class exportLoadoutToArsenal {};
+        class exportLoadoutsToArsenal {};
     };
 
     class debug {

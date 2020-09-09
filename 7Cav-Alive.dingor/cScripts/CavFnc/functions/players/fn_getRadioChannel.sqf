@@ -38,13 +38,6 @@ if (_radio == "ACRE_PRC343") then {
         case "APOLLO-5": {_channel = 1};
         case "APOLLO-6": {_channel = 1};
         
-        case "ATLAS-1": {_channel = 2};
-        case "ATLAS-2": {_channel = 3};
-        case "ATLAS-3": {_channel = 1};
-        case "ATLAS-4": {_channel = 1};
-        case "ATLAS-5": {_channel = 1};
-        case "ATLAS-6": {_channel = 1};
-        
         //Air
         case "PEGASUS-2": {_channel = 1};
 
@@ -118,14 +111,6 @@ if (_radio == "ACRE_PRC343") then {
         case "MISFIT-6": {_channel = 37};
         case "MISFIT-7": {_channel = 37};
 
-        case "GUNSLINGER-1": {_channel = 1};
-        case "GUNSLINGER-2": {_channel = 1};
-        case "GUNSLINGER-3": {_channel = 1};
-        case "GUNSLINGER-4": {_channel = 1};
-        case "GUNSLINGER-5": {_channel = 1};
-        case "GUNSLINGER-6": {_channel = 1};
-        case "GUNSLINGER-7": {_channel = 1};
-
         // LETTER NAMING
         case "GODFATHER FIVE": {_channel = 4};
         case "GODFATHER SIX": {_channel = 4};
@@ -137,13 +122,6 @@ if (_radio == "ACRE_PRC343") then {
         case "APOLLO ONE": {_channel = 1};
         case "APOLLO FIVE": {_channel = 1};
         case "APOLLO SIX": {_channel = 1};
-        
-        case "ATLAS ONE": {_channel = 2};
-        case "ATLAS TWO": {_channel = 3};
-        case "ATLAS THREE": {_channel = 1};
-        case "ATLAS FOUR": {_channel = 1};
-        case "ATLAS FIVE": {_channel = 1};
-        case "ATLAS SIX": {_channel = 1};
         
         //Air
         case "PEGASUS TWO": {_channel = 1};
@@ -218,13 +196,6 @@ if (_radio == "ACRE_PRC343") then {
         case "MISFIT SIX": {_channel = 37};
         case "MISFIT SEVEN": {_channel = 37};
 
-        case "GUNSLINGER ONE": {_channel = 1};
-        case "GUNSLINGER TWO": {_channel = 1};
-        case "GUNSLINGER THREE": {_channel = 1};
-        case "GUNSLINGER FOUR": {_channel = 1};
-        case "GUNSLINGER FIVE": {_channel = 1};
-        case "GUNSLINGER SIX": {_channel = 1};
-        case "GUNSLINGER SEVEN": {_channel = 1};
 
         case "ZEUS": {_channel = 1};
 
@@ -242,13 +213,6 @@ if (_radio == "ACRE_PRC343") then {
         case "APOLLO-1": {_channel = 15};
         case "APOLLO-5": {_channel = 15};
         case "APOLLO-6": {_channel = 15};
-        
-        case "ATLAS-1": {_channel = 15};
-        case "ATLAS-2": {_channel = 15};
-        case "ATLAS-3": {_channel = 15};
-        case "ATLAS-4": {_channel = 15};
-        case "ATLAS-5": {_channel = 15};
-        case "ATLAS-6": {_channel = 15};
         
         //Air
         case "PEGASUS-2": {_channel = 2};
@@ -323,13 +287,6 @@ if (_radio == "ACRE_PRC343") then {
         case "MISFIT-6": {_channel = 8};
         case "MISFIT-7": {_channel = 8};
 
-        case "GUNSLINGER-1": {_channel = 8};
-        case "GUNSLINGER-2": {_channel = 8};
-        case "GUNSLINGER-3": {_channel = 8};
-        case "GUNSLINGER-4": {_channel = 8};
-        case "GUNSLINGER-5": {_channel = 8};
-        case "GUNSLINGER-6": {_channel = 8};
-        case "GUNSLINGER-7": {_channel = 8};
 
         // LETTER NAMING
         case "GODFATHER FIVE": {_channel = 20};
@@ -342,13 +299,6 @@ if (_radio == "ACRE_PRC343") then {
         case "APOLLO ONE": {_channel = 15};
         case "APOLLO FIVE": {_channel = 15};
         case "APOLLO SIX": {_channel = 15};
-        
-        case "ATLAS ONE": {_channel = 15};
-        case "ATLAS TWO": {_channel = 15};
-        case "ATLAS THREE": {_channel = 15};
-        case "ATLAS FOUR": {_channel = 15};
-        case "ATLAS FIVE": {_channel = 15};
-        case "ATLAS SIX": {_channel = 15};
         
         //Air
         case "PEGASUS TWO": {_channel = 2};
@@ -423,13 +373,6 @@ if (_radio == "ACRE_PRC343") then {
         case "MISFIT SIX": {_channel = 8};
         case "MISFIT SEVEN": {_channel = 8};
 
-        case "GUNSLINGER ONE": {_channel = 0};
-        case "GUNSLINGER TWO": {_channel = 0};
-        case "GUNSLINGER THREE": {_channel = 0};
-        case "GUNSLINGER FOUR": {_channel = 0};
-        case "GUNSLINGER FIVE": {_channel = 0};
-        case "GUNSLINGER SIX": {_channel = 0};
-        case "GUNSLINGER SEVEN": {_channel = 0};
 
         case "ZEUS": {_channel = 18};
 

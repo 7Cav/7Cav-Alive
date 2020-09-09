@@ -6,7 +6,7 @@
  *
  * Arguments:
  * 0: Object <OBJECT>
- * 1: Selection type <STRING>       (Default: "none")
+ * 1: Selection type <STRING>       (Default: "none") ["none","all","officer","alpha","bravo","charlie"]
  * 2: ReGear action <BOOL>          (Default: true)
  * 3: Heal action <BOOL>            (Default: true)
  * 4: Insignia Selection <BOOL>     (Default: true)
@@ -37,29 +37,16 @@ params [
     [formatText["Starter Crate system applied to %1.", _object]] call FUNC(logInfo);
 #endif
 
-// Lowercase
-_quickSelectScale = toLower(_quickSelectScale);
-
 // If isServer call equipBase
 if (isServer) then {
     [_object, _quickSelectScale] call FUNC(doStarterCrateSupplies);
 };
 
 // Make addAction Topic
-private _fullLableCheck = (_quickSelectScale == 'none' || _quickSelectScale == 'all' || _quickSelectScale == 'full');
-private _CoLableCheck = (_quickSelectScale == 'alpha' || _quickSelectScale == 'bravo' || _quickSelectScale == 'charlie');
-private _crateName = if ( !(_fullLableCheck) ) then {
-    if ( _CoLableCheck ) then {
-        format [" %1 Co ", [_quickSelectScale] call CBA_fnc_capitalize];
-    } else {
-        format [" %1 ", [_quickSelectScale] call CBA_fnc_capitalize];
-    };
-} else { ' ' };
-_object addAction [format ["<img image='cScripts\Data\Icon\icon_00.paa' /> 7th Cavalry%1Equipment Crate", _crateName], {}, [], 1.5, true, true, "", "true", 5];
+_object addAction ["<img image='cScripts\Data\Icon\icon_00.paa' /> 7th Cavalry Equipment Crate", {}, [], 1.5, true, true, "", "true", 5];
 
 if (_arsenal) then {
-    private _arsenalContainer = if (_fullLableCheck && (EGVAR(Settings,setMissionType) >= 3)) then {'PUBLIC'} else {_quickSelectScale};
-    [_object, _arsenalContainer] call FUNC(addArsenal);
+    [_object, _quickSelectScale] call FUNC(addArsenal);
 };
 
 // Call ReGear Option
@@ -88,6 +75,3 @@ _object enableRopeAttach false;
 
 // Make object not loadable in ACE
 [_object, -1] call ace_cargo_fnc_setSize;
-
-// Make Starter crate clean junk around it
-[_object, 100] call FUNC(deleteDroppedObjects);

@@ -16,7 +16,6 @@ class Poppy {
         class selectLoadout {};
         class setUniqueRadio {};
         class synchGroupIDs {};
-        class getMagwellMagazines {};
     };
     class ACRE {
         file ="cScripts\Loadouts\script\functions\ACRE";
