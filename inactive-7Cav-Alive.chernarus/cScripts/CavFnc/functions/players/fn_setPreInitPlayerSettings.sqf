@@ -31,6 +31,8 @@ params [
     ["_zeusImmortality", false]
 ];
 
+if (!isPlayer _player) exitWith {};
+
 // Set company Variables
 (_player) setVariable [QEGVAR(Cav,Company), _setCompany];
 #ifdef DEBUG_MODE
@@ -47,6 +49,7 @@ _playerName = [_player,'PROFILE'] call FUNC(getPlayerName);
 // Set MedicClass
 private _MedicClass = if (_isMedicLevel >= 1) then {true} else {false};
 (_player) setVariable ["ACE_medical_medicClass", _isMedicLevel, _MedicClass];
+if (_isMedicLevel >= 1) then {_player setUnitTrait ["medic", true]};
 #ifdef DEBUG_MODE
     if (_MedicClass) then {[formatText["%1 medicLevel is %2", _player, _isMedicLevel], "LoadoutPreInit"] call FUNC(logInfo)};
 #endif
@@ -54,7 +57,7 @@ private _MedicClass = if (_isMedicLevel >= 1) then {true} else {false};
 // Set Engineer
 private _EngineerClass = if (_isEngineerLevel >= 1) then {true} else {false};
 (_player) setVariable ['ACE_isEngineer', _isEngineerLevel, _EngineerClass];
-if (_isEngineerClass >= 1) then {_player setUnitTrait "engineer"};
+if (_isEngineerLevel >= 1) then {_player setUnitTrait ["engineer", true]};
 #ifdef DEBUG_MODE
     if (_EngineerClass) then {[formatText["%1 engineerLevel is %2", _player, _EngineerClass], "LoadoutPreInit"] call FUNC(logInfo)};
 #endif

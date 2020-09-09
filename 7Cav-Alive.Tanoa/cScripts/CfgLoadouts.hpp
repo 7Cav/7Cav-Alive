@@ -1,14 +1,24 @@
 class CfgLoadouts {
     #include "script_component.hpp"
-
-    // Common
     #include "Loadouts\CfgLoadouts_Common.hpp"
 
-    // Charlie
-    #include "Loadouts\CfgLoadouts_Charlie.hpp"
-    #include "Loadouts\CfgLoadouts_CharlieClass.hpp"
+    #include "Loadouts\CfgLoadouts_Alpha.hpp"
+    #include "Loadouts\CfgLoadouts_Bravo.hpp"
+    #include "Loadouts\CfgLoadouts_Bravo_Atlas.hpp"
+    #include "Loadouts\CfgLoadouts_Bravo_Scouts.hpp"
 
-    // Tac2
-    #include "Loadouts\CfgLoadouts_tac2.hpp"
-    #include "Loadouts\CfgLoadouts_tac2Class.hpp"
+    #include "Loadouts\CfgLoadouts_Charlie.hpp"
+
+    #include "Loadouts\CfgLoadouts_Training.hpp"        // Not compleeted
+
+    #include "Loadouts\CfgLoadouts_S3.hpp"
+    #include "Loadouts\CfgLoadouts_S5.hpp"
+
+    
+    #include "Loadouts\CfgLoadouts_AlphaClass.hpp"
+    #include "Loadouts\CfgLoadouts_BravoClass.hpp"
+    #include "Loadouts\CfgLoadouts_CharlieClass.hpp"
+    #include "Loadouts\CfgLoadouts_TrainingClass.hpp"   // Not compleeted
+    
+    #include "Loadouts\CfgLoadouts_UserCustom.hpp"
 };

@@ -26,6 +26,8 @@ params [
     ["_squadTeamColor",true]
 ];
 
+if (!isPlayer _player) exitWith {};
+
 // Safety first
 if (_safemode) then {
     [_player, currentWeapon _player, true] call ace_safemode_fnc_setWeaponSafety;
@@ -133,6 +135,16 @@ if (EGVAR(Settings,setMissionType) != 3) then {
     [_player] call FUNC(doPlayerAnnouncement);
 };
 
+//Player lower weapon
+if !(weaponLowered _player) then {_player action ["WeaponOnBack", _player]};
+
 if (isNil {_unit getVariable QEGVAR(Player,Unit)}) then {
     [formatText["%1 have no unit variable defined", _player], "LoadoutPostInit", true] call FUNC(logWarning);
+};
+
+//Server metrics
+if ((call BIS_fnc_admin) >= 2) then {
+    player addAction ["Server Metrics", {
+        [owner player] call FUNC(getServerMetrics);
+    }, [], 0, false, true];
 };
