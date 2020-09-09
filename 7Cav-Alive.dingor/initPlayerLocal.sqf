@@ -41,5 +41,11 @@ player addEventHandler ["Fired", {
 	};
 }]; 
 
+
+[player, {
+	[] spawn { call LOYALTY_InitDataStores };
+}] remoteExec ['SERVER_DB_OnPlayerLogin', 2];
+
+
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";

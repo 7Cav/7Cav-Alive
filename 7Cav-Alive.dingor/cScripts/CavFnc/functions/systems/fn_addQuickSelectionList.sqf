@@ -38,7 +38,7 @@ private _icon = "cScripts\Data\Icon\icon_01.paa";
 // Create categories
 private _officer = ["OFFICER"];
 private _alpha   = ["ALPHA", "BUFFALO", "TITAN", "RAIDER", "SPARROW"];
-private _bravo   = ["BRAVO", "LANCER", "VIKING", "SABER", "BANSHEE", "ATLAS"];
+private _bravo   = ["BRAVO", "LANCER", "VIKING", "SABER", "BANSHEE", "APOLLO", "MUSTANG"];
 private _charlie = ["CHARLIE", "BANDIT", "MISFIT"];
 
 if !(_companySelector in (["NONE", "FULL", "ALL"] + _officer + _alpha + _bravo + _charlie)) exitWith {
@@ -54,7 +54,7 @@ private _alwaysAvalible = if (_companySelector == 'FULL' or _companySelector == 
 if (_companySelector in _officer or _alwaysAvalible) then {
     [_object,"cScriptQuickSelection_Officer", "Officers", _icon, ["ACE_MainActions","cScriptQuickSelectionMenu"]] call FUNC(addAceCategory);
     private _officerCoCat = ['ACE_MainActions', 'cScriptQuickSelectionMenu', 'cScriptQuickSelection_Officer'];
-
+    
     [_object,"Air Controller", "Cav_B_A_AirController_F", "", _officerCoCat, "Officer", _allowOnlyForCompany] call FUNC(addQuickSelection);
     [_object,"Officer", "Cav_B_A_Officer_F", "", _officerCoCat, "Officer", _allowOnlyForCompany] call FUNC(addQuickSelection);
     [_object,"Joint Fires Observer", "Cav_B_A_JFO_F", "", _officerCoCat, "Officer", _allowOnlyForCompany] call FUNC(addQuickSelection);
@@ -103,10 +103,6 @@ if (_companySelector in _bravo or _alwaysAvalible) then {
         //[_object,"Rifleman (AT)", "Cav_B_B_Alpha_RiflemanAT_F", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
         //[_object,"Rifleman (LAT)", "Cav_B_B_RiflemanLAT_F", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
         [_object,"Combat Life Saver", "Cav_B_B_CombatLifeSaver_F", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-
-        [_object,"MMG Team Leader", "Cav_B_B_MMGFireTeamLeader_Local", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"MMG Gunner", "Cav_B_B_MMGMachineGunner_Local", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"MMG Assistant Gunner", "Cav_B_C_MMGAssistantGunner_Local", "", _bravoLancerCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
     };
 
     // Loadouts Sabre
@@ -135,31 +131,37 @@ if (_companySelector in _bravo or _alwaysAvalible) then {
         [_object,"cScriptQuickSelection_Bravo_Viking","Viking",_icon,["ACE_MainActions","cScriptQuickSelectionMenu","cScriptQuickSelection_Bravo"]] call FUNC(addAceCategory);
         private _bravoVikingCat = ['ACE_MainActions','cScriptQuickSelectionMenu','cScriptQuickSelection_Bravo','cScriptQuickSelection_Bravo_Viking'];
 
-        [_object,"Platoon Leader", "Cav_B_B_Scout_PlatoonLead_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Squad Leader", "Cav_B_B_Scout_SquadLeader_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Team Leader (M320)", "Cav_B_B_Scout_TeamLead_320_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Team Leader", "Cav_B_B_Scout_TeamLead_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Automatic Rifleman", "Cav_B_B_Scout_AutomaticRifleman_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Grenadier", "Cav_B_B_Scout_Grenadier_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Rifleman", "Cav_B_B_Scout_Rifleman_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Combat Lifesaver", "Cav_B_B_Scout_CombatLifeSaver_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Crewman/UAV Operator", "Cav_B_B_Scout_Crew_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Platoon Leader", "Cav_B_B_CavScout_PlatoonLead_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Squad Leader", "Cav_B_B_CavScout_SquadLead_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Team Leader (M320)", "Cav_B_B_CavScout_TeamLead320_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Team Leader", "Cav_B_B_CavScout_TeamLead_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Automatic Rifleman", "Cav_B_B_CavScout_AutomaticRifleman_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Grenadier", "Cav_B_B_CavScout_Grenadier_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Rifleman", "Cav_B_B_CavScout_Rifleman_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Combat Lifesaver", "Cav_B_B_CavScout_CombatLifeSaver_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Crewman/UAV Operator", "Cav_B_B_CavScout_Crew_F", "", _bravoVikingCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+    };
+    
+    // Loadouts Apollo
+    if (_companySelector in ['BRAVO', 'APOLLO'] or _alwaysAvalible) then {
+        [_object,"cScriptQuickSelection_Bravo_Apollo","Apollo",_icon,["ACE_MainActions","cScriptQuickSelectionMenu","cScriptQuickSelection_Bravo"]] call FUNC(addAceCategory);
+        private _bravoApoCoCat = ['ACE_MainActions','cScriptQuickSelectionMenu','cScriptQuickSelection_Bravo','cScriptQuickSelection_Bravo_Apollo'];
+
+        [_object,"Ops Officer", "Cav_B_B_LogisticsOpsOfficer_F", "", _bravoApoCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Ops NCO", "Cav_B_B_LogisticsOpsNCO_F", "", _bravoApoCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Team Leader", "Cav_B_B_LogisticTeamLeader_F", "", _bravoApoCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Team Member", "Cav_B_B_LogisticsTeamMember_F", "", _bravoApoCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
     };
 
-    // Loadouts Atlas
-    if (_companySelector in ['BRAVO', 'ATLAS'] or _alwaysAvalible) then {
-        [_object,"cScriptQuickSelection_Bravo_Atlas","Atlas",_icon,["ACE_MainActions","cScriptQuickSelectionMenu","cScriptQuickSelection_Bravo"]] call FUNC(addAceCategory);
-        private _bravoAtlasCoCat = ['ACE_MainActions','cScriptQuickSelectionMenu','cScriptQuickSelection_Bravo','cScriptQuickSelection_Bravo_Atlas'];
-
-        [_object,"Medical Team Leader", "Cav_B_B_Atlas_Medic_TeamLeader_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Combat Medic", "Cav_B_B_Atlas_Medic_CombatMedic_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-
-        [_object,"Ops Officer", "Cav_B_B_Atlas_Logistics_OpsOfficer_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Ops NCO", "Cav_B_B_Atlas_Logistics_OpsNCO_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-
-        [_object,"Logistical Team Leader", "Cav_B_B_Atlas_Logistics_TeamLeader_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
-        [_object,"Logistical Team Member", "Cav_B_B_Atlas_Logistics_TeamMember_F", "", _bravoAtlasCoCat, "Bravo", _allowOnlyForCompany] call FUNC(addQuickSelection);
+    // Loadouts Mustang
+    if (_companySelector in ['BRAVO', 'MUSTANG'] or _alwaysAvalible) then {
+        [_object,"cScriptQuickSelection_Bravo_Mustang","Mustang",_icon,["ACE_MainActions","cScriptQuickSelectionMenu","cScriptQuickSelection_Bravo"]] call FUNC(addAceCategory);
+        private _bravoMustCoCat = ['ACE_MainActions','cScriptQuickSelectionMenu','cScriptQuickSelection_Bravo','cScriptQuickSelection_Bravo_Mustang'];
+        
+        [_object,"Team Leader", "Cav_B_B_TeamLeader_Mustang_F", "", _bravoMustCoCat, "Mustang", _allowOnlyForCompany] call FUNC(addQuickSelection);
+        [_object,"Combat Medic", "Cav_B_B_Mustang_CombatMedic_F", "", _bravoMustCoCat, "Mustang", _allowOnlyForCompany] call FUNC(addQuickSelection);
     };
+
 };
 
 //          C H A R L I E   C O M P A N Y   L O A D O U T S
@@ -185,7 +187,7 @@ if (_companySelector in _charlie or _alwaysAvalible) then {
     [_object,"Grenadier", "Cav_B_C_Grenadier_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
     [_object,"Rifleman", "Cav_B_C_Rifleman_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
     [_object,"Combat Life Saver", "Cav_B_C_CombatLifeSaver_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
-    //[_object,"Marksman", "Cav_B_C_Marksman_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
+    [_object,"Marksman", "Cav_B_C_Marksman_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
     [_object,"Crew", "Cav_B_C_Crew_F", "", _charlieSquadCat, "Charlie", _allowOnlyForCompany] call FUNC(addQuickSelection);
 
 

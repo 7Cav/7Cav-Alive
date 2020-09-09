@@ -73,11 +73,11 @@ private _bravoArsenalContainer = [
     "B_Carryall_mcamo","B_AssaultPack_mcamo",
 
     // Crate Weapons Export
-    "rhs_weap_maaws","rhs_weap_m240B","rhs_weap_fim92","rhs_weap_M136_hp","rhs_weap_m72a7",
+    "tf47_m3maaws","rhs_weap_m240B","rhs_weap_fim92","rhs_weap_M136_hp","rhs_weap_m72a7",
     // Crate Magazines Export
-    "ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","SmokeShell","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","ACE_Chemlight_IR","B_IR_Grenade","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red","rhsusf_200Rnd_556x45_box","rhsusf_200rnd_556x45_mixed_box","rhsusf_100Rnd_762x51_m61_ap","rhs_mag_maaws_HEAT","rhs_mag_maaws_HE","rhs_mag_maaws_HE","rhs_mag_maaws_HEAT","rhs_fim92_mag","rhs_fgm148_magazine_AT","HandGrenade","ACE_M84","rhs_mag_M441_HE","rhs_mag_M433_HEDP","rhs_mag_M397_HET","rhs_mag_M585_white","rhs_mag_m661_green","rhs_mag_m662_red","rhs_mag_m713_Red","rhs_mag_m714_White","rhs_mag_m715_Green","rhs_mag_m716_yellow","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","ACE_HuntIR_M203","rhsusf_m112_mag","rhsusf_m112x4_mag","ClaymoreDirectionalMine_Remote_Mag",
+    "ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","SmokeShell","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","ACE_Chemlight_IR","B_IR_Grenade","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red","rhsusf_200Rnd_556x45_box","rhsusf_200rnd_556x45_mixed_box","rhsusf_100Rnd_762x51_m61_ap","Cav_m3maaws_HEAT_CS","tf47_m3maaws_ILLUM","tf47_m3maaws_HE","tf47_m3maaws_HEAT","rhs_fim92_mag","rhs_fgm148_magazine_AT","HandGrenade","ACE_M84","rhs_mag_M441_HE","rhs_mag_M433_HEDP","rhs_mag_M397_HET","rhs_mag_M585_white","rhs_mag_m661_green","rhs_mag_m662_red","rhs_mag_m713_Red","rhs_mag_m714_White","rhs_mag_m715_Green","rhs_mag_m716_yellow","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","ACE_HuntIR_M203","rhsusf_m112_mag","rhsusf_m112x4_mag","ClaymoreDirectionalMine_Remote_Mag",
     // Crate Items Export
-    "ACRE_PRC343","ACRE_PRC117F","ACRE_PRC152","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_M952V","rhsusf_acc_anpeq15side_bk","ACE_quikclot","ACE_tourniquet","ACE_splint","ACE_personalAidKit","ACE_surgicalKit","ACE_Chemlight_Shield","ACE_Flashlight_XL50","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_EarPlugs","rhs_googles_black","rhs_googles_clear","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_clr","ACE_MapTools","ACE_Canteen","ACE_MRE_BeefStew","ACE_MRE_ChickenTikkaMasala","ACE_MRE_ChickenHerbDumplings","ACE_MRE_CreamChickenSoup","ACE_MRE_CreamTomatoSoup","ACE_MRE_LambCurry","ACE_MRE_MeatballsPasta","ACE_MRE_SteakVegetables","rhs_optic_maaws","ACE_wirecutter","ACE_EntrenchingTool","ACE_CableTie","ToolKit","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_adenosine","ACE_epinephrine","ACE_morphine","ACE_bloodIV","ACE_bloodIV_500","ACE_bloodIV_250","ACE_plasmaIV","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_salineIV","ACE_salineIV_500","ACE_salineIV_250","ACE_bodyBag","ACE_M26_Clacker","ACE_DefusalKit","ACE_Fortify"
+    "ACRE_PRC343","ACRE_PRC117F","ACRE_PRC152","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_M952V","rhsusf_acc_anpeq15side_bk","ACE_quikclot","ACE_tourniquet","ACE_splint","ACE_personalAidKit","ACE_surgicalKit","ACE_Chemlight_Shield","ACE_Flashlight_XL50","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_EarPlugs","rhs_googles_black","rhs_googles_clear","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_clr","ACE_MapTools","ACE_Canteen","ACE_MRE_BeefStew","ACE_MRE_ChickenTikkaMasala","ACE_MRE_ChickenHerbDumplings","ACE_MRE_CreamChickenSoup","ACE_MRE_CreamTomatoSoup","ACE_MRE_LambCurry","ACE_MRE_MeatballsPasta","ACE_MRE_SteakVegetables","tf47_optic_m3maaws","ACE_wirecutter","ACE_EntrenchingTool","ACE_CableTie","ToolKit","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_adenosine","ACE_epinephrine","ACE_morphine","ACE_bloodIV","ACE_bloodIV_500","ACE_bloodIV_250","ACE_plasmaIV","ACE_plasmaIV_500","ACE_plasmaIV_250","ACE_salineIV","ACE_salineIV_500","ACE_salineIV_250","ACE_bodyBag","ACE_M26_Clacker","ACE_DefusalKit","ACE_Fortify"
     // Crate Backpacks Export
 ];
 
@@ -94,70 +94,12 @@ private _charlieArsenalContainer = [
     "B_Carryall_mcamo","B_AssaultPack_mcamo",
 
     // Crate Weapons Export
-    "rhs_weap_maaws","rhs_weap_m240B","rhs_weap_fim92","rhs_weap_M136_hp","rhs_weap_m72a7",
+    "tf47_m3maaws","rhs_weap_m240B","rhs_weap_fim92","rhs_weap_M136_hp","rhs_weap_m72a7",
     // Crate Magazines Export
-    "ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","SmokeShell","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","ACE_Chemlight_IR","B_IR_Grenade","rhs_mag_30Rnd_556x45_M855A1_PMAG","rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red","rhsusf_200Rnd_556x45_box","rhsusf_200rnd_556x45_mixed_box","rhsusf_100Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m61_ap","rhs_mag_maaws_HEAT","rhs_mag_maaws_HE","rhs_mag_maaws_HE","rhs_mag_maaws_HEAT","rhs_fim92_mag","rhs_fgm148_magazine_AT","HandGrenade","ACE_M84","rhs_mag_M441_HE","rhs_mag_M433_HEDP","rhs_mag_M397_HET","rhs_mag_M585_white","rhs_mag_m661_green","rhs_mag_m662_red","rhs_mag_m713_Red","rhs_mag_m714_White","rhs_mag_m715_Green","rhs_mag_m716_yellow","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","ACE_HuntIR_M203","rhsusf_m112_mag","rhsusf_m112x4_mag","ClaymoreDirectionalMine_Remote_Mag",
+    "ACE_Chemlight_HiBlue","ACE_Chemlight_HiGreen","ACE_Chemlight_HiRed","ACE_Chemlight_HiWhite","ACE_Chemlight_HiYellow","SmokeShell","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","ACE_Chemlight_IR","B_IR_Grenade","rhs_mag_30Rnd_556x45_M855A1_PMAG","rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red","rhsusf_200Rnd_556x45_box","rhsusf_200rnd_556x45_mixed_box","rhsusf_100Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m61_ap","Cav_m3maaws_HEAT_CS","tf47_m3maaws_ILLUM","tf47_m3maaws_HE","tf47_m3maaws_HEAT","rhs_fim92_mag","rhs_fgm148_magazine_AT","HandGrenade","ACE_M84","rhs_mag_M441_HE","rhs_mag_M433_HEDP","rhs_mag_M397_HET","rhs_mag_M585_white","rhs_mag_m661_green","rhs_mag_m662_red","rhs_mag_m713_Red","rhs_mag_m714_White","rhs_mag_m715_Green","rhs_mag_m716_yellow","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","ACE_HuntIR_M203","rhsusf_m112_mag","rhsusf_m112x4_mag","ClaymoreDirectionalMine_Remote_Mag",
     // Crate Items Export
-    "ACRE_PRC343","ACRE_PRC117F","ACRE_PRC152","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_M952V","rhsusf_acc_anpeq15side_bk","ACE_quikclot","ACE_tourniquet","ACE_splint","ACE_personalAidKit","ACE_surgicalKit","ACE_Chemlight_Shield","ACE_Flashlight_XL50","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_EarPlugs","rhs_googles_black","rhs_googles_clear","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_clr","ACE_MapTools","ACE_Canteen","ACE_MRE_BeefStew","ACE_MRE_ChickenTikkaMasala","ACE_MRE_ChickenHerbDumplings","ACE_MRE_CreamChickenSoup","ACE_MRE_CreamTomatoSoup","ACE_MRE_LambCurry","ACE_MRE_MeatballsPasta","ACE_MRE_SteakVegetables","rhs_optic_maaws","rhsusf_acc_ELCAN_ard","rhsusf_acc_ACOG_MDO","rhsusf_acc_T1_high","rhsusf_acc_ACOG_RMR","rhsusf_acc_ACOG2","rhsusf_acc_compm4","rhsusf_acc_RX01","rhsusf_acc_eotech_xps3","rhsusf_acc_eotech_552","ACE_M26_Clacker","DAR_Beret_Mar","rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp","rhsusf_ach_helmet_headset_ocp","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_ach_helmet_camo_ocp","rhsusf_ach_helmet_ocp_norotos","ACE_wirecutter","ACE_EntrenchingTool","ACE_CableTie"
+    "ACRE_PRC343","ACRE_PRC117F","ACRE_PRC152","rhsusf_acc_anpeq15_bk_light","rhsusf_acc_M952V","rhsusf_acc_anpeq15side_bk","ACE_quikclot","ACE_tourniquet","ACE_splint","ACE_personalAidKit","ACE_surgicalKit","ACE_Chemlight_Shield","ACE_Flashlight_XL50","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_EarPlugs","rhs_googles_black","rhs_googles_clear","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_clr","ACE_MapTools","ACE_Canteen","ACE_MRE_BeefStew","ACE_MRE_ChickenTikkaMasala","ACE_MRE_ChickenHerbDumplings","ACE_MRE_CreamChickenSoup","ACE_MRE_CreamTomatoSoup","ACE_MRE_LambCurry","ACE_MRE_MeatballsPasta","ACE_MRE_SteakVegetables","tf47_optic_m3maaws","rhsusf_acc_ELCAN_ard","rhsusf_acc_ACOG_MDO","rhsusf_acc_T1_high","rhsusf_acc_ACOG_RMR","rhsusf_acc_ACOG2","rhsusf_acc_compm4","rhsusf_acc_RX01","rhsusf_acc_eotech_xps3","rhsusf_acc_eotech_552","ACE_M26_Clacker","DAR_Beret_Mar","rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp","rhsusf_ach_helmet_headset_ocp","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_ach_helmet_camo_ocp","rhsusf_ach_helmet_ocp_norotos","ACE_wirecutter","ACE_EntrenchingTool","ACE_CableTie"
     // Crate Backpacks Export
-];
-
-private _privateBlacklist = [
-    "launch_I_Titan_F",
-    "launch_O_Titan_ghex_F",
-    "launch_O_Titan_F",
-    "launch_B_Titan_tna_F",
-    "launch_B_Titan_F",
-    "launch_O_Titan_short_F",
-    "launch_O_Titan_short_ghex_F",
-    "launch_I_Titan_short_F",
-    "launch_B_Titan_short_F",
-    "launch_B_Titan_short_tna_F",
-    "launch_B_Titan_olive_F",
-    "launch_I_Titan_eaf_F",
-    "rhsusf_5Rnd_HE",
-    "rhsusf_5Rnd_FRAG",
-    "rhsusf_8Rnd_HE",
-    "rhsusf_8Rnd_FRAG",
-    "H_HelmetO_ViperSP_ghex_F",
-    "H_HelmetO_ViperSP_hex_F",
-    "arifle_ARX_hex_F",
-    "arifle_ARX_ghex_F",
-    "arifle_ARX_blk_F",
-    "U_O_V_Soldier_Viper_hex_F",
-    "U_O_V_Soldier_Viper_F",
-    "U_B_Protagonist_VR",
-    "U_O_Protagonist_VR",
-    "U_C_Protagonist_VR",
-    "U_I_Protagonist_VR",
-    "kka3_ace_extension_Campfire_burning_F",
-    "ACRE_SEM52SL",
-    "ACRE_SEM70",
-    "B_Respawn_Sleeping_bag_blue_F",
-    "B_Respawn_Sleeping_bag_brown_F",
-    "B_Respawn_TentDome_F",
-    "B_Patrol_Respawn_bag_F",
-    "B_Respawn_Sleeping_bag_F",
-    "B_Respawn_TentA_F",
-    "I_AA_01_weapon_F",
-    "O_AA_01_weapon_F",
-    "O_AT_01_weapon_F",
-    "I_AT_01_weapon_F",
-    "B_AT_01_weapon_F",
-    "B_AA_01_weapon_F",
-    "I_E_AT_01_weapon_F",
-    "I_E_AA_01_weapon_F",
-    "ace_csw_staticATCarry",
-    "ace_csw_staticAACarry",
-    "I_E_UavTerminal",
-    "O_UavTerminal",
-    "I_UavTerminal",
-    "ALIVE_Terminal",
-    "ACE_CTS9",
-    "rhsusf_acc_tacsac_blk",
-    "rhsusf_acc_tacsac_blue",
-    "rhsusf_acc_tacsac_tan",
-    "ALIVE_Tablet"
 ];
 
 switch (_container) do {
@@ -175,10 +117,6 @@ switch (_container) do {
         _charlieArsenalContainer append _globalArsenalContainer;
         _charlieArsenalContainer arrayIntersect _charlieArsenalContainer;
         [_object, _charlieArsenalContainer] call ace_arsenal_fnc_initBox;
-    };
-    case "PUBLIC": {
-        [_object, true] call ace_arsenal_fnc_initBox;
-        [_object, _privateBlacklist, true] call ace_arsenal_fnc_removeVirtualItems
     };
     default {
         [_object, true] call ace_arsenal_fnc_initBox;

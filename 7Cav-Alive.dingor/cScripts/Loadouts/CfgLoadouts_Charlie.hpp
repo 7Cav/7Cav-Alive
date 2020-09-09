@@ -15,7 +15,7 @@ class Cav_B_Charlie_Trooper_Local : Cav_B_Charlie_base_F {
         "ACE_DAGR"
     };
 };
-
+    
 class Cav_B_Charlie_Leader_Local : Cav_B_Charlie_base_F {
     vest[] = {"rhsusf_spcs_ocp_squadleader"};
 
@@ -85,7 +85,7 @@ class Cav_B_C_PlatoonStaff_F : Cav_B_Charlie_Leader_Local {
         "ACE_HuntIR_monitor"
     };
 
-    gps[] = {"ItemAndroid"};
+    gps[] = {""};
 };
 
 class Cav_B_C_PlatoonMedic_F : Cav_B_Charlie_Leader_Local {
@@ -135,7 +135,7 @@ class Cav_B_C_PlatoonMedic_F : Cav_B_Charlie_Leader_Local {
         "ACE_CableTie",2
     };
 
-    gps[] = {"ItemAndroid"};
+    gps[] = {""};
 
     insignia[] = {"Cav_Insignia_Specialized_CLS"};
     preLoadout = "[(_this select 0), 'charlie', 1, 0] call cScripts_fnc_setPreInitPlayerSettings;";
@@ -163,7 +163,7 @@ class Cav_B_C_SquadLeader_F : Cav_B_Charlie_Leader_Local {
         "rhs_weap_rsp30_red",2
     };
 
-    gps[] = {"ItemAndroid"};
+    gps[] = {""};
 };
 
 class Cav_B_C_FireTeamLeader_F : Cav_B_Charlie_Leader_Local {
@@ -187,7 +187,7 @@ class Cav_B_C_FireTeamLeader_F : Cav_B_Charlie_Leader_Local {
 };
 
 class Cav_B_C_Bravo_FireTeamLeader_F : Cav_B_Charlie_Leader_Local {
-    displayName = "";
+    displayName = "Fire Team Leader";
 
     vest[] = {"rhsusf_spcs_ocp_teamleader","rhsusf_spcs_ocp_teamleader_alt"};
 
@@ -263,7 +263,7 @@ class Cav_B_C_Grenadier_F : Cav_B_Charlie_Trooper_Local {
 class Cav_B_C_Rifleman_F : Cav_B_Charlie_Trooper_Local {
     displayName = "Rifleman";
 
-    launcher[] = {"rhs_weap_M136_hp"};
+    launcher[] = {"tf47_at4_HP"};
 
     magazines[] += {
         "rhs_mag_30Rnd_556x45_M855A1_PMAG",2,
@@ -449,8 +449,8 @@ class Cav_B_C_SLMFireTeamLeader_F : Cav_B_Charlie_Leader_Local {
     backpack[] = {"B_Kitbag_mcamo"};
 
     magazines[] += {
-        "rhs_mag_maaws_HE",3,
-        "rhs_mag_maaws_HEAT",
+        "tf47_m3maaws_HE",3,
+        "Cav_m3maaws_HEAT_CS",
     };
     
     items[] += {
@@ -463,11 +463,11 @@ class Cav_B_C_SLMFireTeamLeader_F : Cav_B_Charlie_Leader_Local {
 class Cav_B_C_SLMGunner_F : Cav_B_Charlie_Trooper_Local {
     displayName = "MAAWS Gunner";
 
-    launcher[] = {"rhs_weap_maaws","rhs_optic_maaws"};
+    launcher[] = {"tf47_m3maaws","tf47_optic_m3maaws"};
 
     magazines[] += {
-        "rhs_mag_maaws_HE",
-        "rhs_mag_maaws_HEAT"
+        "tf47_m3maaws_HE",
+        "Cav_m3maaws_HEAT_CS"
     };
     
     items[] += {
@@ -485,8 +485,8 @@ class Cav_B_C_SLMAmmoBearer_F : Cav_B_Charlie_Trooper_Local {
     binoculars[] = {"rhsusf_bino_m24","rhsusf_bino_m24_ARD"};
 
     magazines[] += {
-        "rhs_mag_maaws_HE",3,
-        "rhs_mag_maaws_HEAT",
+        "tf47_m3maaws_HE",3,
+        "Cav_m3maaws_HEAT_CS",
     };
     items[] += {
 
@@ -571,7 +571,7 @@ class Cav_B_C_CCMSFireTeamLeader_F : Cav_B_Charlie_Leader_Local {
 class Cav_B_C_CCMSGunner_F : Cav_B_Charlie_Trooper_Local {
     displayName = "Javelin Gunner";
 
-    backpack[] = {"B_Carryall_mcamo","B_Carryall_mcamo","B_Carryall_cbr"};
+    backpack[] = {""};
 
     launcher[] = {"rhs_weap_fgm148"};
 
