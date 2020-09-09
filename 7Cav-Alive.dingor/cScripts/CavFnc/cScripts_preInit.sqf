@@ -8,7 +8,7 @@
     if !(is3DEN) then {
             ["Initializing CBA Settings...", "preInit"] call FUNC(logInfo);
     } else {
-        diag_log format["[%1] (%2) %3: %4", QUOTE(PREFIX), "INFO", "EDEN", "Initializing CBA Settings..."];
+        diag_log formatText ["[%1] (%2) %3: %4", QUOTE(PREFIX), "INFO", "EDEN", "Initializing CBA Settings..."];
     };
 #endif
 
@@ -16,6 +16,7 @@
 EGVAR(patches,usesACE)      = isClass (configFile >> "CfgPatches" >> "ace_main");
 EGVAR(patches,usesACRE)     = isClass (configFile >> "CfgPatches" >> "acre_sys_core");
 EGVAR(patches,usesTFAR)     = isClass (configFile >> "CfgPatches" >> "task_force_radio");
+EGVAR(patches,usesAlive)    = isClass (configFile >> "CfgPatches" >> "ALiVE_main");
 EGVAR(patches,usesAchilles) = isClass (configFile >> "CfgPatches" >> "achilles_data_f_achilles");
 EGVAR(patches,usesZen)      = isClass (configFile >> "CfgPatches" >> "zen_main");
 
@@ -93,7 +94,7 @@ private _cScriptSettings = "cScripts Mission Settings";
     QEGVAR(Settings,allowCustomInit),
     "CHECKBOX",
     ["Custom object init", "Allow the mission to be able to apply custom init to vehicles and objects pressent on mission start.\n"],
-    [_cScriptSettings, "3; Custom Initzialisation"],
+    [_cScriptSettings, "3; Custom Initialization"],
     true,
     true,
     {},
@@ -105,7 +106,7 @@ private _cScriptSettings = "cScripts Mission Settings";
     QEGVAR(Settings,useCustomVehicleSettings),
     "CHECKBOX",
     ["Vehicle Settings", "Allow mission to apply custom settings, including change inventory, to vehicles.\nC130 jump action and Helicopter Get out right and Left is Included here.\n"],
-    [_cScriptSettings, "3; Custom Initzialisation"],
+    [_cScriptSettings, "3; Custom Initialization"],
     true,
     true,
     {},
@@ -115,7 +116,7 @@ private _cScriptSettings = "cScripts Mission Settings";
     QEGVAR(Settings,useCustomVehicleInventory),
     "CHECKBOX",
     ["Vehicle Inventory", "Allow mission to change the vehicles inventory.\n"],
-    [_cScriptSettings, "3; Custom Initzialisation"],
+    [_cScriptSettings, "3; Custom Initialization"],
     true,
     true,
     {},
@@ -129,7 +130,7 @@ private _cScriptSettings = "cScripts Mission Settings";
     QEGVAR(Settings,useCustomSupplyInventory),
     "CHECKBOX",
     ["Custom supplies Crates","Allow mission to adjust crate content.\n"],
-    [_cScriptSettings, "3; Custom Initzialisation"],
+    [_cScriptSettings, "3; Custom Initialization"],
     false,
     true,
     {},
@@ -357,7 +358,7 @@ private _cScriptSettings = "cScripts Mission Settings";
     if !(is3DEN) then {
             ["Initialization of CBA Settings completed...", "preInit"] call FUNC(logInfo);
     } else {
-        diag_log format["[%1] (%2) %3: %4", QUOTE(PREFIX), "INFO", "EDEN", "Initialization of CBA Settings completed..."];
+        diag_log formatText ["[%1] (%2) %3: %4", QUOTE(PREFIX), "INFO", "EDEN", "Initialization of CBA Settings completed..."];
     };
 #endif
 
