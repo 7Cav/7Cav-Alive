@@ -107,7 +107,6 @@ TypeFilter_ArmoredVehicles =
 	["rhsusf_m113*", true],
 	["B_AFV_Wheeled_01*", true], // Rookiat tank destoryer
 	["B_APC_Wheeled_01*", true],
-	["rhsusf_stryker*", true],
 	["I_LT_01*", true],
 	["All", false]
 ];
@@ -127,8 +126,12 @@ TypeFilter_LogisticsVehicles =
 	["rhsusf_M107*", true], // Rearm SOV + more logi trucks
 	["rhsusf_M1230A1*", true], // Medical MRAP
 	["rhsusf_M109*", true], // SPG
+	["rhsusf_M142*", true], // MLRS
 	["rhsusf_m113_usarmy_medical", true], //Medical M113
 	["B_APC_Tracked_01*", true], //Bobcat
+	["RHS_CH_47F*", true],	//Chinook is a logistics helicopter
+	["B_Heli_Transport_03_F", true], //ditto
+	["B_T_VTOL_01_vehicle_F", true], //Specifically the vehicle transport blackfish
 	["All", false]
 ];
 
@@ -167,14 +170,12 @@ TypeFilter_InfantryVehicles =
 	["rhsusf_m113_usarmy", true],
 	["rhsusf_m113_usarmy_supply", true],
 
+	["rhsusf_stryker*", true],
+
 	["Car", true],
 	["O_HMG_01_*", true],
 	["I_HMG_01_*", true],
 	["Ship", true],
-	["RHS_M2A3*", true], // Bradleys
-	["LT_01_base_F", true], // Wiesel
-	["I_APC_tracked_03_base_F", true], // Warrior AFV
-	["B_APC_Wheeled_01_cannon_F", true], // NATO Vanilla APC (Badger IFV)
 	["B_MRAP_01_F", true], // MATV
 	["rhsusf_m998*", true], // Soft top HMMWV
 	["rhsusf_m102*", true], //HMMWV
