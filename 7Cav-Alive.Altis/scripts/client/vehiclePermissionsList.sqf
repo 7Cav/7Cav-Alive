@@ -107,6 +107,7 @@ TypeFilter_ArmoredVehicles =
 	["rhsusf_m113*", true],
 	["B_AFV_Wheeled_01*", true], // Rookiat tank destoryer
 	["B_APC_Wheeled_01*", true],
+	["I_APC_tracked_03*", true],
 	["I_LT_01*", true],
 	["All", false]
 ];
