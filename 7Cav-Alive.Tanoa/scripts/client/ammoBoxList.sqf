@@ -12,6 +12,61 @@ CLIENT_SpawnBox = {
   _crate
 };
 
+CLIENT_spawn_small_box = {
+  params ["_position"];
+
+  _crate = [_position, "ACE_Box_Misc"] call CLIENT_SpawnBox;
+
+  // Empty the crate
+  clearweaponcargoGlobal _crate;
+  clearmagazinecargoGlobal _crate;
+  clearitemcargoGlobal _crate;
+  clearbackpackcargoGlobal _crate;
+};
+
+CLIENT_spawn_big_box = {
+  params ["_position"];
+
+  _crate = [_position, "Box_NATO_Uniforms_F"] call CLIENT_SpawnBox;
+
+  // Empty the crate
+  clearweaponcargoGlobal _crate;
+  clearmagazinecargoGlobal _crate;
+  clearitemcargoGlobal _crate;
+  clearbackpackcargoGlobal _crate;
+};
+
+CLIENT_spawn_airDrop_box = {
+  params ["_position"];
+
+  _crate = [_position, "C_IDAP_supplyCrate_F"] call CLIENT_SpawnBox;
+
+  // Empty the crate
+  clearweaponcargoGlobal _crate;
+  clearmagazinecargoGlobal _crate;
+  clearitemcargoGlobal _crate;
+  clearbackpackcargoGlobal _crate;
+};
+
+CLIENT_spawn_vehicleAmmo_box = {
+  params ["_position"];
+
+  _crate = [_position, "Box_NATO_AmmoVeh_F"] call CLIENT_SpawnBox;
+
+  //add vehicle ammo
+  _crate setVariable ["ace_rearm_isSupplyVehicle", true];
+  [_crate, 1000] call ace_rearm_fnc_setSupplyCount;
+};
+
+CLIENT_spawn_fuel_box = {
+  params ["_position"];
+
+  _crate = [_position, "CargoNet_01_barrels_F"] call CLIENT_SpawnBox;
+
+  //Add fuel
+  [_crate, 600] call ace_refuel_fnc_makeSource
+};
+
 CLIENT_SpawnMedicalBox = {
   params ["_position"];
 

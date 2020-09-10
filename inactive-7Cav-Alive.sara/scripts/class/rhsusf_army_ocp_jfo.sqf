@@ -9,9 +9,12 @@ if (_state == "init") then
 
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	{
-		// Let Apollo drive anything
-		player setVariable [_x, [[TypeFilter_All, [], {}]] + (player getVariable _x)];
+		player setVariable [_x, [[TypeFilter_LogisticsVehicles, [], {}]] + (player getVariable _x)];
 	} forEach ["VP_Driver", "VP_Pilot", "VP_Gunner", "VP_Turret"];
+
+	{
+		player setVariable [_x, [[TypeFilter_ArmoredVehicles, [], {}]] + (player getVariable _x)];
+	} forEach ["VP_Driver"];
 };
 
 if (_state == "respawn") then
