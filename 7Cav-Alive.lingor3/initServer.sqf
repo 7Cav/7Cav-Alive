@@ -53,14 +53,15 @@ setDate _date;
 
 enableEnvironment [false, true];
 
-// BEGIN TASKS
-[ //TERMINAL 1 ( Term1 )
+//Begin Tasks
+if (!isNull Term1) then { 
+	[ //TERMINAL 1 ( Term1 )
   BLUFOR, //Group (can be boolean)
   "Deactivate the Airfield!", //Task ID
   [ //task description, title, marker
-    "Deactivate the satellite to prevent the enemy air commander from being able to call in air strikes!", //Task description
-    "Deactivate the Airfield!", //Task Title
-    "Term1" //Task location
+  "Deactivate the satellite to prevent the enemy air commander from being able to call in air strikes!", //Task description
+  "Deactivate the Airfield!", //Task Title
+  "Term1" //Task location
   ],
   Term1, //Object that the task will be put onto
   "CREATED", //Task State
@@ -68,8 +69,10 @@ enableEnvironment [false, true];
   true, //Show notification
   "destroy", //Type (string)
   false //Visible in 3d space
-] call BIS_fnc_taskCreate;
+  ] call BIS_fnc_taskCreate;
+};
 
+if (!isNull Term2) then {
 [ //TERMINAL 2 ( Term2 )
   BLUFOR, //Group (can be boolean)
   "Deactivate the Armored Corps!", //Task ID
@@ -85,7 +88,9 @@ enableEnvironment [false, true];
   "destroy", //Type (string)
   false //Visible in 3d space
 ] call BIS_fnc_taskCreate;
+};
 
+if (!isNull Term3) then {
 [ //TERMINAL 3 ( Term3 )
   BLUFOR, //Group (can be boolean)
   "Deactivate the Mechanized Corps!", //Task ID
@@ -101,7 +106,9 @@ enableEnvironment [false, true];
   "destroy", //Type (string)
   false //Visible in 3d space
 ] call BIS_fnc_taskCreate;
+};
 
+if (!isNull Term4) then {
 [ //TERMINAL 4 ( Term4 )
   BLUFOR, //Group (can be boolean)
   "Deactivate the Specops headquarters!", //Task ID
@@ -117,6 +124,7 @@ enableEnvironment [false, true];
   "destroy", //Type (string)
   false //Visible in 3d space
 ] call BIS_fnc_taskCreate;
+};
 
 //ALiVE headless
 if (!hasInterface && !isDedicated) then {
