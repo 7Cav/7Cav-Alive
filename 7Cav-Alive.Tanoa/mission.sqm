@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5541;
+		nextID=5590;
 	};
 	class Camera
 	{
-		pos[]={6894.9341,6.1379929,7461.2612};
-		dir[]={-0.10496991,-0.38289097,0.91789973};
-		up[]={-0.043513533,0.92375755,0.38049632};
-		aside[]={0.99360168,7.9046004e-008,0.11362606};
+		pos[]={6969.9243,54.64291,7145.9688};
+		dir[]={-0.22185537,-0.51475292,0.82824385};
+		up[]={-0.13320544,0.8572979,0.49728832};
+		aside[]={0.9660278,2.6919588e-007,0.25876254};
 	};
 };
 binarizationWanted=0;
@@ -63641,7 +63641,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Mustang</t>"", {_this select 1 setpos getpos medicMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Apollo</t>"", {_this select 1 setpos getpos apolloMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Boat Launch</t>"", {_this select 1 setpos getpos boatMarker;}];};}";
+								init="call{call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to ATLAS-1/2</t>"", {_this select 1 setpos getpos medicMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to ATLAS-4</t>"", {_this select 1 setpos getpos apolloMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Boat Launch</t>"", {_this select 1 setpos getpos boatMarker;}];};}";
 								name="baseStand";
 								disableSimulation=1;
 							};
@@ -64209,7 +64209,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={6931.7949,3.9781122,7348.6196};
-												angles[]={-0,4.0367546,0};
+												angles[]={0,4.0367546,0};
 											};
 											side="West";
 											flags=6;
