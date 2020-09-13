@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7200;
+		nextID=7253;
 	};
 	class Camera
 	{
-		pos[]={3047.1714,57.514214,6491.4966};
+		pos[]={2992.5608,27.852001,6488.6211};
 		dir[]={-0.79725802,-0.60226625,-0.041954502};
 		up[]={-0.60147971,0.79826289,-0.031651746};
 		aside[]={-0.052552462,-3.9941187e-007,0.99866074};
@@ -790,7 +790,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=110;
+		items=109;
 		class Item0
 		{
 			dataType="Layer";
@@ -16123,14 +16123,14 @@ class Mission
 					name="4 - Support Elements";
 					class Entities
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							dataType="Layer";
-							name="1 - Atlas 1";
+							name="1 - ATLAS";
 							class Entities
 							{
-								items=1;
+								items=3;
 								class Item0
 								{
 									dataType="Group";
@@ -16495,7 +16495,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Atlas-1";
+													value="ATLAS - 1";
 												};
 											};
 										};
@@ -16521,17 +16521,400 @@ class Mission
 										nAttributes=2;
 									};
 								};
-							};
-							id=6425;
-						};
-						class Item1
-						{
-							dataType="Layer";
-							name="3 - Apollo 1";
-							class Entities
-							{
-								items=1;
-								class Item0
+								class Item1
+								{
+									dataType="Group";
+									side="West";
+									class Entities
+									{
+										items=4;
+										class Item0
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={2983.7849,14.113588,6485.0986};
+												angles[]={0,4.0367546,6.2731848};
+											};
+											side="West";
+											flags=6;
+											class Attributes
+											{
+												rank="LIEUTENANT";
+												init="call{this setgroupid[""ATLAS-2""];" \n "}";
+												name="MUST_3";
+												description="Medical Team Leader @ATLAS-2";
+												isPlayable=1;
+											};
+											id=8198;
+											type="Cav_B_B_Atlas_Medic_TeamLeader_F";
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ace_isSurrendered";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ace_isEngineer";
+													expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												class Attribute2
+												{
+													property="ace_isHandcuffed";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												class Attribute3
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0.98000002;
+														};
+													};
+												};
+												class Attribute4
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male03ENG";
+														};
+													};
+												};
+												class Attribute5
+												{
+													property="ace_isMedic";
+													expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=1;
+														};
+													};
+												};
+												class Attribute6
+												{
+													property="acex_headless_blacklist";
+													expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"BOOL"
+																};
+															};
+															value=0;
+														};
+													};
+												};
+												nAttributes=7;
+											};
+										};
+										class Item1
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={2982.365,14.127919,6483.7271};
+											};
+											side="West";
+											flags=5;
+											class Attributes
+											{
+												description="Combat Medic @ATLAS-2";
+												isPlayable=1;
+											};
+											id=8199;
+											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
+											atlOffset=0.00013160706;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male08ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0.97000003;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
+										class Item2
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={2982.9822,14.121844,6486.4546};
+											};
+											side="West";
+											flags=5;
+											class Attributes
+											{
+												description="Combat Medic @ATLAS-2";
+												isPlayable=1;
+											};
+											id=8200;
+											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
+											atlOffset=0.00022697449;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male08ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0.97000003;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
+										class Item3
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={2985.3435,14.098157,6484.8423};
+											};
+											side="West";
+											flags=5;
+											class Attributes
+											{
+												description="Combat Medic @ATLAS-2";
+												isPlayable=1;
+											};
+											id=8201;
+											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
+											atlOffset=0.00015449524;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="speaker";
+													expression="_this setspeaker _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Male08ENG";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="pitch";
+													expression="_this setpitch _value;";
+													class Value
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"SCALAR"
+																};
+															};
+															value=0.97000003;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
+									};
+									class Attributes
+									{
+									};
+									id=8197;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="groupID";
+											expression="[_this, _value] call CBA_fnc_setCallsign";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ATLAS - 2";
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="acex_headless_blacklist";
+											expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
+								class Item2
 								{
 									dataType="Group";
 									side="West";
@@ -17048,6 +17431,25 @@ class Mission
 									{
 										class Attribute0
 										{
+											property="groupID";
+											expression="[_this, _value] call CBA_fnc_setCallsign";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ATLAS - 4";
+												};
+											};
+										};
+										class Attribute1
+										{
 											property="acex_headless_blacklist";
 											expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 											class Value
@@ -17065,13 +17467,14 @@ class Mission
 												};
 											};
 										};
-										nAttributes=1;
+										nAttributes=2;
 									};
 								};
 							};
-							id=6430;
+							id=6425;
+							atlOffset=-0.059461594;
 						};
-						class Item2
+						class Item1
 						{
 							dataType="Layer";
 							name="4 - Havoc 1";
@@ -18625,7 +19028,7 @@ class Mission
 						};
 					};
 					id=6424;
-					atlOffset=-0.024999619;
+					atlOffset=-4.1387491;
 				};
 				class Item3
 				{
@@ -24203,7 +24606,7 @@ class Mission
 				};
 			};
 			id=6361;
-			atlOffset=-0.026562691;
+			atlOffset=-0.24702263;
 		};
 		class Item3
 		{
@@ -35633,410 +36036,6 @@ class Mission
 			};
 			id=8184;
 			type="EmptyDetector";
-		};
-		class Item109
-		{
-			dataType="Layer";
-			name="Players_1";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Layer";
-					name="4 - Support Elements_1";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Layer";
-							name="1 - Atlas-1";
-							class Entities
-							{
-								items=1;
-								class Item0
-								{
-									dataType="Group";
-									side="West";
-									class Entities
-									{
-										items=4;
-										class Item0
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={2983.7849,14.113588,6485.0991};
-												angles[]={-0,4.0367546,6.2731905};
-											};
-											side="West";
-											flags=6;
-											class Attributes
-											{
-												rank="LIEUTENANT";
-												init="call{this setgroupid[""ATLAS-2""];" \n "}";
-												name="MUST_3";
-												description="Medical Team Leader @ATLAS-2";
-												isPlayable=1;
-											};
-											id=8198;
-											type="Cav_B_B_Atlas_Medic_TeamLeader_F";
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="ace_isEngineer";
-													expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												class Attribute2
-												{
-													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												class Attribute3
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0.98000002;
-														};
-													};
-												};
-												class Attribute4
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male03ENG";
-														};
-													};
-												};
-												class Attribute5
-												{
-													property="ace_isMedic";
-													expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=1;
-														};
-													};
-												};
-												class Attribute6
-												{
-													property="acex_headless_blacklist";
-													expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"BOOL"
-																};
-															};
-															value=0;
-														};
-													};
-												};
-												nAttributes=7;
-											};
-										};
-										class Item1
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={2982.365,14.127919,6483.7271};
-											};
-											side="West";
-											flags=5;
-											class Attributes
-											{
-												description="Combat Medic @ATLAS-2";
-												isPlayable=1;
-											};
-											id=8199;
-											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
-											atlOffset=0.00013160706;
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male08ENG";
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0.97000003;
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-										class Item2
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={2982.9822,14.121844,6486.4546};
-											};
-											side="West";
-											flags=5;
-											class Attributes
-											{
-												description="Combat Medic @ATLAS-2";
-												isPlayable=1;
-											};
-											id=8200;
-											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
-											atlOffset=0.00022697449;
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male08ENG";
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0.97000003;
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-										class Item3
-										{
-											dataType="Object";
-											class PositionInfo
-											{
-												position[]={2985.3435,14.098157,6484.8423};
-											};
-											side="West";
-											flags=5;
-											class Attributes
-											{
-												description="Combat Medic @ATLAS-2";
-												isPlayable=1;
-											};
-											id=8201;
-											type="Cav_B_B_Atlas_Medic_CombatMedic_F";
-											atlOffset=0.00015449524;
-											class CustomAttributes
-											{
-												class Attribute0
-												{
-													property="speaker";
-													expression="_this setspeaker _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="Male08ENG";
-														};
-													};
-												};
-												class Attribute1
-												{
-													property="pitch";
-													expression="_this setpitch _value;";
-													class Value
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"SCALAR"
-																};
-															};
-															value=0.97000003;
-														};
-													};
-												};
-												nAttributes=2;
-											};
-										};
-									};
-									class Attributes
-									{
-									};
-									id=8197;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="acex_headless_blacklist";
-											expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-							};
-							id=8196;
-						};
-					};
-					id=8195;
-				};
-			};
-			id=8194;
 		};
 	};
 	class Connections
