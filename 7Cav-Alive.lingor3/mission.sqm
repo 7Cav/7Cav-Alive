@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3550;
+		nextID=3654;
 	};
 	class Camera
 	{
-		pos[]={1963.5089,26.813324,9990.2002};
-		dir[]={0.038358536,-0.23409422,-0.97152197};
-		up[]={0.0092396587,0.97219342,-0.23398915};
-		aside[]={-0.99928296,-5.7350917e-008,-0.039456684};
+		pos[]={1799.8003,78.170593,9816.6787};
+		dir[]={-0.23055623,-0.71837538,-0.65645278};
+		up[]={-0.23805539,0.69562995,-0.67780679};
+		aside[]={-0.94356906,-7.5167918e-007,0.3313942};
 	};
 };
 binarizationWanted=0;
@@ -61413,20 +61413,20 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1785.2948,4.5682106,9738.5186};
-								angles[]={6.2612667,2.8164377,0.018322192};
+								position[]={1785.2953,4.5684738,9738.5186};
+								angles[]={6.2612638,2.8164377,0.018325957};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="call{call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Mustang</t>"", {_this select 1 setpos getpos medicMarker;}];};}";
+								init="call{call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to ATLAS-1/2</t>"", {_this select 1 setpos getpos medicMarker;}];};}";
 								name="baseStand";
 								disableSimulation=1;
 							};
 							id=7122;
 							type="Land_InfoStand_V2_F";
-							atlOffset=-0.0012550354;
+							atlOffset=-0.0010001659;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -62018,11 +62018,11 @@ class Mission
 						};
 					};
 					id=7121;
-					atlOffset=0.87150955;
+					atlOffset=0.87151003;
 				};
 			};
 			id=7120;
-			atlOffset=0.87150955;
+			atlOffset=0.87151003;
 		};
 		class Item103
 		{
@@ -64550,7 +64550,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={1842.1389,3.9457521,9717.3887};
-												angles[]={-0,4.0367546,0};
+												angles[]={0,4.0367546,0};
 											};
 											side="West";
 											flags=6;
