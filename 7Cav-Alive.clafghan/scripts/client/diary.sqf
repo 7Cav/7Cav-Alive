@@ -8,8 +8,8 @@ player createDiaryRecord ["diary", ["Unit callsigns",
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
 <br/>JTAC                           Infidel
-<br/>Logistics/FOB Ops              Apollo
-<br/>Field Medical                  Mustang
+<br/>Logistics/FOB Ops              ATLAS-4
+<br/>Field Medical                  ATLAS-1/2
 <br/>Air traffic control            Telos Tower
 <br/></font>
 <br/><font face=PuristaSemiBold' size='12'>Transport Aircraft</font>
@@ -63,10 +63,10 @@ player createDiaryRecord ["diary", ["Radio Channels",
 <br/>            Used to conduct pick-up requests from logistical aviation units 
 <br/>
 <font face='EtelkaMonospacePro' size='10'><br/>15 - Logistics</font>
-<br/>            Used by Apollo and Mustang personnel to dispatch where needed. 
+<br/>            Used by ATLAS personnel to dispatch where needed. 
 <br/>
 <font face='EtelkaMonospacePro' size='10'><br/>16 - FARP Requests</font>
-<br/>            Used to communicate with Apollo personnel when you are inbound to a FARP as to what you need using the FARM acronym. FOXTROT - FUEL (state current fuel state if requesting FOXTROT) / ALPHA - AMMUNITION / ROMEO - REPAIRS / MIKE - MEDICAL (use triage category for multiple casualties) 
+<br/>            Used to communicate with ATLAS personnel when you are inbound to a FARP as to what you need using the FARM acronym. FOXTROT - FUEL (state current fuel state if requesting FOXTROT) / ALPHA - AMMUNITION / ROMEO - REPAIRS / MIKE - MEDICAL (use triage category for multiple casualties) 
 <br/>
 <font face='EtelkaMonospacePro' size='10'><br/>17 - Convoy</font>
 <br/>            Used when conducting a convoy 
@@ -122,14 +122,14 @@ player createDiaryRecord ["diary", ["FOB Building",
 In order to place down fortify objects, you must have a fortify tool (looks like a hammer) and be near the Fortify Truck. Proximity to this truck is required for other modules to be activated.
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>Ammo Module</font>
-<br/>The Ammo Module, a Huron Rearm Pod, allows Apollo to purchase ammunication crates, similar to the ammo crate spawner at base.
+<br/>The Ammo Module, a Huron Rearm Pod, allows ATLAS-4 to purchase ammunication crates, similar to the ammo crate spawner at base.
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>Vehicle Module</font>
-<br/>The Vehicle Module, a Huron Repair Pod, allows Apollo to purchase limited vehicles for players spawning at the FOB.
+<br/>The Vehicle Module, a Huron Repair Pod, allows ATLAS-4 to purchase limited vehicles for players spawning at the FOB.
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>Personnel Module</font>
-<br/>The Personnel Module, a Huron Medical Pod, allows Apollo to enable a mobile spawn, provided enemies are not within 500m of the module. If enemies approach the module, it will disable
-and will require manual intervation to renable. Each teleport consumes points, and may be disabled by Apollo if they are low on supplies.
+<br/>The Personnel Module, a Huron Medical Pod, allows ATLAS-4 to enable a mobile spawn, provided enemies are not within 500m of the module. If enemies approach the module, it will disable
+and will require manual intervation to renable. Each teleport consumes points, and may be disabled by ATLAS-4 if they are low on supplies.
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>Supply Module and Points</font>
 <br/>The Supply Module, when activated, adds points to the supply budget. The supply budget is shared by all modules, as well as the fortify items.
@@ -207,7 +207,7 @@ player createDiaryRecord ["ALiVE", ["Logistics",
 <br/><font face='PuristaMedium' color='#ffffff' size='13'>If you would like a new feature to be added, or if you would like to report an issue with our missions, please use this link: https://bit.ly/2HOWGUJ</t>
 <br/>
 <br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--The Role of Logistical Support--#</t>
-<br/><font face='PuristaMedium' color='#ffffff' size='13'>Apollo is the callsign we use for the server's logistical support assets. Apollo is in charge of creating Forward Operating Bases, Combat Outposts, and Forward Rearm and Repair Points. This is more important now than ever before, because fights can last hours. Without resupply or a fallback point, squads and vehicles who are in combat run the risk of running out of ammunition or fuel. Perhaps more important, vehicles such as Saber and Buffallo may need repairs, but might not be able to make it all the way back to base. Having a forward rearm point enables the possibility of long, sustained combat actions.
+<br/><font face='PuristaMedium' color='#ffffff' size='13'>ATLAS-4 is the callsign we use for the server's logistical support assets. ATLAS-4 is in charge of creating Forward Operating Bases, Combat Outposts, and Forward Rearm and Repair Points. This is more important now than ever before, because fights can last hours. Without resupply or a fallback point, squads and vehicles who are in combat run the risk of running out of ammunition or fuel. Perhaps more important, vehicles such as Saber and Buffallo may need repairs, but might not be able to make it all the way back to base. Having a forward rearm point enables the possibility of long, sustained combat actions.
 <br/>
 <br/><font face=PuristaSemiBold' color='#ffffff' size='16'>#--FOBs and Persistance--#</t>
 <br/><font face='PuristaMedium' color='#ffffff' size='13'>In standard rotation missions, persistance isn't enabled by default. This means that, between server restarts, FOBs and progress will not be maintained. On other map variants, such as COIN or Warfare Wednesday, persistance is enabled. This means that, if you build a FOB during Warfare Wednesday, that FOb will remain there after the next server restart. This is the same for COIN operations as well.
