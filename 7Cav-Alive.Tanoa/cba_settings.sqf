@@ -226,7 +226,7 @@ force force ace_medical_treatment_maxLitterObjects = 50;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 2;
-force force ace_medical_treatment_medicSurgicalKit = 1;
+force force ace_medical_treatment_medicSurgicalKit = 2;
 force force ace_medical_treatment_timeCoefficientPAK = 1;
 
 // ACE Name Tags
@@ -668,7 +668,7 @@ force acre_sys_core_ts3ChannelName = "";
 force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
 acre_sys_core_unmuteClients = true;
-force force acre_sys_signal_signalModel = 3;
+force force acre_sys_signal_signalModel = 1;
 
 // ACRE2 UI
 acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
