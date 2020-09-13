@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=2430;
+		nextID=2477;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3784;
+		nextID=3888;
 	};
 	class Camera
 	{
-		pos[]={15197.979,75.023567,739.59894};
-		dir[]={0.90363127,-0.40316042,0.14533725};
-		up[]={0.39810461,0.91509444,0.064028092};
-		aside[]={0.15881114,1.3654353e-006,-0.98741144};
+		pos[]={15320.721,33.22834,963.44012};
+		dir[]={0.39062726,-0.49968514,-0.77314287};
+		up[]={0.2253371,0.86620462,-0.4459939};
+		aside[]={-0.89255887,-2.8408249e-007,-0.45096341};
 	};
 };
 binarizationWanted=0;
@@ -1021,7 +1021,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=310;
+		items=315;
 		class Item0
 		{
 			dataType="Layer";
@@ -7039,7 +7039,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Mustang</t>"", {_this select 1 setpos getpos medicMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Camp Branca</t>"", {_this select 1 setpos getpos campMarker;}];};}";
+								init="call{" \n "call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to ATLAS-1/2</t>"", {_this select 1 setpos getpos medicMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Camp Branca</t>"", {_this select 1 setpos getpos campMarker;}];};}";
 								name="baseStand";
 								disableSimulation=1;
 							};
@@ -62370,7 +62370,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={15387.125,3.4345169,806.19806};
-												angles[]={-0,4.0367546,0};
+												angles[]={0,4.0367546,0};
 											};
 											side="West";
 											flags=6;
@@ -62739,6 +62739,662 @@ class Mission
 				};
 			};
 			id=2422;
+		};
+		class Item310
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15589.173,5.2760129,17349.74};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2448;
+					type="rhsusf_army_ocp_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15584.173,5.609539,17344.742};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2449;
+					type="rhsusf_army_ocp_machinegunner";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15592.173,5.4057474,17344.742};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2450;
+					type="rhsusf_army_ocp_grenadier";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15594.173,5.3703699,17344.742};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2451;
+					type="rhsusf_army_ocp_machinegunnera";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={15580.831,5.4581633,17356.404};
+					type="CBA_Task_Garrison";
+					script="\x\cba\addons\ai\fnc_waypointGarrison.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=2452;
+					atlOffset=0.07383728;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2447;
+		};
+		class Item311
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15590.044,6.8305478,17113};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2454;
+					type="rhsusf_army_ocp_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15585.044,6.9652982,17108.002};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2455;
+					type="rhsusf_army_ocp_machinegunner";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15593.044,6.9933066,17108.002};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2456;
+					type="rhsusf_army_ocp_grenadier";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15595.044,6.9791636,17108.002};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2457;
+					type="rhsusf_army_ocp_machinegunnera";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={15582.666,7.172987,17102.502};
+					type="CBA_Task_Garrison";
+					script="\x\cba\addons\ai\fnc_waypointGarrison.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=2458;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2453;
+		};
+		class Item312
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15721.988,9.3222837,17112.844};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2460;
+					type="rhsusf_army_ocp_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15716.988,9.0016565,17107.846};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2461;
+					type="rhsusf_army_ocp_machinegunner";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15724.988,9.6355667,17107.846};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2462;
+					type="rhsusf_army_ocp_grenadier";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15726.988,9.7840633,17107.846};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2463;
+					type="rhsusf_army_ocp_machinegunnera";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={15726.252,9.8686752,17103.074};
+					type="CBA_Task_Garrison";
+					script="\x\cba\addons\ai\fnc_waypointGarrison.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=2464;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2459;
+		};
+		class Item313
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15720.122,5.2736735,17349.508};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2466;
+					type="rhsusf_army_ocp_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15715.122,5.7526436,17344.51};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2467;
+					type="rhsusf_army_ocp_machinegunner";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15723.122,5.5387101,17344.51};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2468;
+					type="rhsusf_army_ocp_grenadier";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15725.122,5.467998,17344.51};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2469;
+					type="rhsusf_army_ocp_machinegunnera";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={15726.282,4.5692444,17355.715};
+					type="CBA_Task_Garrison";
+					script="\x\cba\addons\ai\fnc_waypointGarrison.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=2470;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2465;
+		};
+		class Item314
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15656.223,3.6600094,17354.555};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2472;
+					type="rhsusf_army_ocp_teamleader";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15656.515,3.894521,17349.691};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=2473;
+					type="rhsusf_army_ocp_machinegunner";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15659.223,3.9232547,17349.557};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2474;
+					type="rhsusf_army_ocp_grenadier";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15661.223,3.9728396,17349.557};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=2475;
+					type="rhsusf_army_ocp_machinegunnera";
+				};
+				class Item4
+				{
+					dataType="Waypoint";
+					position[]={15657.986,3.4491518,17359.189};
+					type="CBA_Task_Garrison";
+					script="\x\cba\addons\ai\fnc_waypointGarrison.sqf";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=2476;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2471;
 		};
 	};
 	class Connections
