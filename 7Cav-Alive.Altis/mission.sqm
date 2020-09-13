@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10947;
+		nextID=11044;
 	};
 	class Camera
 	{
-		pos[]={14182.095,22.116985,16246.01};
-		dir[]={0.77571064,-0.52557707,-0.34967867};
-		up[]={0.47917584,0.85071313,-0.21600655};
-		aside[]={-0.41100532,-2.6833732e-007,-0.9117564};
+		pos[]={14627.525,27.845888,16792.592};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -68493,14 +68493,14 @@ class Mission
 					name="4 - Support Elements";
 					class Entities
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							dataType="Layer";
-							name="1 - Atlas-1";
+							name="1 - ATLAS";
 							class Entities
 							{
-								items=2;
+								items=3;
 								class Item0
 								{
 									dataType="Group";
@@ -68521,9 +68521,9 @@ class Mission
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{this setgroupid[""ATLAS-1""];" \n "}";
+												init="call{this setgroupid[""ATLAS-2""];" \n "}";
 												name="MUST_1";
-												description="Medical Team Leader @ATLAS-1";
+												description="Medical Team Leader @ATLAS-2";
 												isPlayable=1;
 											};
 											id=16972;
@@ -68871,7 +68871,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Atlas-1";
+													value="ATLAS-2";
 												};
 											};
 										};
@@ -68917,9 +68917,9 @@ class Mission
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{this setgroupid[""ATLAS-2""];" \n "}";
+												init="call{this setgroupid[""ATLAS-1""];" \n "}";
 												name="MUST_2";
-												description="Medical Team Leader @ATLAS-2";
+												description="Medical Team Leader @ATLAS-1";
 												isPlayable=1;
 											};
 											id=16989;
@@ -69253,6 +69253,25 @@ class Mission
 									{
 										class Attribute0
 										{
+											property="groupID";
+											expression="[_this, _value] call CBA_fnc_setCallsign";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ATLAS-1";
+												};
+											};
+										};
+										class Attribute1
+										{
 											property="acex_headless_blacklist";
 											expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 											class Value
@@ -69270,21 +69289,10 @@ class Mission
 												};
 											};
 										};
-										nAttributes=1;
+										nAttributes=2;
 									};
 								};
-							};
-							id=13866;
-							atlOffset=0.072658539;
-						};
-						class Item1
-						{
-							dataType="Layer";
-							name="3 - Apollo 1";
-							class Entities
-							{
-								items=1;
-								class Item0
+								class Item2
 								{
 									dataType="Group";
 									side="West";
@@ -69306,7 +69314,7 @@ class Mission
 												rank="CORPORAL";
 												init="call{this setgroupid[""ATLAS-4""];" \n "this setUnitRank ""CORPORAL"";}";
 												name="APO_1";
-												description="Logistic Team Leader@Apollo-1";
+												description="Logistic Team Leader@ATLAS-4";
 												isPlayable=1;
 											};
 											id=9561;
@@ -69815,7 +69823,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Alpha 2-6";
+													value="ATLAS - 4";
 												};
 											};
 										};
@@ -69842,9 +69850,10 @@ class Mission
 									};
 								};
 							};
-							id=13868;
+							id=13866;
+							atlOffset=2.8386612;
 						};
-						class Item2
+						class Item1
 						{
 							dataType="Layer";
 							name="4 - Havoc 1";
@@ -77956,7 +77965,7 @@ class Mission
 				};
 			};
 			id=15495;
-			atlOffset=0.22792435;
+			atlOffset=0.22838211;
 		};
 		class Item35
 		{
@@ -77978,7 +77987,7 @@ class Mission
 			};
 			id=15496;
 			type="B_SAM_System_01_F";
-			atlOffset=0.22792435;
+			atlOffset=0.22838211;
 			class CustomAttributes
 			{
 				class Attribute0
