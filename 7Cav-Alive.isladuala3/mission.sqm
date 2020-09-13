@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2773;
+		nextID=2879;
 	};
 	class Camera
 	{
-		pos[]={5786.4795,88.505836,6248.5854};
-		dir[]={-0.27932656,-0.54367566,-0.79158932};
-		up[]={-0.1809411,0.83923048,-0.51277375};
-		aside[]={-0.94311583,1.9263825e-007,0.33279601};
+		pos[]={5780.708,145.44637,6016.5503};
+		dir[]={-0.7000522,-0.61545599,0.36243847};
+		up[]={-0.54661131,0.78810763,0.28299731};
+		aside[]={0.45981675,1.8440187e-007,0.88813668};
 	};
 };
 binarizationWanted=0;
@@ -21882,14 +21882,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5659.895,15.748324,6084.5347};
-								angles[]={0,0.01480341,0};
+								position[]={5659.895,15.748324,6084.5352};
+								angles[]={0,0.014800392,0};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
-								init="call{" \n "call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Mustang</t>"", {_this select 1 setpos getpos medicMarker;}];};}";
+								init="call{" \n "call {baseStand addaction[""<t color='#3399ff'> Teleport to Airfield</t>"", {_this select 1 setpos getpos airMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Rotary</t>"", {_this select 1 setpos getpos rotaryMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to Saber</t>"", {_this select 1 setpos getpos saberMarker;}];};call {baseStand addaction[""<t color='#3399ff'> Teleport to ATLAS-1/2</t>"", {_this select 1 setpos getpos medicMarker;}];};}";
 								name="baseStand";
 								disableSimulation=1;
 							};
@@ -66405,7 +66405,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5812.8076,17.513111,6107.1074};
-												angles[]={-0,4.0367546,0};
+												angles[]={0,4.0367546,0};
 											};
 											side="West";
 											flags=6;
