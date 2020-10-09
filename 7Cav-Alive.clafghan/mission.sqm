@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=2668;
+		nextID=2674;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4301;
+		nextID=4501;
 	};
 	class Camera
 	{
-		pos[]={20420.689,68.085938,12210.852};
-		dir[]={-0.11366076,-0.539226,0.83446383};
-		up[]={-0.072775245,0.84216058,0.5342927};
-		aside[]={0.99085754,8.920324e-009,0.13496277};
+		pos[]={15364.051,19.037298,919.66632};
+		dir[]={-0.52613956,-0.79821587,-0.29334384};
+		up[]={-0.69717747,0.60237098,-0.38870353};
+		aside[]={-0.4869732,-5.2619725e-007,0.87343007};
 	};
 };
 binarizationWanted=0;
@@ -1007,7 +1007,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=368;
+		items=369;
 		class Item0
 		{
 			dataType="Layer";
@@ -18598,7 +18598,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="40";
+											value="45";
 										};
 									};
 								};
@@ -40790,7 +40790,7 @@ class Mission
 					name="5 - Recon Elelments";
 					class Entities
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							dataType="Group";
@@ -41431,344 +41431,6 @@ class Mission
 							{
 							};
 							id=1323;
-						};
-						class Item2
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=5;
-								class Item0
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15351.941,2.8328435,912.11407};
-										angles[]={0,0.62831861,0};
-									};
-									side="West";
-									flags=6;
-									class Attributes
-									{
-										init="call{this setgroupID[""VIKING-1""];}";
-										name="HUNT_2";
-										description="Recon Team Leader @VIKING-1";
-										isPlayable=1;
-									};
-									id=1383;
-									type="rhsusf_army_ocp_arb_rifleman";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male08ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.95999998;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15350.652,2.8975103,905.3421};
-										angles[]={0,0.69813186,0};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										description="Recon Rifleman";
-										isPlayable=1;
-									};
-									id=1384;
-									type="rhsusf_army_ocp_arb_rifleman";
-									atlOffset=0.064666748;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male04ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item2
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15351.341,2.8800848,908.62195};
-										angles[]={0,0.64577228,0};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										description="Recon Auto Rifleman";
-										isPlayable=1;
-									};
-									id=1385;
-									type="rhsusf_army_ocp_arb_rifleman";
-									atlOffset=0.047241211;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male01ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item3
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15351.916,2.8467901,910.56677};
-										angles[]={0,0.62831861,0};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										description="Recon Marksman";
-										isPlayable=1;
-									};
-									id=1386;
-									type="rhsusf_army_ocp_arb_rifleman";
-									atlOffset=0.013946533;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male05ENG";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item4
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15351.067,2.8941839,906.8811};
-										angles[]={0,0.69813186,0};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										description="Recon CLS";
-										isPlayable=1;
-									};
-									id=1387;
-									type="rhsusf_army_ocp_arb_rifleman";
-									atlOffset=0.061340332;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ace_isMedic";
-											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="Male08ENG";
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-							};
-							class Attributes
-							{
-							};
-							id=1378;
 						};
 					};
 					id=1313;
@@ -62344,7 +62006,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15582.399,13.470959,17355.352};
-				angles[]={-0,1.5990356,0};
+				angles[]={0,1.5990356,0};
 			};
 			side="Empty";
 			flags=4;
@@ -62361,7 +62023,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15579.229,13.470959,17355.299};
-				angles[]={-0,3.186465,0};
+				angles[]={0,3.186465,0};
 			};
 			side="Empty";
 			flags=4;
@@ -62677,7 +62339,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15724.169,12.582092,17356.91};
-				angles[]={-0,4.6953893,0};
+				angles[]={0,4.6953893,0};
 			};
 			side="Empty";
 			flags=4;
@@ -62713,7 +62375,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15724.305,12.582092,17354.463};
-				angles[]={-0,3.186465,0};
+				angles[]={0,3.186465,0};
 			};
 			side="Empty";
 			flags=4;
@@ -62998,7 +62660,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15723.916,12.57528,17355.672};
-				angles[]={-0,1.5689813,0};
+				angles[]={0,1.5689813,0};
 			};
 			side="Empty";
 			flags=4;
@@ -64706,6 +64368,341 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item368
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15356.354,2.8328435,904.94177};
+						angles[]={0,1.3962634,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="HUNT_1";
+						description="Recon Team Leader@VIKING";
+						isPlayable=1;
+					};
+					id=2669;
+					type="rhsusf_army_ocp_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15354.392,2.8375852,904.81287};
+						angles[]={0,1.8500491,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						description="Recon Marksman";
+						isPlayable=1;
+					};
+					id=2670;
+					type="rhsusf_army_ocp_rifleman";
+					atlOffset=0.0047416687;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15352.367,2.834995,904.68689};
+						angles[]={0,1.8675026,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						description="Recon Auto Rifleman";
+						isPlayable=1;
+					};
+					id=2671;
+					type="rhsusf_army_ocp_rifleman";
+					atlOffset=0.0021514893;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15350.638,2.8328435,904.34802};
+						angles[]={0,1.9198622,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						description="Recon CLS";
+						isPlayable=1;
+					};
+					id=2672;
+					type="rhsusf_army_ocp_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15349.05,2.8328435,904.21228};
+						angles[]={0,1.9198622,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						description="Recon Rifleman";
+						isPlayable=1;
+					};
+					id=2673;
+					type="rhsusf_army_ocp_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2668;
 		};
 	};
 	class Connections
