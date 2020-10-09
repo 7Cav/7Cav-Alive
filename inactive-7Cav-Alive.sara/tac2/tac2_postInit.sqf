@@ -6,7 +6,7 @@ player addEventHandler ["Respawn", { [player] call ace_common_fnc_resetAllDefaul
 
 // Ensure that enhanced movement vehicle enter menu doesn't work
 [] spawn {
-	if (isDedicated) exitWith {};
+	if (isServer) exitWith {};
 	waitUntil {
 		private _c = babe_core_modkeydata select { 
 			_x select 1 == "Use" 

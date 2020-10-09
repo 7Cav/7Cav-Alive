@@ -9,6 +9,3 @@
         };
     }];
 };
-
-// Initialize loyalty rewards GUI
-_vehDialog = [] spawn compile PreprocessFileLineNumbers "Tac2\loyalty\loyalty_fnc.sqf";

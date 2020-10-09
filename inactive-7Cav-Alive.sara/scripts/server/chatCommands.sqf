@@ -8,7 +8,6 @@ ROOT_RG_COMMANDS = [];
 
 #include ".\chatCommands\logistics.sqf"
 #include ".\chatCommands\teleport.sqf"
-#include ".\chatCommands\loyalty.sqf"
 
 SERVER_CMD_RootCommands = 
 {
