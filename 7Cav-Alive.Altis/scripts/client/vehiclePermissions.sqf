@@ -153,16 +153,18 @@ CLIENT_VP_GetIn_Key =
 	true
 };
 
-["GetInDriver", { (["VP_Driver"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["GetInGunner", { (["VP_Gunner"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["GetInCommander", { (["VP_Commander"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["GetInPilot", { (["VP_Pilot"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["GetInTurret", { (["VP_Turret"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["GetInCargo", { (["VP_Cargo"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+// Commented out for now due to people want to have fun on tac2
 
-["MoveToDriver", { (["VP_Driver"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["MoveToGunner", { (["VP_Gunner"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["MoveToCommander", { (["VP_Commander"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["MoveToPilot", { (["VP_Pilot"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["MoveToTurret", { (["VP_Turret"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
-["MoveToCargo", { (["VP_Cargo"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInDriver", { (["VP_Driver"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInGunner", { (["VP_Gunner"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInCommander", { (["VP_Commander"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInPilot", { (["VP_Pilot"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInTurret", { (["VP_Turret"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["GetInCargo", { (["VP_Cargo"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+
+//["MoveToDriver", { (["VP_Driver"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["MoveToGunner", { (["VP_Gunner"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["MoveToCommander", { (["VP_Commander"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["MoveToPilot", { (["VP_Pilot"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["MoveToTurret", { (["VP_Turret"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
+//["MoveToCargo", { (["VP_Cargo"] + _this) call CLIENT_VP_GetIn_Action }, CLIENT_VP_GetIn_Action, CLIENT_VP_GetIn_Action] call CLIENT_OverrideAction;
